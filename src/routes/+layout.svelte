@@ -58,11 +58,11 @@
         </button>
 
         <ul class="nav-links" class:open={menuOpen}>
-            <li><a href="{base}/atlasy" onclick={() => menuOpen = false}>Atlasy</a></li>
-            <li><a href="{base}/postavy" onclick={() => menuOpen = false}>Postavy</a></li>
-            <li><a href="{base}/slovnik" onclick={() => menuOpen = false}>Slovník</a></li>
-            <li><a href="{base}/rodokmeny" onclick={() => menuOpen = false}>Rodokmeny</a></li>
-            <li><a href="{base}/mapa" onclick={() => menuOpen = false}>Mapa</a></li>
+            <li><a href="{base}/" onclick={() => menuOpen = false}>XYZ.ATH</a></li>
+            <li><a href="{base}/" onclick={() => menuOpen = false}>XYZ.ATH</a></li>
+            <li><a href="{base}/" onclick={() => menuOpen = false}>XYZ.ATH</a></li>
+            <li><a href="{base}/" onclick={() => menuOpen = false}>XYZ.ATH</a></li>
+            <li><a href="{base}/" onclick={() => menuOpen = false}>XYZ.ATH</a></li>
         </ul>
     </nav>
 </header>
