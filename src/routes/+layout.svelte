@@ -46,15 +46,15 @@
 
 <header>
 	<nav>
-		<a href="/">
+		<a href="{base}/">
 			<img src={logo} alt="Aurionth Logo" class="nav-logo" />
 		</a>
 		<ul class="nav-links">
-			<li><a href="/">xyz.ath</a></li>
-			<li><a href="/">xyz.ath</a></li>
-			<li><a href="/">xyz.ath</a></li>
-			<li><a href="/">xyz.ath</a></li>
-			<li><a href="/">xyz.ath</a></li>
+			<li><a href="{base}/">xyz.ath</a></li>
+			<li><a href="{base}/">xyz.ath</a></li>
+			<li><a href="{base}/">xyz.ath</a></li>
+			<li><a href="{base}/">xyz.ath</a></li>
+			<li><a href="{base}/">xyz.ath</a></li>
 		</ul>
 	</nav>
 </header>
@@ -81,19 +81,19 @@
 		<div class="footer-col">
 			<span class="footer-title">Navigace</span>
 			<ul>
-				<li><a href="/">xyz.cz</a></li>
-				<li><a href="/">xyz.cz</a></li>
-				<li><a href="/">xyz.cz</a></li>
-				<li><a href="/">xyz.cz</a></li>
-				<li><a href="/contact">Kontakt</a></li>
-				<li><a href="/about-project">O projektu</a></li>
+				<li><a href="{base}/">xyz.cz</a></li>
+				<li><a href="{base}/">xyz.cz</a></li>
+				<li><a href="{base}/">xyz.cz</a></li>
+				<li><a href="{base}/">xyz.cz</a></li>
+				<li><a href="{base}/contact">Kontakt</a></li>
+				<li><a href="{base}/about-project">O projektu</a></li>
 			</ul>
 		</div>
 	</div>
 	
 	
 	<div class="footer-bottom">
-		<a href="/"><img src={logo} alt="Aurionth Logo" class="footer-logo"></a>
+		<a href="{base}/"><img src={logo} alt="Aurionth Logo" class="footer-logo"></a>
 		<p>&copy;2026<br>Všechna práva vyhrazena</p>
 	</div>
 </footer>
