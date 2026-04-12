@@ -105,6 +105,10 @@ nav {
     border-bottom: 0.5px solid var(--violet);
 }
 
+.hamburger {
+    display: none;
+}
+
 .nav-logo {
     margin: 0;
     height: 2rem;
@@ -415,21 +419,40 @@ footer {
 
     /* --- NAV --- */
     nav {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        align-items: center;
         padding: 1rem 1.5rem;
-        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .hamburger {
+        display: block;
+        background: transparent;
+        border: 0.5px solid var(--softindigo);
+        color: var(--golden);
+        font-size: 1.5rem;
+        padding: 0.4rem 0.75rem;
+        cursor: pointer;
+        z-index: 20;
     }
 
     .nav-links {
-        flex-wrap: wrap;
-        gap: 0;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--voidblack);
+        border-top: 0.5px solid var(--violet);
+    }
+
+    .nav-links.open {
+        display: flex;
     }
 
     .nav-links a {
-        font-size: 0.9rem;
-        padding: 0.75rem 0.6rem;
-        letter-spacing: 0.1em;
+        font-size: 1rem;
+        padding: 1rem 1.5rem;
+        border-bottom: 0.5px solid var(--violet);
+        letter-spacing: 0.15em;
     }
 
     /* --- HERO --- */

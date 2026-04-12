@@ -22,6 +22,8 @@
 			color: ['#5030c0', '#2050a0', '#8040a0', '#6040c0', '#3040b0'][Math.floor(Math.random() * 5)]
 		}));
 	});
+
+    let menuOpen = $state(false);
 </script>
 
 <svelte:head>
@@ -46,19 +48,23 @@
 	></div>
 {/each}
 
+
 <header>
-	<nav>
-		<a href="{base}/">
-			<img src={logo} alt="Aurionth Logo" class="nav-logo" />
-		</a>
-		<ul class="nav-links">
-			<li><a href="{base}/">xyz.ath</a></li>
-			<li><a href="{base}/">xyz.ath</a></li>
-			<li><a href="{base}/">xyz.ath</a></li>
-			<li><a href="{base}/">xyz.ath</a></li>
-			<li><a href="{base}/">xyz.ath</a></li>
-		</ul>
-	</nav>
+    <nav>
+        <a href="{base}/"><img src={logo} alt="Aurionth Logo" class="nav-logo" /></a>
+        
+        <button class="hamburger" onclick={() => menuOpen = !menuOpen} aria-label="Menu">
+            {#if menuOpen}✕{:else}☰{/if}
+        </button>
+
+        <ul class="nav-links" class:open={menuOpen}>
+            <li><a href="{base}/atlasy" onclick={() => menuOpen = false}>Atlasy</a></li>
+            <li><a href="{base}/postavy" onclick={() => menuOpen = false}>Postavy</a></li>
+            <li><a href="{base}/slovnik" onclick={() => menuOpen = false}>Slovník</a></li>
+            <li><a href="{base}/rodokmeny" onclick={() => menuOpen = false}>Rodokmeny</a></li>
+            <li><a href="{base}/mapa" onclick={() => menuOpen = false}>Mapa</a></li>
+        </ul>
+    </nav>
 </header>
 
 <main>
