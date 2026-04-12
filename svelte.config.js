@@ -7,6 +7,9 @@ export default {
         }),
         paths: {
             base: process.env.NODE_ENV === 'production' ? '/Aurionth' : ''
+        },
+        prerender: {
+            handleHttpError: 'warn'
         }
     }
 };
