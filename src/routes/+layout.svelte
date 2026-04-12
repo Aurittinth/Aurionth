@@ -1,4 +1,6 @@
 <script>
+    import { base } from '$app/paths';
+	
 	import favicon from '../lib/assets/images/favicon/favicon.svg';
 	import '../lib/assets/css/global.css';
 	import Stars from '../lib/assets/components/stars.svelte';
