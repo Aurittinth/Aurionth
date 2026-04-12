@@ -440,8 +440,6 @@ footer {
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: var(--darkslategray);
-        border-top: 0.5px solid var(--violet);
         padding: 0.5rem 0;
     }
 
@@ -452,8 +450,12 @@ footer {
     .nav-links a {
         font-size: 1rem;
         padding: 1rem 2rem;
-        border-bottom: 0.5px solid var(--violet);
         letter-spacing: 0.15em;
+    }
+
+    .nav-links a:hover {
+        color: var(--cyannebula);
+        background-color: transparent;
     }
     
     /* --- HERO --- */
