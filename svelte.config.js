@@ -6,7 +6,7 @@ export default {
             fallback: '404.html'
         }),
         paths: {
-            base: '/Aurionth'
+            base: process.env.NODE_ENV === 'production' ? '/Aurionth' : ''
         }
     }
 };
