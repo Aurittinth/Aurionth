@@ -60,8 +60,8 @@
         <ul class="nav-links" class:open={menuOpen}>
             <!-- Začátek (levo) navigace -->
             <li><a href="{base}/" onclick={() => menuOpen = false}>XYZ.ATH</a></li>
-            <li><a href="{base}/Atlases" onclick={() => menuOpen = false}>Atlasy</a></li>
-            <li><a href="{base}/Languages" onclick={() => menuOpen = false}>Jazyky</a></li>
+            <li><a href="{base}/atlases" onclick={() => menuOpen = false}>Atlasy</a></li>
+            <li><a href="{base}/languages" onclick={() => menuOpen = false}>Jazyky</a></li>
             <!-- Konec (pravo) nsvigace -->
         </ul>
     </nav>
