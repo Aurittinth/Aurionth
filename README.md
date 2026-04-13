@@ -2,6 +2,10 @@
 
 > **Website about my fiction world.** - *Aurittinth Kîllis No’Uu*
 
+**Odkaz na stránku**: [aurittinth.github.io/Aurionth](https://aurittinth.github.io/Aurionth/)
+
+Vše co chcete vědět o Aurionthu na jednom místě.
+
 <!--
 # sv
 
