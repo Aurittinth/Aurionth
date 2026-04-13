@@ -4,7 +4,7 @@
 
 <section class="hero">
 	<p class="hero-eyebrow">
-		Fe pêrpetumo Lumôr &#9670; V neustálém světle
+		Fe pêrpetumo Lumôr <br><!--&#9670;--> V neustálém světle
 	</p>
 	
 	<img src={logo} alt="Aurionth Logo" class="hero-logo" />
