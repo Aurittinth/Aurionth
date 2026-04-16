@@ -1,42 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Uncial+Antiqua&display=swap');
+/*
+    - Cinzel
+    - Cormorant Garamond
+    - Crimson Pro
+    - Uncial Antiqua
+*/
 
 
 /*==============================================
 =               VARIABLE ROOTING               =
 ==============================================*/
 :root {
+        /*
+        25% = 3F
+        50% = 80
+        75% = BF
+    */
+
     /* --- COLOR --- */
-    --black: #050508;
-    --snow: #e8e0f0;
-    --white: #ffffff;
-    --darkslategray: #2f4f4fbf;
-    --violet: #6450c84d;
-    --golden: #c8a84b;
-    --softlavender: #c8b4f0b3;
-    --cyan: #00ffff;
-    --goldpale: #e8d5a0;
-    --amethyst: #a070e0;
-    --lightindigo: #6040c0;
-    --mistlavender: #c8b4f0bf;
-    --golddark: #a07830;
-    --voidblack: #0a080f;
-    --brightgold: #ddb855;
-    --warmgold: #b08840;
-    --softviolet: #a078f0cc;
-    --softindigo: #6446c880;
-    --glowviolet: #a078ffcc;
-    --lavender: #b090f0;
-    --ghostindigo: #503ca026;
-    --hazeindigo: #503ca04d;
-    --deepvoid: #050508;
-    --shadowindigo: #3c287866;
-    --fadelavender: #b4a0dc99;
-    --bluenebula: #5030c0;
-    --cyannebula: #2050a0;
-    --violetnebula: #8040a0;
-    --veilindigo: #6450a080;
-    --thinindigo: #503ca033;
-    --iceblue: #9ec3ff;
+    --black:            #050508;
+    --snow:             #e8e0f0;
+    --white:            #ffffff;
+    --darkslategray:    #2f4f4fbf;
+    --violet:           #6450c84d;
+    --golden:           #c8a84b;
+    --softlavender:     #c8b4f0b3;
+    --cyan:             #00ffff;
+    --goldpale:         #e8d5a0;
+    --amethyst:         #a070e0;
+    --lightindigo:      #6040c0;
+    --mistlavender:     #c8b4f0bf;
+    --golddark:         #a07830;
+    --voidblack:        #0a080f;
+    --brightgold:       #ddb855;
+    --warmgold:         #b08840;
+    --softviolet:       #a078f0cc;
+    --softindigo:       #6446c880;
+    --glowviolet:       #a078ffcc;
+    --lavender:         #b090f0;
+    --ghostindigo:      #503ca026;
+    --hazeindigo:       #503ca04d;
+    --deepvoid:         #050508;
+    --shadowindigo:     #3c287866;
+    --fadelavender:     #b4a0dc99;
+    --bluenebula:       #5030c0;
+    --cyannebula:       #2050a0;
+    --violetnebula:     #8040a0;
+    --veilindigo:       #6450a080;
+    --thinindigo:       #503ca033;
+    --iceblue:          #9ec3ff;
+    --fullblack:        #000000;
+    --fullwhite:        #ffffff;
+    --navblue:          #91b6fb;
+    --smokewhite:       #f5f5f5;
     
     /* --- FONT --- */
     --f-cinzel: 'Cinzel', serif;
@@ -102,7 +118,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 3rem;
-    border-bottom: 0.5px solid var(--violet);
 }
 
 .hamburger {
@@ -501,4 +516,47 @@ footer {
         padding: 2rem 1.5rem;
         text-align: left;
     }
+}
+
+
+
+/*==============================================
+=                ABOUT-PROJECT                 =
+==============================================*/
+section.ap {
+    color: var(--golden);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 75px 25%;
+    font-size: 1.5rem;
+}
+
+section.ap p.uptitle {
+    font-family: var(--f-cormorant);
+    color: var(--mistlavender);
+    font-weight: 900;
+}
+
+section.ap p.subtitle {
+    font-family: var(--f-cormorant);
+    color: var(--mistlavender);
+    font-weight: 900;
+}
+
+section.ap h1 {
+    color: var(--brightgold);
+    font-family: var(--f-antiqua);
+    font-size: 6rem;
+}
+section.ap h2 {
+    color: var(--golden);
+    font-size: 2.5rem;
+    font-family: var(--f-antiqua);
+    padding: 50px 0 5px 0;
+}
+
+section.ap p {
+    color: var(--goldpale);
+    padding: 5px 0;
 }

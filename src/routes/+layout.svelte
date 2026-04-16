@@ -1,10 +1,10 @@
 <script>
     import { base } from '$app/paths';
 	
-	import favicon from '../lib/assets/images/favicon/favicon.svg';
+	import favicon from '../lib/assets/images/favicon/ath-favicon.ico';
 	import '../lib/assets/css/global.css';
 	import Stars from '../lib/assets/components/stars.svelte';
-	import logo from '../lib/assets/images/favicon/aurionth-logo-favicon.svg';
+	import logo from '../lib/assets/images/logo/aurionth-logo.svg';
 	import GitHubIcon from '../lib/assets/images/icons/GitHub_Invertocat_White_Clearspace.svg';
 	import GmailIcon from '../lib/assets/images/icons/Gmail_icon_(2020).svg';
 
@@ -28,8 +28,6 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
 	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Crimson+Pro:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
 </svelte:head>
 
@@ -87,15 +85,16 @@
 			</ul>
 		</div>
 		<div class="footer-col">
-			<span class="footer-title">Navigace</span>
-			<ul>
-				<li><a href="{base}/">xyz.cz</a></li>
-				<li><a href="{base}/">xyz.cz</a></li>
-				<li><a href="{base}/">xyz.cz</a></li>
-				<li><a href="{base}/">xyz.cz</a></li>
-				<li><a href="{base}/contact">Kontakt</a></li>
-				<li><a href="{base}/about-project">O projektu</a></li>
-			</ul>
+			<div class="footer">
+				<span class="footer-title">Navigace</span>
+				<ul>
+					<li><a href="{base}/">xyz.cz</a></li>
+					<li><a href="{base}/atlases">Atlasy</a></li>
+					<li><a href="{base}/languages">Jazyky</a></li>
+					<li><a href="{base}/contact">Kontakt</a></li>
+					<li><a href="{base}/about-project">O projektu</a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 	
