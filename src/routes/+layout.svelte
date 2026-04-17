@@ -49,7 +49,9 @@
 
 <header>
     <nav>
-        <a href="{base}/"><img src={logo} alt="Aurionth Logo" class="nav-logo" /></a>
+        <a href="{base}/">
+			<img src={logo} alt="Aurionth Logo" class="nav-logo" />
+		</a>
         
         <button class="hamburger" onclick={() => menuOpen = !menuOpen} aria-label="Menu">
             {#if menuOpen}✕{:else}☰{/if}
