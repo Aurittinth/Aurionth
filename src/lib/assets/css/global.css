@@ -211,22 +211,6 @@ nav {
     margin-bottom: 3rem;
 }
 
-/*
-.hero-title {
-    font-family: var(--f-cinzel);
-    font-size: clamp(3rem, 10vw, 12.5rem);
-    font-weight: 600;
-    letter-spacing: 0.15em;
-    line-height: 1;
-    background: linear-gradient(-180deg, var(--golden) 0%, var(--goldpale) 40%, var(--amethyst) 70%, var(--lightindigo) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: 1.5rem;
-    text-transform: uppercase;
-}
-*/
-
 .hero-logo {
     width: 50%;
     height: auto;
@@ -295,36 +279,6 @@ nav {
     border-color: var(--glowviolet);
     color: var(--lavender);
 }
-
-
-/*==============================================
-=                 GRID SECTION                 =
-==============================================*/
-/*
-.sections-grid {
-    position: relative;
-    z-index: 5;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1px;
-    background: var(--ghostindigo);
-    border-top: 0.5px solid var(--hazeindigo);
-    border-bottom: 0.5px solid var(--hazeindigo);
-    margin: 0 0 4rem;
-}
-
-.section-card {
-    background: var(--black);
-    padding: 2.5rem 2rem;
-    cursor: pointer;
-    transition: background 0.3s;
-    text-align: center;
-}
-
-.section-card:hover {
-    background: var(--shadowindigo);
-}
-*/
 
 
 /*==============================================
@@ -605,4 +559,44 @@ section.ap span.sign {
 }
 section.ap span.sign:hover {
     text-shadow: #ff0000 0 0 20px;
+}
+
+header.about-project {
+    background-color: var(--ghostindigo);
+}
+
+.ap-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    width: 100%;
+}
+
+.ap-nav ul {
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+}
+
+.ap-nav li {
+    list-style: none;
+}
+
+.ap-nav a {
+    font-family: var(--f-cinzel);
+    font-size: 1rem;
+    letter-spacing: 0.2em;
+    color: var(--goldpale);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    cursor: pointer;
+    padding: 1.5rem 1.25rem;
+}
+
+.ap-nav a:hover {
+    color: var(--cyannebula);
+    background-color: var(--voidblack);
 }

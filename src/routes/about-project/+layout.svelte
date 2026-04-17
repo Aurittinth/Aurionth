@@ -5,9 +5,9 @@
     let { children } = $props();
 </script>
 
-<header>
+<header class="about-project">
     <nav>
-        <ul>
+        <ul class="ap-nav">
             <li><a href="#ap-what">Co to je?</a></li>
             <li><a href="#ap-born">Jak to vzniklo?</a></li>
             <li><a href="#ap-essence">Jaké je podstata?</a></li>
