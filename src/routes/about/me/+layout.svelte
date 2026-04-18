@@ -1,19 +1,20 @@
 <script>
     import '../../../lib/assets/css/global.css';
+    import { base } from '$app/paths';
 
     let { children } = $props();
 </script>
 
-<header class="about-project">
+<header class="about">
     <nav>
-        <ul class="ap-nav">
-            <li><a href="#placeholder">PLACEHOLDER</a></li>
-            <li><a href="#placeholder">PLACEHOLDER</a></li>
-            <li><a href="#placeholder">PLACEHOLDER</a></li>
-            <li><a href="#placeholder">PLACEHOLDER</a></li>
-            <li><a href="#placeholder">PLACEHOLDER</a></li>
-            <li><a href="#placeholder">PLACEHOLDER</a></li>
-            <li><a href="#placeholder">PLACEHOLDER</a></li>
+        <ul class="about-nav">
+            <li><a href="{base}/about/me">PLACEHOLDER</a></li>
+            <li><a href="{base}/about/me">PLACEHOLDER</a></li>
+            <li><a href="{base}/about/me">PLACEHOLDER</a></li>
+            <li><a href="{base}/about/me">PLACEHOLDER</a></li>
+            <li><a href="{base}/about/me">PLACEHOLDER</a></li>
+            <li><a href="{base}/about/me">PLACEHOLDER</a></li>
+            <li><a href="{base}/about/me">PLACEHOLDER</a></li>
         </ul>
     </nav>
 </header>

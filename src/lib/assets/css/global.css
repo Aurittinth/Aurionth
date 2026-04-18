@@ -561,11 +561,11 @@ section.ap .sign:hover {
     text-shadow: #ff0000 0 0 20px;
 }
 
-header.about-project {
+header.about {
     background-color: var(--ghostindigo);
 }
 
-.ap-nav {
+.about-nav {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -574,17 +574,17 @@ header.about-project {
     width: 100%;
 }
 
-.ap-nav ul {
+.about-nav ul {
     margin: 0 auto;
     display: flex;
     gap: 2rem;
 }
 
-.ap-nav li {
+.about-nav li {
     list-style: none;
 }
 
-.ap-nav a {
+.about-nav a {
     font-family: var(--f-cinzel);
     font-size: 1rem;
     letter-spacing: 0.2em;
@@ -596,7 +596,7 @@ header.about-project {
     padding: 1.5rem 1.25rem;
 }
 
-.ap-nav a:hover {
+.about-nav a:hover {
     color: var(--cyannebula);
     background-color: var(--voidblack);
 }
