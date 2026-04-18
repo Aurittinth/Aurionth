@@ -4,7 +4,7 @@
 </script>
 
 <section class="hero">
-	<p class="hero-eyebrow">Fe pêrpetumo Lumôr&nbsp;&#9671;&nbsp;V neustálém světle</p>
+	<p class="hero-eyebrow">Fe pêrpetumo Lumôr<br>V neustálém světle</p>
 	
 	<img src={logo} alt="Aurionth Logo" class="hero-logo" />
 	
