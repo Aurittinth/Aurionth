@@ -1,3 +1,7 @@
+<script>
+    import { base } from '$app/paths';
+</script>
+
 <section class="ap">
     <span class="uptitle">O projektu</span>
     <h1>Aurionth</h1>
@@ -9,7 +13,7 @@
     <p>Aurionth není o úniku. I když by se to nabízelo. Je o prozkoumávání reálných zákoutí, které si často ani neuvědomujeme. Je to o hledání diamantu v moři drahokamů. O vyjádření odlišnosti v rámci toho, co považujeme za normální.</p>
 
     <h2 id="ap-born">Jak to vzniklo?</h2>
-    <p>Aurionth je jako lidstvo. Náhoda v hromadě <span class="chan">nepravděpodobností</span>. Vznikl z pouhé tvorby nějaké neznámé mapy a již chvíli vznikajícího děje v mé knize. Z náhodné mapy se stala mapa náhodného světa. Z náhodného světa se stal svět, který vidíme dnes.</p>
+    <p>Aurionth je jako lidstvo. Náhoda v hromadě nepravděpodobností. Vznikl z pouhé tvorby nějaké neznámé mapy a již chvíli vznikajícího děje v mé knize. Z náhodné mapy se stala mapa náhodného světa. Z náhodného světa se stal svět, který vidíme dnes.</p>
     <p>Vše se stalo náhodou, stejně jako lidstvo. A podobně jako ono se Aurionth neustále rozvíjí a mění, přičemž si ponechává svou primární a  podstatu. <i>Mužnost.</i></p>
     <p>Nepředstavujte si však <i>mužnost</i> jako něco známého. Zde je tento pojem pouze obrazem aurionthské reality.</p>
 
