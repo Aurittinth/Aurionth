@@ -1,13 +1,24 @@
 <script>
-    import { base } from '$app/paths';
-	
-	import favicon from '../lib/assets/images/favicon/ath-favicon.ico';
-	import '../lib/assets/css/global.css';
-	import Stars from '../lib/assets/components/stars.svelte';
-	import logo from '../lib/assets/images/logo/aurionth-logo.svg';
-	import GitHubIcon from '../lib/assets/images/icons/GitHub_Invertocat_White_Clearspace.svg';
-	import GmailIcon from '../lib/assets/images/icons/Gmail_icon_(2020).svg';
+	/* CSS imports */
+	import '$lib/assets/css/global.css';
 
+	/* JS imports */
+	import { afterNavigate } from '$app/navigation';
+	import { fixOrphans } from '$lib/assets/js/typography.js';
+	
+	/* Favicon */
+	import favicon from '$lib/assets/images/favicon/ath-favicon.ico';
+
+	/* Images imports */
+	import logo from '$lib/assets/images/logo/aurionth-logo.svg';
+	import GitHubIcon from '$lib/assets/images/icons/GitHub_Invertocat_White_Clearspace.svg';
+	import GmailIcon from '$lib/assets/images/icons/Gmail_icon_(2020).svg';
+	
+	/* Componets and Other imports */
+    import { base } from '$app/paths';
+	import Stars from '$lib/assets/components/stars.svelte';
+
+	/* Other JavaScript Properties */ 
 	let { children } = $props();
 
 	import { onMount } from 'svelte';
@@ -21,6 +32,11 @@
 			size: Math.random() * 300 + 200,
 			color: ['#5030c0', '#2050a0', '#8040a0', '#6040c0', '#3040b0'][Math.floor(Math.random() * 5)]
 		}));
+	});
+
+	afterNavigate(() => {
+		const main = document.querySelector('main');
+		if (main) fixOrphans(main);
 	});
 
     let menuOpen = $state(false);

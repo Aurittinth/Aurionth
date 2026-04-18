@@ -258,19 +258,32 @@ nav {
     border: none;
 }
 
+.btn:hover {
+    transform: scale(110%);
+}
+
 .btn-primary {
-    background: linear-gradient(135deg, var(--golden), var(--golddark));
+    background-color: var(--golden);
     color: var(--voidblack);
     font-weight: 600;
 }
 
 .btn-primary:hover {
-    background: linear-gradient(135deg, var(--brightgold), var(--warmgold));
-    transform: translateY(-1px);
+    background-color: var(--cyannebula);
+}
+
+.btn-secondary {
+    background-color: var(--navblue);
+    color: var(--voidblack);
+    font-weight: 600;
+}
+
+.btn-secondary:hover {
+    background-color: var(--goldpale);
 }
 
 .btn-outline {
-    background: transparent;
+    background-color: transparent;
     color: var(--softviolet);
     border: 0.5px solid var(--softindigo);
 }
@@ -510,7 +523,7 @@ footer {
 /*==============================================
 =                ABOUT-PROJECT                 =
 ==============================================*/
-section.ap {
+section.about {
     color: var(--golden);
     display: flex;
     justify-content: center;
@@ -519,45 +532,45 @@ section.ap {
     font-size: 1.5rem;
 }
 
-section.ap span.uptitle {
+section.about span.uptitle {
     font-family: var(--f-cormorant-garamond);
     color: var(--mistlavender);
     font-weight: 900;
     text-transform: uppercase;
 }
 
-section.ap span.subtitle {
+section.about span.subtitle {
     font-family: var(--f-cormorant-garamond);
     color: var(--mistlavender);
     font-weight: 900;
 }
 
-section.ap h1 {
+section.about h1 {
     color: var(--brightgold);
     font-family: var(--f-uncial-antiqua);
     font-size: 6rem;
 }
-section.ap h2 {
+section.about h2 {
     color: var(--golden);
     font-size: 2.5rem;
     font-family: var(--f-uncial-antiqua);
     padding: 50px 0 5px 0;
 }
 
-section.ap p {
+section.about p {
     color: var(--goldpale);
     padding: 5px 0;
     text-align: justify;
 }
 
-section.ap .sign {
+section.about .sign {
     color: var(--cyan);
     font-family: var(--f-playwrite-cz);
     margin: 50px 0 0 0;
     text-align: center;
     text-decoration: none;
 }
-section.ap .sign:hover {
+section.about .sign:hover {
     text-shadow: #ff0000 0 0 20px;
 }
 
