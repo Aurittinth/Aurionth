@@ -62,7 +62,6 @@
 	></div>
 {/each}
 
-
 <header>
     <nav>
         <a href="{base}/">
@@ -78,7 +77,8 @@
             <li><a href="{base}/" onclick={() => menuOpen = false}>XYZ.ATH</a></li>
             <li><a href="{base}/atlases" onclick={() => menuOpen = false}>Atlasy</a></li>
             <li><a href="{base}/languages" onclick={() => menuOpen = false}>Jazyky</a></li>
-            <!-- Konec (pravo) nsvigace -->
+            <li><a href="{base}/about/project" onclick={() => menuOpen = false}>About</a></li>
+            <!-- Konec (pravo) navigace -->
         </ul>
     </nav>
 </header>

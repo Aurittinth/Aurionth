@@ -47,5 +47,8 @@
     <p>Tvorba světa je náročnější než napsání knihy o několika stovkách stránek. Je to proces, který zahrnuje čas, prostor i kus života.</p>
     <p>A hlavně – je to proces, který možná nemá konec.</p>
 
-    <a href="{base}/about/me" class="sign">– Aurittinth Kîllis No’Uu –</a>
+    <div class="sign">
+        <span class="sign-up">–––––––––––– Autor ––––––––––––</span>
+        <a href="{base}/about/me" class="sign-name">– Aurittinth Kîllis No’Uu –</a>
+    </div>
 </section>

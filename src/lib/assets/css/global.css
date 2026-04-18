@@ -31,43 +31,50 @@
     75% = BF
 */
 :root {
-    
     /* --- COLOR --- */
-    --black:            #050508;
-    --snow:             #e8e0f0;
-    --white:            #ffffff;
-    --darkslategray:    #2f4f4fbf;
-    --violet:           #6450c84d;
-    --golden:           #c8a84b;
-    --softlavender:     #c8b4f0b3;
-    --cyan:             #00ffff;
-    --goldpale:         #e8d5a0;
-    --amethyst:         #a070e0;
-    --lightindigo:      #6040c0;
-    --mistlavender:     #c8b4f0bf;
-    --golddark:         #a07830;
-    --voidblack:        #0a080f;
-    --brightgold:       #ddb855;
-    --warmgold:         #b08840;
-    --softviolet:       #a078f0cc;
-    --softindigo:       #6446c880;
-    --glowviolet:       #a078ffcc;
-    --lavender:         #b090f0;
-    --ghostindigo:      #503ca026;
-    --hazeindigo:       #503ca04d;
-    --deepvoid:         #050508;
-    --shadowindigo:     #3c287866;
-    --fadelavender:     #b4a0dc99;
-    --bluenebula:       #5030c0;
-    --cyannebula:       #2050a0;
-    --violetnebula:     #8040a0;
-    --veilindigo:       #6450a080;
-    --thinindigo:       #503ca033;
-    --iceblue:          #9ec3ff;
-    --fullblack:        #000000;
-    --fullwhite:        #ffffff;
-    --navblue:          #91b6fb;
-    --smokewhite:       #f5f5f5;
+    --c-black:                  #050508;
+    --c-snow:                   #e8e0f0;
+    --c-white:                  #ffffff;
+    --c-darkslategray:          #2f4f4fbf;
+    --c-fulldarkslategray:      #2f4f4f;
+    --c-violet:                 #6450c84d;
+    --c-golden:                 #c8a84b;
+    --c-softlavender:           #c8b4f0b3;
+    --c-cyan:                   #00ffff;
+    --c-goldpale:               #e8d5a0;
+    --c-amethyst:               #a070e0;
+    --c-lightindigo:            #6040c0;
+    --c-mistlavender:           #c8b4f0bf;
+    --c-golddark:               #a07830;
+    --c-voidblack:              #0a080f;
+    --c-brightgold:             #ddb855;
+    --c-warmgold:               #b08840;
+    --c-softviolet:             #a078f0cc;
+    --c-softindigo:             #6446c880;
+    --c-glowviolet:             #a078ffcc;
+    --c-lavender:               #b090f0;
+    --c-ghostindigo:            #503ca026;
+    --c-fullghostindigo:        #503ca0;
+    --c-hazeindigo:             #503ca04d;
+    --c-deepvoid:               #050508;
+    --c-shadowindigo:           #3c287866;
+    --c-fadelavender:           #b4a0dc99;
+    --c-bluenebula:             #5030c0;
+    --c-cyannebula:             #2050a0;
+    --c-violetnebula:           #8040a0;
+    --c-veilindigo:             #6450a080;
+    --c-thinindigo:             #503ca033;
+    --c-iceblue:                #9ec3ff;
+    --c-fullblack:              #000000;
+    --c-fullwhite:              #ffffff;
+    --c-lightskyblue:           #91b6fb;
+    --c-smokewhite:             #f5f5f5;
+    --c-fullred:                #ff0000;
+    --c-skyblue:                #87ceeb;
+    
+    /* SPECIAL COLOR */
+    --c-header-darkslategray:   #243c3d;
+    --c-header-ghostindigo:     #100d1f;
     
     /* --- FONT --- */
     --f-asimovian:              "Asimovian", sans-serif;
@@ -92,6 +99,22 @@
 
 
 /*==============================================
+=                     STARS                    =
+==============================================*/
+.stars {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.star {
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--c-white);
+}
+
+/*==============================================
 =                     MAIN                     =
 ==============================================*/
 * {
@@ -101,8 +124,8 @@
 }
 
 body {
-    background: var(--black);
-    color: var(--snow);
+    background-color: var(--c-black);
+    color: var(--c-snow);
     font-family: var(--f-crimson-pro);
     min-height: 100vh;
     overflow-x: hidden;
@@ -121,31 +144,23 @@ main {
 }
 
 /*==============================================
-=                     STARS                    =
-==============================================*/
-.stars {
-    position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
-    pointer-events: none;
-    z-index: 0;
-}
-
-.star {
-    position: absolute;
-    border-radius: 50%;
-    background: var(--white);
-}
-
-/*==============================================
 =                    HEADER                    =
 ==============================================*/
 header {
-    background-color: var(--darkslategray);
+    background-color: var(--c-darkslategray);
+    width: 100%;
+}
+
+header.about-header,
+header.atlas-header {
+    background-color: var(--c-ghostindigo);
 }
 
 /*==============================================
 =                  NAVIGATION                  =
 ==============================================*/
+
+/*---------------  Primary nav  --------------*/
 nav {
     position: relative;
     z-index: 10;
@@ -171,10 +186,10 @@ nav {
 }
 
 .nav-links a {
+    color: var(--c-goldpale);
     font-family: var(--f-cinzel);
     font-size: 1.5rem;
     letter-spacing: 0.2em;
-    color: var(--goldpale);
     text-decoration: none;
     text-transform: uppercase;
     transition: color 0.3s;
@@ -183,10 +198,47 @@ nav {
 }
 
 .nav-links a:hover {
-    color: var(--cyannebula);
-    background-color: var(--voidblack);
+    color: var(--c-iceblue);
+    background-color: var(--c-fulldarkslategray);
 }
 
+/*--------------  Secundary nav  -------------*/
+.sec-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    z-index: 10;
+
+    width: 100%;
+}
+
+.sec-nav ul {
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+}
+
+.sec-nav li {
+    list-style: none;
+}
+
+.sec-nav a {
+    font-family: var(--f-cinzel);
+    font-size: 1rem;
+    letter-spacing: 0.2em;
+    color: var(--c-goldpale);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    cursor: pointer;
+    padding: 1.5rem 1.25rem;
+}
+
+.sec-nav a:hover {
+    color: var(--c-cyannebula);
+    background-color: var(--c-voidblack);
+}
 
 /*==============================================
 =                 HERO SECTION                 =
@@ -207,7 +259,7 @@ nav {
     font-family: var(--f-crimson-pro);
     font-size: 1.5rem;
     letter-spacing: 0.5em;
-    color: var(--mistlavender);
+    color: var(--c-mistlavender);
     margin-bottom: 3rem;
 }
 
@@ -220,7 +272,7 @@ nav {
 .hero-divider {
     width: 50%;
     height: 0.25rem;
-    background: linear-gradient(90deg, transparent, var(--lightindigo), var(--golden), var(--lightindigo), transparent);
+    background-image: linear-gradient(90deg, transparent, var(--lightindigo), var(--golden), var(--lightindigo), transparent);
     margin: 0 auto 2rem;
 }
 
@@ -228,7 +280,7 @@ nav {
     font-size: 2.5rem;
     font-weight: 300;
     font-style: italic;
-    color: var(--mistlavender);
+    color: var(--c-mistlavender);
     max-width: 50%;
     line-height: 1.8;
     letter-spacing: 0.02em;
@@ -263,34 +315,34 @@ nav {
 }
 
 .btn-primary {
-    background-color: var(--golden);
-    color: var(--voidblack);
+    background-color: var(--c-golden);
+    color: var(--c-voidblack);
     font-weight: 600;
 }
 
 .btn-primary:hover {
-    background-color: var(--cyannebula);
+    background-color: var(--c-cyannebula);
 }
 
 .btn-secondary {
-    background-color: var(--navblue);
-    color: var(--voidblack);
+    background-color: var(--c-lightskyblue);
+    color: var(--c-voidblack);
     font-weight: 600;
 }
 
 .btn-secondary:hover {
-    background-color: var(--goldpale);
+    background-color: var(--c-goldpale);
 }
 
 .btn-outline {
     background-color: transparent;
-    color: var(--softviolet);
+    color: var(--c-softviolet);
     border: 0.5px solid var(--softindigo);
 }
 
 .btn-outline:hover {
-    border-color: var(--glowviolet);
-    color: var(--lavender);
+    border-color: var(--c-glowviolet);
+    color: var(--c-lavender);
 }
 
 
@@ -312,14 +364,14 @@ nav {
     font-size: 0.75rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: var(--golden);
+    color: var(--c-golden);
     margin-bottom: 0.5rem;
 }
 
 /*----------  DESC  ----------*/
 .section-desc {
     font-size: 0.85rem;
-    color: var(--fadelavender);
+    color: var(--c-fadelavender);
     font-style: italic;
     font-weight: 300;
     line-height: 1.6;
@@ -349,8 +401,8 @@ footer {
     font-family: var(--f-crimson-pro);
     font-size: 1.15rem;
     letter-spacing: 0.3em;
-    color: var(--snow);
-    background-color: var(--darkslategray);
+    color: var(--c-snow);
+    background-color: var(--c-darkslategray);
     border-top: 0.5px solid var(--thinindigo);
 }
 
@@ -370,13 +422,13 @@ footer {
 .footer-title {
     font-family: var(--f-crimson-pro);
     letter-spacing: 0.3em;
-    color: var(--golden);
+    color: var(--c-golden);
     margin-bottom: 0.5rem;
 }
 
 .footer-col p,
 .footer-col a {
-    color: var(--lavender);
+    color: var(--c-lavender);
     text-decoration: none;
     letter-spacing: 0.05em;
     line-height: 1.8;
@@ -384,7 +436,7 @@ footer {
 }
 
 .footer-col a:hover {
-    color: var(--cyan);
+    color: var(--c-cyan);
 }
 
 .footer-col ul {
@@ -405,7 +457,7 @@ footer {
     padding: 1rem 2rem;
     font-family: var(--f-crimson-pro);
     letter-spacing: 0.3em;
-    color: var(--lavender);
+    color: var(--c-lavender);
     border-top: 0.5px solid var(--lavender);
 }
 
@@ -444,9 +496,9 @@ footer {
 
     .hamburger {
         display: block;
-        background: transparent;
+        background-color: transparent;
         border: 0.5px solid var(--softindigo);
-        color: var(--golden);
+        color: var(--c-golden);
         font-size: 1.5rem;
         padding: 0.4rem 0.75rem;
         cursor: pointer;
@@ -471,7 +523,7 @@ footer {
     }
 
     .nav-links a:hover {
-        color: var(--cyannebula);
+        color: var(--c-cyannebula);
         background-color: transparent;
     }
     
@@ -524,7 +576,71 @@ footer {
 =                ABOUT-SECTION                 =
 ==============================================*/
 section.about {
-    color: var(--golden);
+    color: var(--c-golden);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 75px 25%;
+    font-size: 1.5rem;
+}    
+
+section.about span.uptitle {
+    font-family: var(--f-cormorant-garamond);
+    color: var(--c-mistlavender);
+    font-weight: 900;
+    text-transform: uppercase;
+}    
+
+section.about span.subtitle {
+    font-family: var(--f-cormorant-garamond);
+    color: var(--c-mistlavender);
+    font-weight: 900;
+}    
+
+section.about h1 {
+    color: var(--c-brightgold);
+    font-family: var(--f-uncial-antiqua);
+    font-size: 6rem;
+}    
+section.about h2 {
+    color: var(--c-golden);
+    font-size: 2.5rem;
+    font-family: var(--f-uncial-antiqua);
+    padding: 50px 0 5px 0;
+}    
+
+section.about p {
+    color: var(--c-goldpale);
+    padding: 5px 0;
+    text-align: justify;
+}    
+
+section.about div.sign {
+    margin: 100px 0 0 0;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}    
+
+section.about .sign-up {
+    color: var(--c-cyan);
+    font-family: var(--f-datatype);
+}    
+
+section.about .sign-name {
+    color: var(--c-cyan);
+    font-family: var(--f-playwrite-cz);
+}    
+
+section.about .sign-name:hover {
+    text-shadow: var(--c-fullred) 0 0 20px;
+}    
+
+/*==============================================
+=                   ATLASES                    =
+==============================================*/
+section.atlas {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -532,84 +648,73 @@ section.about {
     font-size: 1.5rem;
 }
 
-section.about span.uptitle {
-    font-family: var(--f-cormorant-garamond);
-    color: var(--mistlavender);
-    font-weight: 900;
-    text-transform: uppercase;
+section.atlas h1 {
+    color: var(--c-fullwhite);
 }
 
-section.about span.subtitle {
-    font-family: var(--f-cormorant-garamond);
-    color: var(--mistlavender);
-    font-weight: 900;
+section.atlas h2 {
+    color: var(--c-fullwhite);
 }
 
-section.about h1 {
-    color: var(--brightgold);
-    font-family: var(--f-uncial-antiqua);
-    font-size: 6rem;
-}
-section.about h2 {
-    color: var(--golden);
-    font-size: 2.5rem;
-    font-family: var(--f-uncial-antiqua);
-    padding: 50px 0 5px 0;
+section.atlas h3 {
+    color: var(--c-fullwhite);
 }
 
-section.about p {
-    color: var(--goldpale);
-    padding: 5px 0;
-    text-align: justify;
+/*
+section.atlas h4 {
+    color: var(--c-fullwhite);
 }
 
-section.about .sign {
-    color: var(--cyan);
-    font-family: var(--f-playwrite-cz);
-    margin: 50px 0 0 0;
-    text-align: center;
-    text-decoration: none;
-}
-section.about .sign:hover {
-    text-shadow: #ff0000 0 0 20px;
+section.atlas h5 {
+    color: var(--c-fullwhite);
 }
 
-header.about {
-    background-color: var(--ghostindigo);
+section.atlas h6 {
+    color: var(--c-fullwhite);
+}
+*/
+
+section.atlas p {
+    color: var(--c-fullwhite);
 }
 
-.about-nav {
+section.atlas a {
+    color: var(--c-fullwhite);
+}
+
+
+/*==============================================
+=                  GRID TABLE                  =
+==============================================*/
+div.grid-table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+div.grid-item {
+    padding: 12px;
+    border: 1px solid #444;
+    border-radius: 10px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+    flex-direction: column;
+    gap: 8px;
+    background-color: rgba(255,255,255,0.02);
+}
 
+div.grid-item img {
     width: 100%;
+    height: auto;
+    border-radius: 6px;
 }
-
-.about-nav ul {
-    margin: 0 auto;
-    display: flex;
-    gap: 2rem;
-}
-
-.about-nav li {
-    list-style: none;
-}
-
-.about-nav a {
-    font-family: var(--f-cinzel);
-    font-size: 1rem;
-    letter-spacing: 0.2em;
-    color: var(--goldpale);
+div.grid-item a {
     text-decoration: none;
-    text-transform: uppercase;
-    transition: color 0.3s;
-    cursor: pointer;
-    padding: 1.5rem 1.25rem;
 }
 
-.about-nav a:hover {
-    color: var(--cyannebula);
-    background-color: var(--voidblack);
+div.grid-item p {
+    text-align: center;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
 }
