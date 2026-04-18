@@ -1,6 +1,5 @@
 <script>
-    import '../../lib/assets/css/global.css';
-    import '../../lib/assets/css/about-project.css';
+    import '../../../lib/assets/css/global.css';
 
     let { children } = $props();
 </script>

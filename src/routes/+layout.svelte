@@ -93,8 +93,8 @@
 					<li><a href="{base}/">xyz.cz</a></li>
 					<li><a href="{base}/atlases">Atlasy</a></li>
 					<li><a href="{base}/languages">Jazyky</a></li>
-					<li><a href="{base}/contact">Kontakt</a></li>
-					<li><a href="{base}/about-project">O projektu</a></li>
+					<li><a href="{base}/about/me">O tvůrci</a></li>
+					<li><a href="{base}/about/project">O projektu</a></li>
 				</ul>
 			</div>
 		</div>
