@@ -4,7 +4,7 @@
 </script>
 
 <section class="atlas">
-    <span class="uptitle">O světě</span>
+    <span class="uptitle">Rozcestník</span>
     <h1>Atlasy</h1>
     <span class="subtitle">NRD – Svět starý bilióny let.</span>
     
