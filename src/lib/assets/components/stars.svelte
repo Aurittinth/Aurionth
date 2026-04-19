@@ -19,7 +19,13 @@
 	{#each stars as star}
 		<div
 			class="star"
-			style="left: {star.x}%; top: {star.y}%; width: {star.size}px; height: {star.size}px; opacity: {star.opacity};"
-		></div>
+			style="
+				left: {star.x}%;
+				top: {star.y}%;
+				width: {star.size}px;
+				height: {star.size}px;
+				opacity: {star.opacity};
+				">
+		</div>
 	{/each}
 </div>

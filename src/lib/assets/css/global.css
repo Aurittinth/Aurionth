@@ -75,6 +75,7 @@
     /* SPECIAL COLOR */
     --c-header-darkslategray:   #243c3d;
     --c-header-ghostindigo:     #100d1f;
+    --c-grid-invisibilitywhite: #ffffff05;
     
     /* --- FONT --- */
     --f-asimovian:              "Asimovian", sans-serif;
@@ -97,7 +98,6 @@
     --f-uncial-antiqua:         "Uncial Antiqua", system-ui;
 }
 
-
 /*==============================================
 =                     STARS                    =
 ==============================================*/
@@ -105,13 +105,26 @@
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
     pointer-events: none;
-    z-index: 0;
+    z-index: -1;
 }
 
 .star {
     position: absolute;
     border-radius: 50%;
     background-color: var(--c-white);
+}
+
+/*==============================================
+=                   GLOW ORBS                  =
+==============================================*/
+.glow-orb {
+    position: fixed;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 100;
+    filter: blur(80px);
+    opacity: 0.12;
+    transform: translate(-50%, -50%);
 }
 
 /*==============================================
@@ -141,19 +154,31 @@ a * {
 
 main {
     flex: 1;
+    width: 100%;
+}
+
+header,
+main,
+footer {
+    z-index: 1000;
 }
 
 /*==============================================
 =                    HEADER                    =
 ==============================================*/
 header {
-    background-color: var(--c-darkslategray);
+    background-color: var(--c-header-darkslategray);
     width: 100%;
 }
 
 header.about-header,
 header.atlas-header {
-    background-color: var(--c-ghostindigo);
+    background-color: var(--c-header-ghostindigo);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow:
+    0 10px 15px var(--c-header-ghostindigo);
 }
 
 /*==============================================
@@ -163,7 +188,6 @@ header.atlas-header {
 /*---------------  Primary nav  --------------*/
 nav {
     position: relative;
-    z-index: 10;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -208,8 +232,6 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    z-index: 10;
-
     width: 100%;
 }
 
@@ -245,7 +267,6 @@ nav {
 ==============================================*/
 .hero {
     position: relative;
-    z-index: 5;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -272,7 +293,14 @@ nav {
 .hero-divider {
     width: 50%;
     height: 0.25rem;
-    background-image: linear-gradient(90deg, transparent, var(--lightindigo), var(--golden), var(--lightindigo), transparent);
+    background: linear-gradient(
+        90deg,
+        transparent,
+        var(--c-lightindigo),
+        var(--c-golden),
+        var(--c-lightindigo),
+        transparent
+        );
     margin: 0 auto 2rem;
 }
 
@@ -337,7 +365,7 @@ nav {
 .btn-outline {
     background-color: transparent;
     color: var(--c-softviolet);
-    border: 0.5px solid var(--softindigo);
+    border: 0.5px solid var(--c-softindigo);
 }
 
 .btn-outline:hover {
@@ -377,33 +405,18 @@ nav {
     line-height: 1.6;
 }
 
-
-/*==============================================
-=                   GLOW ORBS                  =
-==============================================*/
-.glow-orb {
-    position: fixed;
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 1;
-    filter: blur(80px);
-    opacity: 0.12;
-    transform: translate(-50%, -50%);
-}
-
 /*==============================================
 =                    FOOTER                    =
 ==============================================*/
 footer {
     position: relative;
-    z-index: 5;
     padding: 2rem;
     font-family: var(--f-crimson-pro);
     font-size: 1.15rem;
     letter-spacing: 0.3em;
     color: var(--c-snow);
     background-color: var(--c-darkslategray);
-    border-top: 0.5px solid var(--thinindigo);
+    border-top: 0.5px solid var(--c-thinindigo);
 }
 
 .footer-inner {
@@ -458,7 +471,7 @@ footer {
     font-family: var(--f-crimson-pro);
     letter-spacing: 0.3em;
     color: var(--c-lavender);
-    border-top: 0.5px solid var(--lavender);
+    border-top: 0.5px solid var(--c-lavender);
 }
 
 .footer-logo {
@@ -497,12 +510,11 @@ footer {
     .hamburger {
         display: block;
         background-color: transparent;
-        border: 0.5px solid var(--softindigo);
+        border: 0.5px solid var(--c-softindigo);
         color: var(--c-golden);
         font-size: 1.5rem;
         padding: 0.4rem 0.75rem;
         cursor: pointer;
-        z-index: 20;
     }
 
     .nav-links {
@@ -682,6 +694,56 @@ section.atlas a {
     color: var(--c-fullwhite);
 }
 
+/*
+section.atlas div.sep {
+    height: 2px;
+    width: 100%;
+    margin: 4rem 0;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        var(--c-iceblue) 50%, 
+        transparent 100%
+    );
+    border: none;
+    position: relative;
+}
+*/
+
+.sep {
+    height: 0.25rem;
+    width: 100%;
+    margin: 4rem 0;
+    border: none;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        var(--c-iceblue),
+        transparent
+    );
+    position: relative;
+    overflow: hidden;
+}
+
+.sep::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        var(--c-ghostindigo) 0%,
+        var(--c-amethyst) 50%,
+        var(--c-ghostindigo) 100%
+    );
+    animation: pulse-data 2.5s infinite linear;
+}
+
+@keyframes pulse-data {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
 
 /*==============================================
 =                  GRID TABLE                  =
@@ -699,7 +761,7 @@ div.grid-item {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    background-color: rgba(255,255,255,0.02);
+    background-color: var(--c-grid-invisibilitywhite);
 }
 
 div.grid-item img {
@@ -711,10 +773,23 @@ div.grid-item a {
     text-decoration: none;
 }
 
-div.grid-item p {
-    text-align: center;
-    margin: 0;
+div.grid-item div.item-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
     font-size: 1.5rem;
+    align-items: center;
+    text-align: center;
+}
+
+div.grid-item span.title {
+    margin: 0;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+div.grid-item span.desc {
+    margin: 0;
+    font-style: italic;
+    color: var(--c-fadelavender);
 }
