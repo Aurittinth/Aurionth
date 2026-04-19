@@ -4,8 +4,12 @@
 </script>
 
 <section class="atlas">
+    <span class="uptitle">O světě</span>
+    <h1>Atlasy</h1>
+    <span class="subtitle">NRD – Svět starý bilióny let.</span>
+    
     <section id="opening">
-        <h1>Atlases</h1>
+        <h2>Úvod</h2>
         <p>Tato sekce slouží jako takové knihovna vědění o Aurionthu. Zde najdete informace o světě, jeho obyvatelích, historii, kultuře, ale i žichočichů, rostlin, bohů či nudných minerálů.</p>
         <p>Každý z atlasů (odkazů níže) se zabívá jednou „problematikou“ tohoto světa.</p>
         <p>Kupříkladu atlas „Svět“ se zabívá geografickou, klimatickou, kosmologickou, ale i geopolitickou stránkou Aurionthu.</p>
@@ -18,7 +22,7 @@
     <div class="sep"></div>
 
     <section id="reality">
-        <h3>Realita</h3>
+        <h2>Realita</h2>
         <div class="grid-table">
             <div class="grid-item">
                 <a href="{base}/atlases/">
@@ -116,7 +120,7 @@
     <div class="sep"></div>
 
     <section id="life">
-        <h3>Život</h3>
+        <h2>Život</h2>
         <div class="grid-table">
         
             <div class="grid-item">
@@ -161,7 +165,7 @@
     <div class="sep"></div>
 
     <section id="entity">
-        <h3>Bytosti</h3>
+        <h2>Bytosti</h2>
         <div class="grid-table">
             <div class="grid-item">
                 <a href="{base}/atlases/">
@@ -205,7 +209,7 @@
     <div class="sep"></div>
 
     <section id="magic">
-        <h3>Magie</h3>
+        <h2>Magie</h2>
         <div class="grid-table">
         
             <div class="grid-item">
@@ -251,7 +255,7 @@
     <div class="sep"></div>
 
     <section id="civilization">
-        <h3>Civilizace</h3>
+        <h2>Civilizace</h2>
         <div class="grid-table">
             <div class="grid-item">
                 <a href="{base}/atlases/">
@@ -296,7 +300,7 @@
     <div class="sep"></div>
 
     <section id="systems">
-        <h3>Systémy</h3>
+        <h2>Systémy</h2>
         <div class="grid-table">
             <div class="grid-item">
                 <a href="{base}/atlases/">
@@ -322,7 +326,7 @@
     <div class="sep"></div>
 
     <section id="lists">
-        <h3>Seznamy</h3>
+        <h2>Seznamy</h2>
         <div class="grid-table">
             <div class="grid-item">
                 <a href="{base}/atlases/">
