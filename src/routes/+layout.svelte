@@ -119,6 +119,9 @@
 	
 	<div class="footer-bottom">
 		<a href="{base}/"><img src={logo} alt="Aurionth Logo" class="footer-logo"></a>
-		<p>&copy;2026<br>Všechna práva vyhrazena</p>
+		<p>
+			&copy;2026<br>
+			Všechna práva vyhrazena
+		</p>
 	</div>
 </footer>
