@@ -1,1 +1,0 @@
-<h1>Obyvatelé</h1>
