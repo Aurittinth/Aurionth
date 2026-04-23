@@ -25,7 +25,7 @@
         <h2>Realita</h2>
         <div class="grid-table">
             <div class="grid-item">
-                <a href="{base}/atlases/">
+                <a href="{base}/atlases/reality/kosmos">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
                         <span class="title">Kosmos</span>
@@ -34,7 +34,7 @@
                 </a>
             </div>
             <div class="grid-item">
-                <a href="{base}/atlases/">
+                <a href="{base}/atlases/reality/galaxy">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
                         <span class="title">Galaxie</span>
@@ -43,7 +43,7 @@
                 </a>
             </div>
             <div class="grid-item">
-                <a href="{base}/atlases/">
+                <a href="{base}/atlases/reality/planetary_system">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
                         <span class="title">Soustava</span>
@@ -52,7 +52,7 @@
                 </a>
             </div>
             <div class="grid-item">
-                <a href="{base}/atlases/">
+                <a href="{base}/atlases/reality/planet">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
                         <span class="title">Planeta</span>
@@ -61,7 +61,7 @@
                 </a>
             </div>
             <div class="grid-item">
-                <a href="{base}/atlases/">
+                <a href="{base}/atlases/reality/country">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
                         <span class="title">Země</span>
@@ -70,7 +70,7 @@
                 </a>
             </div>
             <div class="grid-item">
-                <a href="{base}/atlases/">
+                <a href="{base}/atlases/reality/region">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
                         <span class="title">Oblasti</span>
@@ -79,7 +79,7 @@
                 </a>
             </div>
             <div class="grid-item">
-                <a href="{base}/atlases/">
+                <a href="{base}/atlases/reality/city">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
                         <span class="title">Města</span>
@@ -88,7 +88,7 @@
                 </a>
             </div>
             <div class="grid-item">
-                <a href="{base}/atlases/">
+                <a href="{base}/atlases/reality/strukture">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
                         <span class="title">Struktury</span>
@@ -97,7 +97,7 @@
                 </a>
             </div>
             <div class="grid-item">
-                <a href="{base}/atlases/">
+                <a href="{base}/atlases/reality/item">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
                         <span class="title">Předměty</span>
@@ -106,7 +106,7 @@
                 </a>
             </div>
             <div class="grid-item">
-                <a href="{base}/atlases/">
+                <a href="{base}/atlases/reality/mineral">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
                         <span class="title">Minerály</span>
@@ -124,7 +124,7 @@
         <div class="grid-table">
         
             <div class="grid-item">
-                <a href="{base}/atlases/">
+                <a href="{base}/atlases/life/animal">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
                         <span class="title">Živočichové</span>
@@ -133,7 +133,7 @@
                 </a>
             </div>
             <div class="grid-item">
-                <a href="{base}/atlases/">
+                <a href="{base}/atlases/life/botanic">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
                         <span class="title">Botanika</span>
@@ -142,7 +142,7 @@
                 </a>
             </div>
             <div class="grid-item">
-                <a href="{base}/atlases/">
+                <a href="{base}/atlases/life/microorganism">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
                         <span class="title">Mikroorganismus</span>
@@ -151,7 +151,7 @@
                 </a>
             </div>
             <div class="grid-item">
-                <a href="{base}/atlases/">
+                <a href="{base}/atlases/life/illness">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
                         <span class="title">Nemoce</span>
@@ -168,7 +168,7 @@
         <h2>Bytosti</h2>
         <div class="grid-table">
             <div class="grid-item">
-                <a href="{base}/atlases/">
+                <a href="{base}/atlases/entity/deity">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
                         <span class="title">Božstvo</span>
@@ -177,7 +177,7 @@
                 </a>
             </div>
             <div class="grid-item">
-                <a href="{base}/atlases/">
+                <a href="{base}/atlases/entity/mystic">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
                         <span class="title">Mystika</span>
@@ -186,7 +186,7 @@
                 </a>
             </div>
             <div class="grid-item">
-                <a href="{base}/atlases/">
+                <a href="{base}/atlases/entity/spirituality">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
                         <span class="title">Duchovno</span>
@@ -195,7 +195,7 @@
                 </a>
             </div>
             <div class="grid-item">
-                <a href="{base}/atlases/">
+                <a href="{base}/atlases/entity/demonlogia">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
                         <span class="title">Démonologie</span>
@@ -213,7 +213,7 @@
         <div class="grid-table">
         
             <div class="grid-item">
-                <a href="{base}/atlases/">
+                <a href="{base}/atlases/magic/rune">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
                         <span class="title">Runy</span>
@@ -222,7 +222,7 @@
                 </a>
             </div>
             <div class="grid-item">
-                <a href="{base}/atlases/">
+                <a href="{base}/atlases/magic/spell">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
                         <span class="title">Zaklínadla</span>
@@ -231,7 +231,7 @@
                 </a>
             </div>
             <div class="grid-item">
-                <a href="{base}/atlases/">
+                <a href="{base}/atlases/magic/curse">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
                         <span class="title">Kletby</span>
@@ -241,7 +241,7 @@
             </div>
         
             <div class="grid-item">
-                <a href="{base}/atlases/">
+                <a href="{base}/atlases/magic/ritual">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
                         <span class="title">Rituály</span>
@@ -258,7 +258,7 @@
         <h2>Civilizace</h2>
         <div class="grid-table">
             <div class="grid-item">
-                <a href="{base}/atlases/">
+                <a href="{base}/atlases/civilization/resident">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
                         <span class="title">Obyvatelé</span>
@@ -267,7 +267,7 @@
                 </a>
             </div>
             <div class="grid-item">
-                <a href="{base}/atlases/">
+                <a href="{base}/atlases/civilization/culture">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
                         <span class="title">Kultura</span>
@@ -276,7 +276,7 @@
                 </a>
             </div>
             <div class="grid-item">
-                <a href="{base}/atlases/">
+                <a href="{base}/atlases/civilization/history">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
                         <span class="title">Dějiny</span>
@@ -285,7 +285,7 @@
                 </a>
             </div>
             <div class="grid-item">
-                <a href="{base}/atlases/">
+                <a href="{base}/atlases/civilization/charakter">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
                         <span class="title">Postavy</span>
@@ -303,7 +303,7 @@
         <h2>Systémy</h2>
         <div class="grid-table">
             <div class="grid-item">
-                <a href="{base}/atlases/">
+                <a href="{base}/atlases/system/taxonomia">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
                         <span class="title">Taxonomie</span>
@@ -312,7 +312,7 @@
                 </a>
             </div>
             <div class="grid-item">
-                <a href="{base}/atlases/">
+                <a href="{base}/atlases/system/law_world">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
                         <span class="title">Zákony světa</span>
@@ -329,7 +329,7 @@
         <h2>Seznamy</h2>
         <div class="grid-table">
             <div class="grid-item">
-                <a href="{base}/atlases/">
+                <a href="{base}/atlases/list/name">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
                         <span class="title">Jména</span>
@@ -337,7 +337,7 @@
                 </a>
             </div>
             <div class="grid-item">
-                <a href="{base}/atlases/">
+                <a href="{base}/atlases/list/surname">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
                         <span class="title">Příjmení</span>
@@ -345,7 +345,7 @@
                 </a>
             </div>
             <div class="grid-item">
-                <a href="{base}/atlases/">
+                <a href="{base}/atlases/list/family">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
                         <span class="title">Rody</span>
@@ -353,7 +353,7 @@
                 </a>
             </div>
             <div class="grid-item">
-                <a href="{base}/atlases/">
+                <a href="{base}/atlases/list/role">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
                         <span class="title">Postavení</span>
