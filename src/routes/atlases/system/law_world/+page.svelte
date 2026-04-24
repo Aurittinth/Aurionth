@@ -1,1 +1,1 @@
-"<h1>Z kony svØta</h1>" 
+<h1>ZÃ¡kony svÄ›ta</h1>

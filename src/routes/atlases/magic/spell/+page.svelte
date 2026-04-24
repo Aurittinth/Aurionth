@@ -1,1 +1,1 @@
-"<h1>Zakl¡nadla</h1>" 
+<h1>ZaklÃ­nadla</h1>

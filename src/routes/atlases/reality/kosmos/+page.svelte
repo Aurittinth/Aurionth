@@ -1,1 +1,1 @@
-"<h1>Kosmos</h1>" 
+<h1>Kosmos</h1>

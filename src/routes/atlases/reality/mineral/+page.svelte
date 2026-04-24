@@ -1,1 +1,1 @@
-"<h1>Miner ly</h1>" 
+<h1>MinerÃ¡ly</h1>
