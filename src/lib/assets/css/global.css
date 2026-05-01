@@ -105,6 +105,16 @@
     --f-uncial-antiqua:         "Uncial Antiqua", system-ui;
 }
 
+
+/*==============================================
+=                  COLOR SECT                  =
+==============================================*/
+
+.disable {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
 /*==============================================
 =                     STARS                    =
 ==============================================*/
@@ -411,6 +421,10 @@ header.atlas-header {
         color: var(--c-iceblue);
         background-color: var(--c-voidblack);
         transition: color 0.2s, background-color 0.2s;
+    }
+
+    .submenu-arrow {
+        font-weight: normal;
     }
 
     .submenu {

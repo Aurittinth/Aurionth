@@ -26,7 +26,7 @@
 		</a>
 	</div>
 	<br>
-		<a href="{base}/" class="btn btn-secondary">
+		<a href="{base}/" class="btn btn-secondary disable">
 			––––––––––––––––<br>
 			Dále do světa<br>
 			––––––––––––––––

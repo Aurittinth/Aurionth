@@ -50,6 +50,10 @@
     function toggleSubmenu(name) {
         openSubmenu = openSubmenu === name ? null : name;
     }
+
+	function arrow(name) {
+		return openSubmenu === name ? '☷' : '☰'; // close : open status
+}
 </script>
 
 <svelte:head>
@@ -96,31 +100,53 @@
 
     <nav class="drawer-nav">
         <ul>
-            <li><a href="{base}/" onclick={closeMenu}>XYZ.ATH</a></li>
+            <li><a href="{base}/" onclick={closeMenu} class="disable">XYZ.ATH</a></li>
 
             <li class="has-submenu">
-                <button class="submenu-toggle" onclick={() => toggleSubmenu('atlases')} aria-expanded={openSubmenu === 'atlases'} class:is-open={openSubmenu === 'atlases'}>
-                    Atlasy <span class="submenu-arrow">{openSubmenu === 'atlases' ? '⬙' : '⬗'}</span>
+                <button
+					class="submenu-toggle"
+					onclick={() => toggleSubmenu('atlases')}
+					aria-expanded={openSubmenu === 'atlases'}
+					class:is-open={openSubmenu === 'atlases'}
+				>
+                    Atlasy
+					<span class="submenu-arrow">{arrow('atlases')}</span>
                 </button>
                 {#if openSubmenu === 'atlases'}
                     <ul class="submenu">
-                        <li><a href="{base}/atlases"                    onclick={closeMenu}>Úvod</a></li>
-                        <li><a href="{base}/atlases/reality"            onclick={closeMenu}>Realita</a></li>
-                        <li><a href="{base}/atlases/life"               onclick={closeMenu}>Život</a></li>
-                        <li><a href="{base}/atlases/entity"             onclick={closeMenu}>Bytosti</a></li>
-                        <li><a href="{base}/atlases/magic"              onclick={closeMenu}>Magie</a></li>
-                        <li><a href="{base}/atlases/civilization"       onclick={closeMenu}>Civilizace</a></li>
-                        <li><a href="{base}/atlases/systems"            onclick={closeMenu}>Seznamy</a></li>
-                        <li><a href="{base}/atlases/lists"              onclick={closeMenu}>Seznamy</a></li>
+                        <li><a href="{base}/atlases" onclick={closeMenu}>Úvod</a></li>
+                        <li class="disable"><a href="{base}/atlases/reality" onclick={closeMenu}>Realita</a></li>
+                        <li class="disable"><a href="{base}/atlases/life" onclick={closeMenu}>Život</a></li>
+                        <li class="disable"><a href="{base}/atlases/entity" onclick={closeMenu}>Bytosti</a></li>
+                        <li class="disable"><a href="{base}/atlases/magic" onclick={closeMenu}>Magie</a></li>
+                        <li class="disable"><a href="{base}/atlases/civilization" onclick={closeMenu}>Civilizace</a></li>
+                        <li class="disable"><a href="{base}/atlases/systems" onclick={closeMenu}>Seznamy</a></li>
+                        <li class="disable"><a href="{base}/atlases/lists" onclick={closeMenu}>Seznamy</a></li>
                     </ul>
                 {/if}
             </li>
             
-            <li><a href="{base}/languages" onclick={closeMenu}>Jazyky</a></li>
-            <li><a href="{base}/about/project" onclick={closeMenu}>About</a></li>
+            <li><a href="{base}/languages" onclick={closeMenu} class="disable">Jazyky</a></li>
+
+            <li class="has-submenu">
+                <button
+					class="submenu-toggle"
+					onclick={() => toggleSubmenu('about')}
+					aria-expanded={openSubmenu === 'about'}
+					class:is-open={openSubmenu === 'about'}
+				>
+                    O nás
+					<span class="submenu-arrow">{arrow('about')}</span>
+                </button>
+                {#if openSubmenu === 'about'}
+                    <ul class="submenu">
+                        <li><a href="{base}/about/me"     	onclick={closeMenu}>O tvůrci</a></li>
+                        <li><a href="{base}/about/project"	onclick={closeMenu}>O projektu</a></li>
+                    </ul>
+                {/if}
+            </li>
         </ul>
     </nav>
-	
 </aside>
 
 <main>
@@ -134,11 +160,15 @@
 			<ul>
 				<li>
 					<img src={GitHubIcon} alt="GitHub Icon" class="footer-icon-github">
-					<a href="https://github.com/Aurittinth" target="_blank">@Aurittinth</a>
+					<a href="https://github.com/Aurittinth" target="_blank">
+						@Aurittinth
+					</a>
 				</li>
 				<li>
 					<img src={GmailIcon} alt="Gmail Icon" class="footer-icon-gmail">
-					<a href="mailto:aurionth.files@gmail.com">aurionth.files@gmail.com</a>
+					<a href="mailto:aurionth.files@gmail.com">
+						aurionth.files@gmail.com
+					</a>
 				</li>
 			</ul>
 		</div>
@@ -146,9 +176,9 @@
 			<div class="footer">
 				<span class="footer-title">Navigace</span>
 				<ul>
-					<li><a href="{base}/">xyz.cz</a></li>
+					<li><a href="{base}/" class="disable">xyz.cz</a></li>
 					<li><a href="{base}/atlases">Atlasy</a></li>
-					<li><a href="{base}/languages">Jazyky</a></li>
+					<li><a href="{base}/languages" class="disable">Jazyky</a></li>
 					<li><a href="{base}/about/me">O tvůrci</a></li>
 					<li><a href="{base}/about/project">O projektu</a></li>
 				</ul>

@@ -39,7 +39,7 @@
     <section id="reality">
         <h2>Realita</h2>
         <div class="grid-table">
-            <div class="grid-item">
+            <div class="grid-item disable">
                 <a href="{base}/atlases/reality/kosmos">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
@@ -48,7 +48,7 @@
                     </div>
                 </a>
             </div>
-            <div class="grid-item">
+            <div class="grid-item disable">
                 <a href="{base}/atlases/reality/galaxy">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
@@ -57,7 +57,7 @@
                     </div>
                 </a>
             </div>
-            <div class="grid-item">
+            <div class="grid-item disable">
                 <a href="{base}/atlases/reality/planetary-system">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
@@ -66,7 +66,7 @@
                     </div>
                 </a>
             </div>
-            <div class="grid-item">
+            <div class="grid-item disable">
                 <a href="{base}/atlases/reality/planet">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
@@ -75,7 +75,7 @@
                     </div>
                 </a>
             </div>
-            <div class="grid-item">
+            <div class="grid-item disable">
                 <a href="{base}/atlases/reality/country">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
@@ -84,7 +84,7 @@
                     </div>
                 </a>
             </div>
-            <div class="grid-item">
+            <div class="grid-item disable">
                 <a href="{base}/atlases/reality/region">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
@@ -93,7 +93,7 @@
                     </div>
                 </a>
             </div>
-            <div class="grid-item">
+            <div class="grid-item disable">
                 <a href="{base}/atlases/reality/city">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
@@ -102,7 +102,7 @@
                     </div>
                 </a>
             </div>
-            <div class="grid-item">
+            <div class="grid-item disable">
                 <a href="{base}/atlases/reality/strukture">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
@@ -111,7 +111,7 @@
                     </div>
                 </a>
             </div>
-            <div class="grid-item">
+            <div class="grid-item disable">
                 <a href="{base}/atlases/reality/item">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
@@ -120,7 +120,7 @@
                     </div>
                 </a>
             </div>
-            <div class="grid-item">
+            <div class="grid-item disable">
                 <a href="{base}/atlases/reality/mineral">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
@@ -137,8 +137,7 @@
     <section id="life">
         <h2>Život</h2>
         <div class="grid-table">
-        
-            <div class="grid-item">
+            <div class="grid-item disable">
                 <a href="{base}/atlases/life/animal">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
@@ -147,7 +146,7 @@
                     </div>
                 </a>
             </div>
-            <div class="grid-item">
+            <div class="grid-item disable">
                 <a href="{base}/atlases/life/botanic">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
@@ -156,7 +155,7 @@
                     </div>
                 </a>
             </div>
-            <div class="grid-item">
+            <div class="grid-item disable">
                 <a href="{base}/atlases/life/microorganism">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
@@ -165,7 +164,7 @@
                     </div>
                 </a>
             </div>
-            <div class="grid-item">
+            <div class="grid-item disable">
                 <a href="{base}/atlases/life/illness">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
@@ -182,7 +181,7 @@
     <section id="entity">
         <h2>Bytosti</h2>
         <div class="grid-table">
-            <div class="grid-item">
+            <div class="grid-item disable">
                 <a href="{base}/atlases/entity/deity">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
@@ -191,7 +190,7 @@
                     </div>
                 </a>
             </div>
-            <div class="grid-item">
+            <div class="grid-item disable">
                 <a href="{base}/atlases/entity/mystic">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
@@ -200,7 +199,7 @@
                     </div>
                 </a>
             </div>
-            <div class="grid-item">
+            <div class="grid-item disable">
                 <a href="{base}/atlases/entity/spirituality">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
@@ -209,7 +208,7 @@
                     </div>
                 </a>
             </div>
-            <div class="grid-item">
+            <div class="grid-item disable">
                 <a href="{base}/atlases/entity/demonlogia">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
@@ -226,8 +225,7 @@
     <section id="magic">
         <h2>Magie</h2>
         <div class="grid-table">
-        
-            <div class="grid-item">
+            <div class="grid-item disable">
                 <a href="{base}/atlases/magic/rune">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
@@ -236,7 +234,7 @@
                     </div>
                 </a>
             </div>
-            <div class="grid-item">
+            <div class="grid-item disable">
                 <a href="{base}/atlases/magic/spell">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
@@ -245,7 +243,7 @@
                     </div>
                 </a>
             </div>
-            <div class="grid-item">
+            <div class="grid-item disable">
                 <a href="{base}/atlases/magic/curse">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
@@ -255,7 +253,7 @@
                 </a>
             </div>
         
-            <div class="grid-item">
+            <div class="grid-item disable">
                 <a href="{base}/atlases/magic/ritual">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
@@ -272,7 +270,7 @@
     <section id="civilization">
         <h2>Civilizace</h2>
         <div class="grid-table">
-            <div class="grid-item">
+            <div class="grid-item disable">
                 <a href="{base}/atlases/civilization/resident">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
@@ -281,7 +279,7 @@
                     </div>
                 </a>
             </div>
-            <div class="grid-item">
+            <div class="grid-item disable">
                 <a href="{base}/atlases/civilization/culture">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
@@ -290,7 +288,7 @@
                     </div>
                 </a>
             </div>
-            <div class="grid-item">
+            <div class="grid-item disable">
                 <a href="{base}/atlases/civilization/history">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
@@ -299,7 +297,7 @@
                     </div>
                 </a>
             </div>
-            <div class="grid-item">
+            <div class="grid-item disable">
                 <a href="{base}/atlases/civilization/charakter">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
@@ -317,7 +315,7 @@
     <section id="systems">
         <h2>Systémy</h2>
         <div class="grid-table">
-            <div class="grid-item">
+            <div class="grid-item disable">
                 <a href="{base}/atlases/system/taxonomia">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
@@ -326,7 +324,7 @@
                     </div>
                 </a>
             </div>
-            <div class="grid-item">
+            <div class="grid-item disable">
                 <a href="{base}/atlases/system/law_world">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
@@ -343,7 +341,7 @@
     <section id="lists">
         <h2>Seznamy</h2>
         <div class="grid-table">
-            <div class="grid-item">
+            <div class="grid-item disable">
                 <a href="{base}/atlases/list/name">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
@@ -351,7 +349,7 @@
                     </div>
                 </a>
             </div>
-            <div class="grid-item">
+            <div class="grid-item disable">
                 <a href="{base}/atlases/list/surname">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
@@ -359,7 +357,7 @@
                     </div>
                 </a>
             </div>
-            <div class="grid-item">
+            <div class="grid-item disable">
                 <a href="{base}/atlases/list/family">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
@@ -367,7 +365,7 @@
                     </div>
                 </a>
             </div>
-            <div class="grid-item">
+            <div class="grid-item disable">
                 <a href="{base}/atlases/list/role">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
