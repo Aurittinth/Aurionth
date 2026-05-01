@@ -25,4 +25,10 @@
 			––––––––––––
 		</a>
 	</div>
+	<br>
+		<a href="{base}/" class="btn btn-secondary">
+			––––––––––––––––<br>
+			Dále do světa<br>
+			––––––––––––––––
+		</a>
 </section>

@@ -40,6 +40,16 @@
 	});
 
     let menuOpen = $state(false);
+
+	function closeMenu() {
+        menuOpen = false;
+    }
+
+    let openSubmenu = $state(null);
+    
+    function toggleSubmenu(name) {
+        openSubmenu = openSubmenu === name ? null : name;
+    }
 </script>
 
 <svelte:head>
@@ -62,24 +72,53 @@
 	></div>
 {/each}
 
+<!-- Overlay -->
+{#if menuOpen}
+    <div class="drawer-overlay" onclick={closeMenu} aria-hidden="true"></div>
+{/if}
+
+<!-- Drawer menu -->
+<aside class="drawer" class:drawer-open={menuOpen} aria-hidden={!menuOpen}>
+    <div class="drawer-header">
+        <img src={logo} alt="Aurionth" class="drawer-logo" />
+        <button class="drawer-close" onclick={closeMenu} aria-label="Zavřít menu">☷</button>
+    </div>
+    <nav class="drawer-nav">
+        <ul>
+            <li><a href="{base}/" onclick={closeMenu}>XYZ.ATH</a></li>
+
+            <li class="has-submenu">
+                <button class="submenu-toggle" onclick={() => toggleSubmenu('atlases')} aria-expanded={openSubmenu === 'atlases'} class:is-open={openSubmenu === 'atlases'}>
+                    Atlasy <span class="submenu-arrow">{openSubmenu === 'atlases' ? '⬙' : '⬗'}</span>
+                </button>
+                {#if openSubmenu === 'atlases'}
+                    <ul class="submenu">
+                        <li><a href="{base}/atlases"              onclick={closeMenu}>Úvod</a></li>
+                        <li><a href="{base}/atlases/reality"      onclick={closeMenu}>Realita</a></li>
+                        <li><a href="{base}/atlases/life"         onclick={closeMenu}>Život</a></li>
+                        <li><a href="{base}/atlases/beings"       onclick={closeMenu}>Bytosti</a></li>
+                        <li><a href="{base}/atlases/magic"        onclick={closeMenu}>Magie</a></li>
+                        <li><a href="{base}/atlases/civilization" onclick={closeMenu}>Civilizace</a></li>
+                        <li><a href="{base}/atlases/lists"        onclick={closeMenu}>Seznamy</a></li>
+                    </ul>
+                {/if}
+            </li>
+            
+            <li><a href="{base}/languages" onclick={closeMenu}>Jazyky</a></li>
+            <li><a href="{base}/about/project" onclick={closeMenu}>About</a></li>
+        </ul>
+    </nav>
+</aside>
+
 <header>
     <nav>
         <a href="{base}/">
-			<img src={logo} alt="Aurionth Logo" class="nav-logo" />
-		</a>
-        
-        <button class="hamburger" onclick={() => menuOpen = !menuOpen} aria-label="Menu">
-            {#if menuOpen}✕{:else}☰{/if}
-        </button>
+            <img src={logo} alt="Aurionth Logo" class="nav-logo" />
+        </a>
 
-        <ul class="nav-links" class:open={menuOpen}>
-            <!-- Začátek (levo) navigace -->
-            <li><a href="{base}/" onclick={() => menuOpen = false}>XYZ.ATH</a></li>
-            <li><a href="{base}/atlases" onclick={() => menuOpen = false}>Atlasy</a></li>
-            <li><a href="{base}/languages" onclick={() => menuOpen = false}>Jazyky</a></li>
-            <li><a href="{base}/about/project" onclick={() => menuOpen = false}>About</a></li>
-            <!-- Konec (pravo) navigace -->
-        </ul>
+        <button class="hamburger" onclick={() => menuOpen = !menuOpen} aria-label="Menu">
+            ☰
+        </button>
     </nav>
 </header>
 
