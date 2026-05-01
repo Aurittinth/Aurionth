@@ -79,6 +79,7 @@
     --c-overlaydark:            #000000bf;
     --c-shadowblack:            #00000080;
     --c-whisperwhite:           #ffffff1a;
+    --c-blue:                   #2222ff;
     
     /* SPECIAL COLOR */
     --c-header-darkslategray:   #243c3d;
@@ -724,6 +725,16 @@ footer {
 /*==============================================
 =                 SECTION-ALL                  =
 ==============================================*/
+section.about,
+section.atlas,
+section.licence {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 75px 25%;
+    font-size: 1.5rem;
+}
+
 section span.uptitle {
     font-family: var(--f-cormorant-garamond);
     color: var(--c-mistlavender);
@@ -761,11 +772,6 @@ section p {
 ==============================================*/
 section.about {
     color: var(--c-golden);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 75px 25%;
-    font-size: 1.5rem;
 }
 
 section.about div.sign {
@@ -794,11 +800,7 @@ section.about .sign-name:hover {
 =                   ATLASES                    =
 ==============================================*/
 section.atlas {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 75px 25%;
-    font-size: 1.5rem;
+    color: var(--c-golden);
 }
 
 section.atlas .sep {
