@@ -76,6 +76,9 @@
     --c-halfinvisibilitywhite:  #ffffff3f;
     --c-crimson:                #dc143c;
     --c-halfcrimson:            #dc143c80;
+    --c-overlaydark:            #000000bf;
+    --c-shadowblack:            #00000080;
+    --c-whisperwhite:           #ffffff1a;
     
     /* SPECIAL COLOR */
     --c-header-darkslategray:   #243c3d;
@@ -132,6 +135,32 @@
 }
 
 /*==============================================
+=                FLOATING BAR                  =
+==============================================*/
+.floating-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1200;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    pointer-events: none;
+}
+
+.floating-bar > * {
+    pointer-events: auto;
+}
+
+@media (max-width: 768px) {
+    .floating-bar {
+        padding: 1rem 1.5rem;
+    }
+}
+
+/*==============================================
 =                     MAIN                     =
 ==============================================*/
 * {
@@ -159,6 +188,9 @@ a * {
 main {
     flex: 1;
     width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 header,
@@ -170,10 +202,6 @@ footer {
 /*==============================================
 =                    HEADER                    =
 ==============================================*/
-header {
-    background-color: var(--c-header-darkslategray);
-    width: 100%;
-}
 
 header.about-header,
 header.atlas-header {
@@ -181,74 +209,80 @@ header.atlas-header {
     position: sticky;
     top: 0;
     width: 100%;
+    height: 5rem;
     z-index: 1000;
-    box-shadow:
-    0 10px 15px var(--c-header-ghostindigo);
+    box-shadow: 0 10px 15px var(--c-header-ghostindigo);
 }
+
+
+/*----------  Scroll anchor offset  ----------*/
+    section[id] {
+        scroll-margin-top: 5rem;
+    }
 
 /*==============================================
 =                  NAVIGATION                  =
 ==============================================*/
 
 /*---------------  Primary nav  --------------*/
-nav {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 3rem;
-}
+    nav {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 3rem;
+    }
 
-.hamburger {
-    background-color: transparent;
-    border: 0.5px solid var(--c-softindigo);
-    color: var(--c-golden);
-    font-size: 1.5rem;
-    padding: 0.4rem 0.75rem;
-    cursor: pointer;
-}
+    .hamburger {
+        background-color: transparent;
+        border: 0.5px solid var(--c-softindigo);
+        color: var(--c-golden);
+        font-size: 1.5rem;
+        padding: 0.4rem 0.75rem;
+        cursor: pointer;
+    }
 
-.nav-logo {
-    margin: 0;
-    height: 2rem;
-    width: auto;
-}
+    .nav-logo {
+        margin: 0;
+        height: 2rem;
+        width: auto;
+    }
 
 /*--------------  Secundary nav  -------------*/
-.sec-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    width: 100%;
-}
+    .sec-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        width: 100%;
+    }
 
-.sec-nav ul {
-    margin: 0 auto;
-    display: flex;
-    gap: 2rem;
-}
+    .sec-nav ul {
+        margin: 0 auto;
+        display: flex;
+        gap: 2rem;
+    }
 
-.sec-nav li {
-    list-style: none;
-}
+    .sec-nav li {
+        list-style: none;
+    }
 
-.sec-nav a {
-    font-family: var(--f-cinzel);
-    font-size: 1rem;
-    letter-spacing: 0.2em;
-    color: var(--c-goldpale);
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: color 0.3s;
-    cursor: pointer;
-    padding: 1.5rem 1.25rem;
-}
+    .sec-nav a {
+        font-family: var(--f-cinzel);
+        font-size: 1rem;
+        letter-spacing: 0.2em;
+        color: var(--c-goldpale);
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: color 0.3s;
+        cursor: pointer;
+        padding: 1.5rem 1.25rem;
+    }
 
-.sec-nav a:hover {
-    color: var(--c-cyannebula);
-    background-color: var(--c-voidblack);
-}
+    .sec-nav a:hover {
+        color: var(--c-cyannebula);
+        background-color: var(--c-voidblack);
+    }
 
 /*==============================================
 =                   DRAWER                     =
@@ -257,8 +291,9 @@ nav {
 .drawer-overlay {
     position: fixed;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--c-overlaydark);
     z-index: 1500;
+    -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
 }
 
@@ -267,9 +302,9 @@ nav {
     top: 0;
     right: 0;
     height: 100%;
-    width: 20rem;
+    width: 25rem;
     background-color: var(--c-header-ghostindigo);
-    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.5);
+    box-shadow: -4px 0 20px var(--c-shadowblack);
     z-index: 2000;
     transform: translateX(100%);
     transition: transform 0.3s ease;
@@ -287,7 +322,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 1.25rem 1.5rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid var(--c-whisperwhite);
 }
 
 .drawer-logo {
@@ -300,7 +335,7 @@ nav {
     background: transparent;
     border: none;
     color: var(--c-goldpale);
-    font-size: 1.25rem;
+    font-size: 2rem;
     cursor: pointer;
     padding: 0.25rem 0.5rem;
     transition: color 0.2s;
@@ -335,6 +370,8 @@ nav {
     width: 100%;
     font-family: var(--f-cinzel);
     font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
     letter-spacing: 0.2em;
     color: var(--c-goldpale);
     text-decoration: none;
@@ -345,55 +382,57 @@ nav {
 
 .drawer-nav a:hover {
     color: var(--c-iceblue);
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: var(--c-voidblack);
 }
 
 /*-----------  Drawer submenu  ---------------*/
-.submenu-toggle {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-    justify-content: space-between;
-    width: calc(100% + 3rem);
-    background: transparent;
-    border: none;
-    font-family: var(--f-cinzel);
-    font-size: 1.5rem;
-    letter-spacing: 0.2em;
-    color: var(--c-goldpale);
-    text-transform: uppercase;
-    margin-left: -1.5rem;
-    padding: 1rem 1.5rem 1rem 3rem;
-    cursor: pointer;
-    transition: color 0.2s;
-    text-align: left;
-}
+    .submenu-toggle {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        justify-content: space-between;
+        width: calc(100% + 3rem);
+        background: transparent;
+        border: none;
+        font-family: var(--f-cinzel);
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        color: var(--c-goldpale);
+        text-transform: uppercase;
+        margin-left: -1.5rem;
+        padding: 1rem 1.5rem 1rem 3rem;
+        cursor: pointer;
+        transition: color 0.2s;
+        text-align: left;
+    }
 
-.submenu-toggle:hover {
-    color: var(--c-iceblue);
-    background-color: rgba(255, 255, 255, 0.05);
-    transition: color 0.2s, background-color 0.2s;
-}
+    .submenu-toggle:hover {
+        color: var(--c-iceblue);
+        background-color: var(--c-voidblack);
+        transition: color 0.2s, background-color 0.2s;
+    }
 
-.submenu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+    .submenu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
 
-.submenu a {
-    padding: 0.6rem 1.5rem 0.6rem 2.75rem;
-    font-size: 1rem;
-    letter-spacing: 0.15em;
-    color: var(--c-goldpale);
-    opacity: 0.75;
-}
+    .submenu a {
+        padding: 0.6rem 1.5rem 0.6rem 2.75rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        color: var(--c-goldpale);
+        opacity: 0.8;
+    }
 
-.submenu a:hover {
-    opacity: 1;
-    color: var(--c-iceblue);
-    background-color: rgba(255, 255, 255, 0.05);
-}
+    .submenu a:hover {
+        opacity: 1;
+        color: var(--c-iceblue);
+        background-color: var(--c-voidblack);
+    }
 
 /*==============================================
 =                  RESPONSIVE                  =
@@ -457,7 +496,7 @@ nav {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 7rem 2rem 5rem;
+    padding: 15% 2rem 5%;
     min-height: 80vh;
 }
 
@@ -478,14 +517,15 @@ nav {
 .hero-divider {
     width: 50%;
     height: 0.25rem;
-    background: linear-gradient(
-        90deg,
-        transparent,
-        var(--c-lightindigo),
-        var(--c-golden),
-        var(--c-lightindigo),
-        transparent
-        );
+    background: 
+        linear-gradient(
+            90deg,
+            transparent,
+            var(--c-lightindigo),
+            var(--c-golden),
+            var(--c-lightindigo),
+            transparent
+            );
     margin: 0 auto 2rem;
 }
 
@@ -506,7 +546,6 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
 }
-
 
 /*==============================================
 =                    BUTTONS                   =
@@ -551,12 +590,10 @@ nav {
     color: var(--c-crimson);
 }
 
-
 /*==============================================
 =                   SECTIONS                   =
 ==============================================*/
 
-/*----------  ICON  ----------*/
 .section-icon {
     font-size: 1.8rem;
     margin-bottom: 1rem;
@@ -564,7 +601,6 @@ nav {
     opacity: 0.85;
 }
 
-/*----------  NAME  ----------*/
 .section-name {
     font-family: var(--f-cinzel);
     font-size: 0.75rem;
@@ -574,7 +610,6 @@ nav {
     margin-bottom: 0.5rem;
 }
 
-/*----------  DESC  ----------*/
 .section-desc {
     font-size: 0.85rem;
     color: var(--c-fadelavender);

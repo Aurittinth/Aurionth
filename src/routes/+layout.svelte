@@ -72,6 +72,16 @@
 	></div>
 {/each}
 
+<!-- Floating navigation and logo bar -->
+<div class="floating-bar">
+    <a href="{base}/">
+        <img src={logo} alt="Aurionth Logo" class="nav-logo" />
+    </a>
+    <button class="hamburger" onclick={() => menuOpen = !menuOpen} aria-label="Menu">
+        ☰
+    </button>
+</div>
+
 <!-- Overlay -->
 {#if menuOpen}
     <div class="drawer-overlay" onclick={closeMenu} aria-hidden="true"></div>
@@ -83,6 +93,7 @@
         <img src={logo} alt="Aurionth" class="drawer-logo" />
         <button class="drawer-close" onclick={closeMenu} aria-label="Zavřít menu">☷</button>
     </div>
+
     <nav class="drawer-nav">
         <ul>
             <li><a href="{base}/" onclick={closeMenu}>XYZ.ATH</a></li>
@@ -93,13 +104,14 @@
                 </button>
                 {#if openSubmenu === 'atlases'}
                     <ul class="submenu">
-                        <li><a href="{base}/atlases"              onclick={closeMenu}>Úvod</a></li>
-                        <li><a href="{base}/atlases/reality"      onclick={closeMenu}>Realita</a></li>
-                        <li><a href="{base}/atlases/life"         onclick={closeMenu}>Život</a></li>
-                        <li><a href="{base}/atlases/beings"       onclick={closeMenu}>Bytosti</a></li>
-                        <li><a href="{base}/atlases/magic"        onclick={closeMenu}>Magie</a></li>
-                        <li><a href="{base}/atlases/civilization" onclick={closeMenu}>Civilizace</a></li>
-                        <li><a href="{base}/atlases/lists"        onclick={closeMenu}>Seznamy</a></li>
+                        <li><a href="{base}/atlases"                    onclick={closeMenu}>Úvod</a></li>
+                        <li><a href="{base}/atlases/reality"            onclick={closeMenu}>Realita</a></li>
+                        <li><a href="{base}/atlases/life"               onclick={closeMenu}>Život</a></li>
+                        <li><a href="{base}/atlases/entity"             onclick={closeMenu}>Bytosti</a></li>
+                        <li><a href="{base}/atlases/magic"              onclick={closeMenu}>Magie</a></li>
+                        <li><a href="{base}/atlases/civilization"       onclick={closeMenu}>Civilizace</a></li>
+                        <li><a href="{base}/atlases/systems"            onclick={closeMenu}>Seznamy</a></li>
+                        <li><a href="{base}/atlases/lists"              onclick={closeMenu}>Seznamy</a></li>
                     </ul>
                 {/if}
             </li>
@@ -108,19 +120,8 @@
             <li><a href="{base}/about/project" onclick={closeMenu}>About</a></li>
         </ul>
     </nav>
+	
 </aside>
-
-<header>
-    <nav>
-        <a href="{base}/">
-            <img src={logo} alt="Aurionth Logo" class="nav-logo" />
-        </a>
-
-        <button class="hamburger" onclick={() => menuOpen = !menuOpen} aria-label="Menu">
-            ☰
-        </button>
-    </nav>
-</header>
 
 <main>
 	{@render children()}

@@ -11,7 +11,7 @@
             <li><a href="#who-am-i">Představení</a></li>
             <li><a href="#why-create">Účel</a></li>
             <li><a href="#what-inspire">Inpirace</a></li>
-            <li><a href="#and-me">O mně</a></li>
+            <li><a href="#about-me">O mně</a></li>
         </ul>
     </nav>
 </header>
