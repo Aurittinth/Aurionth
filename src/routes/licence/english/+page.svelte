@@ -4,70 +4,87 @@
 </script>
 
 <section class="licence">
-    <section id="licence-header">
-        <h1>Proprietary License</h1>
-        <span class="licence-copyright">Copyright © 2026 <a href="https://github.com/Aurittinth">@Aurittinth</a></span>
-        <p>All rights reserved.</p>
-    </section>
+Proprietární licence / Proprietary License
 
-    <br><hr><br>
+Copyright © 2026 [@Aurittinth](https://github.com/Aurittinth)
 
-    <section id="terms-n-conditions">
-        <h2>Terms and Conditions</h2>
+Všechna práva vyhrazena. / All rights reserved.
 
-        <section class="ownership">
-            <h3>1. Ownership</h3>
-            <p>This repository, the project <b>Aurionth</b> (available at <a href="https://aurittinth.github.io/Aurionth/">aurittinth.github.io/Aurionth</a>) and all related documentation, code and materials (hereinafter the "<i>Work</i>") are the sole property of Aurittinth.</p>
-            <p>All intellectual property rights remain with the author.</p>
-        </section>
+---
 
-        <section class="restriction-of-rights">
-            <h3>2. Restrictions</h3>
-            <p><b>You may not:</b></p>
-            <ul>
-                <li>Copy, reproduce or otherwise duplicate the <i>Work</i> without the author's written consent</li>
-                <li>Modify, alter or create derivative works based on the <i>Work</i></li>
-                <li>Distribute, publish or otherwise make the <i>Work</i> available to the public</li>
-                <li>Use the <i>Work</i> for commercial or non-commercial purposes</li>
-                <li>Reverse engineer, decompile or attempt to derive the source code</li>
-                <li>Sublicense or transfer rights to third parties</li>
-                <li>Include the <i>Work</i> in any other project or publication</li>
-            </ul>
-        </section>
+# Podmínky a ustanovení
 
-        <section class="permitted-use">
-            <h3>3. Permitted Use</h3>
-            <p>Only viewing the source code of this repository for personal reference purposes is permitted.</p>
-            <p>Any other use requires the explicit written consent of the author.</p>
-        </section>
+## 1. Vlastnictví
+Tento repozitář, projekt **Aurionth** (dostupný na [aurittinth.github.io/Aurionth](https://aurittinth.github.io/Aurionth/)) a veškeré související dokumentace, kódy a materiály (dále jen „*Dílo*") jsou výhradním vlastnictvím uživatele Aurittinth.  
+Veškerá práva duševního vlastnictví zůstávají autorovi.
 
-        <section class="guarantee">
-            <h3>4. Warranty</h3>
-            <p><b>The Work is provided "as is", without any warranty, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose and non-infringement of third party rights.</b></p>
-        </section>
+## 2. Omezení práva
+**Není dovoleno:**
+- Kopírovat, reprodukovat nebo jakkoli duplikovat *Dílo* bez písemného souhlasu autora
+- Upravovat, měnit nebo vytvářet odvozená díla založená na *Díle*
+- Distribuovat, publikovat nebo jinak zpřístupňovat *Dílo* veřejnosti
+- Používat *Dílo* pro komerční ani nekomerční účely
+- Provádět zpětné inženýrství, dekompilaci nebo se pokoušet odvodit zdrojový kód
+- Poskytovat sublicence nebo převádět práva na třetí strany
+- Zahrnout *Dílo* do jakéhokoli jiného projektu nebo publikace
 
-        <section class="responsibility">
-            <h3>5. Liability</h3>
-            <p><b>In no event shall the author be liable for any claim, damage or other liability, whether arising out of contract, tort or otherwise, in connection with the <i>Work</i> or its use.</b></p>
-        </section>
+## 3. Povolené užití
+Je povoleno pouze nahlížení do zdrojového kódu tohoto repozitáře pro osobní referenční účely.  
+Jakékoli jiné použití vyžaduje výslovný písemný souhlas autora.
 
-        <section class="contact">
-            <h3>6. Contact</h3>
-            <p>For any inquiries regarding the use of this <i>Work</i>, please contact: <a href="mailto:aurionth.files@gmail.com">aurionth.files@gmail.com</a><sup>1</sup></p>
-        </section>
+## 4. Záruka
+**Dílo je poskytováno „tak, jak je", bez jakékoli záruky, výslovné či implicitní, včetně, ale nikoli omezeno na záruky prodejnosti, vhodnosti pro konkrétní účel a neporušení práv třetích stran.**
 
-        <section class="enforcement-of-rights">
-            <h3>7. Enforcement</h3>
-            <p>Any unauthorized use of the <i>Work</i> may be subject to legal action and damages.</p>
-        </section>
-    </section>
+## 5. Odpovědnost
+**V žádném případě nebude autor odpovědný za jakýkoli nárok, škodu nebo jinou odpovědnost, ať už vzniklou na základě smlouvy, deliktu nebo jinak, v souvislosti s *Dílem* nebo jeho použitím.**
 
-    <br><hr><br>
+## 6. Kontakt
+Pro jakékoli dotazy týkající se použití tohoto *Díla* kontaktujte: aurionth.files@gmail.com[^1]
 
-    <section id="licence-footer">
-        <p><b>Last updated:</b> <i>Fri 01-05-2026</i><sup>2</sup></p>
-        <br>
-        <p class="footnote"><sup>1</sup> Email address of the owner of this repository for contact purposes regarding the license and the repository itself.</p>
-        <p class="footnote"><sup>2</sup> Date of last update of the license in the format <code>dd DD-MM-YYYY</code>.</p>
-    </section>
+## 7. Vymáhání práv
+Jakékoli neoprávněné použití *Díla* může být předmětem právních kroků a náhrady škody.
+
+---
+
+# Terms and Conditions
+
+## 1. Ownership
+This repository, the project **Aurionth** (available at [aurittinth.github.io/Aurionth](https://aurittinth.github.io/Aurionth/)) and all related documentation, code and materials (hereinafter the "*Work*") are the sole property of Aurittinth.  
+All intellectual property rights remain with the author.
+
+## 2. Restrictions
+**You may not:**
+- Copy, reproduce or otherwise duplicate the *Work* without the author's written consent
+- Modify, alter or create derivative works based on the *Work*
+- Distribute, publish or otherwise make the *Work* available to the public
+- Use the *Work* for commercial or non-commercial purposes
+- Reverse engineer, decompile or attempt to derive the source code
+- Sublicense or transfer rights to third parties
+- Include the *Work* in any other project or publication
+
+## 3. Permitted Use
+Only viewing the source code of this repository for personal reference purposes is permitted.  
+Any other use requires the explicit written consent of the author.
+
+## 4. Warranty
+**The Work is provided "as is", without any warranty, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose and non-infringement of third party rights.**
+
+## 5. Liability
+**In no event shall the author be liable for any claim, damage or other liability, whether arising out of contract, tort or otherwise, in connection with the *Work* or its use.**
+
+## 6. Contact
+For any inquiries regarding the use of this *Work*, please contact: aurionth.files@gmail.com[^2]
+
+## 7. Enforcement
+Any unauthorized use of the *Work* may be subject to legal action and damages.
+
+---
+
+**Naposledy aktualizováno / Last updated:** *pá 01-05-2026*[^3]
+
+
+
+[^1]: E-mailová adresa vlastníka tohoto repozitáře pro účely kontaktu ohledně licence a repozitáře samotného.
+[^2]: Email address of the owner of this repository for contact purposes regarding the license and the repository itself.
+[^3]: Datum poslední aktualizace licence ve formátu `dd DD-MM-RRRR` / Date of last update of the license in the format `dd DD-MM-YYYY`.
 </section>

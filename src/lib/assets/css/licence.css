@@ -1,172 +1,64 @@
-/*==============================================
-=               LICENCE — GLOBAL               =
-==============================================*/
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Uncial+Antiqua&display=swap');
 
-section.licence {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 75px 25%;
-    font-size: 1.5rem;
-    font-family: var(--f-crimson-pro);
+/*==============================================
+=               VARIABLE ROOTING               =
+==============================================*/
+:root {
+    /* --- FONT --- */
+    --f-heading:                "Uncial Antiqua", system-ui;
+    --f-classic:                "Crimson Pro", serif;
+    --f-titles:                 "Cormorant Garamond", serif;
+    --f-cardtext:               "Cinzel", serif;
+    
+    /* --- COLOR --- */
+    --c-snow:                   #fffafa;
+    --c-yellowsnow:             #ffface;
+    --c-black:                  #000000;
+    --c-thinindigo:             #503ca0;
+    --c-mistlavender:           #c8b4f0;
+    --c-cyan:                   #00c4c4;
+    --c-cyannebula:             #2050a0;
+    --c-invisibility:           #00ffff1a;
+    --c-cardborder:             #00ffff80;--c-hoverinvisibility:      #00ffff5b;
+    --c-hovercardborder:        #00ffff;
+    --c-smokewhite:             #f5f5f5;
+    --c-iceblue:                #9ec3ff;
+    --c-dodgerblue:             #1e90ff;
+}
+
+main {
     color: var(--c-snow);
-}
+    background-color: var(--c-black);
 
-section.licence * {
-    background-color: transparent;
-}
-
-section.licence hr {
-    border: none;
-    border-top: 0.5px solid var(--c-thinindigo);
-    margin: 1rem 0;
-}
-
-section.licence a {
-    color: var(--c-skyblue);
-    text-decoration: none;
-    transition: color 0.2s;
-}
-
-section.licence a:hover {
-    color: dodgerblue;
 }
 
 /*==============================================
-=              LICENCE — HEADER                =
+=                  SIGNPOST                    =
 ==============================================*/
 
-section.licence h1 {
-    font-family: var(--f-uncial-antiqua);
-    font-size: 4rem;
-    color: var(--c-bluenebula);
-    margin-bottom: 0.5rem;
-}
-
-section.licence span.licence-copyright {
-    font-family: var(--f-crimson-pro);
-    font-size: 1.15rem;
-    color: var(--c-skyblue);
-    letter-spacing: 0.05em;
-}
-
-section.licence span.licence-copyright a {
-    color: var(--c-skyblue);
-}
-
-section.licence span.licence-copyright a:hover {
-    color: dodgerblue;
-}
-
-section.licence #licence-header p {
-    font-size: 1rem;
-    color: var(--c-fadelavender);
-    letter-spacing: 0.1em;
-    padding: 0.25rem 0 0 0;
-}
-
-/*==============================================
-=           LICENCE — TERMS & CONDITIONS       =
-==============================================*/
-
-section.licence h2 {
-    font-family: var(--f-uncial-antiqua);
-    font-size: 2.5rem;
-    color: #2020ff;
-    padding: 2rem 0 0.5rem 0;
-}
-
-section.licence h3 {
-    font-family: var(--f-cinzel);
-    font-size: 1.35rem;
-    color: #2020ff;
-    letter-spacing: 0.1em;
-    padding: 1.75rem 0 0.5rem 0;
-}
-
-section.licence p {
-    color: #8080ff;
-    padding: 4px 0;
-    text-align: justify;
-    line-height: 1.7;
-}
-
-section.licence ul {
-    list-style: disc;
-    padding-left: 1.75em;
-    color: #8080ff;
-}
-
-section.licence ul li {
-    padding: 3px 0;
-    line-height: 1.6;
-}
-
-/*==============================================
-=              LICENCE — FOOTER                =
-==============================================*/
-
-section.licence #licence-footer p {
-    color: var(--c-fadelavender);
-    font-size: 1rem;
-    padding: 2px 0;
-    text-align: left;
-}
-
-section.licence #licence-footer p b {
+.licence #uptitle {
     color: var(--c-mistlavender);
-}
-
-section.licence #licence-footer p i {
-    color: var(--c-iceblue);
-}
-
-section.licence p.footnote {
-    font-size: 0.85rem;
-    color: var(--c-fadelavender);
-    padding: 2px 0;
-}
-
-section.licence sup {
-    font-size: 0.6em;
-    vertical-align: super;
-    color: var(--c-mistlavender);
-}
-
-section.licence code {
-    font-family: var(--f-jetbrains-mono);
-    font-size: 0.8em;
-    color: var(--c-iceblue);
-}
-
-/*==============================================
-=            LICENCE — ROZCESTNÍK              =
-==============================================*/
-
-section.licence span.uptitle {
-    font-family: var(--f-cormorant-garamond);
-    color: var(--c-mistlavender);
+    font-family: var(--f-titles);
     font-weight: 900;
     text-transform: uppercase;
-    font-size: 1rem;
-    letter-spacing: 0.2em;
+    font-size: 1.5rem;
 }
 
-section.licence span.subtitle {
-    font-family: var(--f-cormorant-garamond);
+.licence #subtitle {
     color: var(--c-mistlavender);
+    font-family: var(--f-titles);
     font-weight: 900;
-    font-size: 1rem;
-    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 1.5rem;
 }
 
-section.licence h1.index-title {
-    font-family: var(--f-uncial-antiqua);
+.licence h1#signpost {
+    color: var(--c-cyan);
+    font-family: var(--f-heading);
     font-size: 6rem;
-    color: var(--c-brightgold);
 }
 
-div.licence-grid {
+div.licence-grid-table {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
@@ -174,43 +66,168 @@ div.licence-grid {
 }
 
 div.licence-card {
-    padding: 1.5rem;
-    border: 1px solid var(--c-thinindigo);
-    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    background-color: var(--c-invisibilitywhite);
+    padding: 1.5rem;
+    border: 1px solid var(--c-cardborder);
+    border-radius: 10px;
     transition: transform 0.2s, border-color 0.2s, background-color 0.2s;
     text-decoration: none;
+    background-color: var(--c-invisibility);
 }
 
 div.licence-card:hover {
+    border-color: var(--c-hovercardborder);
     transform: scale(1.05);
-    border-color: var(--c-iceblue);
-    background-color: var(--c-halfinvisibilitywhite);
+    background-color: var(--c-hoverinvisibility);
 }
 
 div.licence-card img {
-    width: 60%;
+    width: 100%;
     height: auto;
-    border-radius: 6px;
+    border-radius: 10px;
 }
 
-div.licence-card span.card-title {
-    font-family: var(--f-cinzel);
-    font-size: 1rem;
+div.licence-card-text {
+    display: flex;
+    flex-direction: column;
+}
+
+div.licence-card-text span.card-title {
+    color: var(--c-smokewhite);
+    font-family: var(--f-cardtext);
+    font-size: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
-    color: var(--c-smokewhite);
-    letter-spacing: 0.15em;
     text-align: center;
 }
 
-div.licence-card span.card-desc {
-    font-style: italic;
+div.licence-card-text span.card-desc {
     color: var(--c-iceblue);
-    font-size: 0.9rem;
+    font-size: 1.4rem;
+    font-style: italic;
     text-align: center;
+}
+
+/*==============================================
+=                   SUBPAGES                   =
+==============================================*/
+/*-----------------  GLOBAL  -----------------*/
+.licence {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 75px 25%;
+    font-size: 1.5rem;
+    color: var(--c-snow);
+    font-family: var(--f-classic);
+}
+
+.licence hr {
+    border: none;
+    border-top: 0.5px solid var(--c-thinindigo);
+    margin: 1rem 0;
+}
+
+.licence a {
+    color: var(--c-yellowsnow);
+    text-decoration: underline solid 1px;
+}
+
+.licence a:hover {
+    color: var(--c-iceblue);
+    text-decoration: underline solid 1px;
+    transition: color 0.5s;
+}
+
+.licence h1 {
+    color: var(--c-cyan);
+    font-size: 4rem;
+    text-align: center;
+}
+
+/*-----------------  HEADER  -----------------*/
+.licence #licence-header div#subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    color: var(--c-iceblue);
+    font-family: var(--f-classic);
+    text-transform: inherit;
+    font-weight: 500;
+}
+
+.licence #licence-header a {
+    color: var(--c-iceblue);
+    text-decoration: none;
+}
+
+.licence #licence-header a:hover {
+    color: var(--c-dodgerblue);
+    text-decoration: underline solid 1px;
+    transition: color 0.5s;
+}
+
+#licence-header p {
+    color: var(--c-skyblue);
+    font-size: 1.5rem;
+    padding: 0;
+}
+
+/*------------------  MAIN  ------------------*/
+#terms-n-conditions h2 {
+    color: var(--c-snow);
+    font-family: var(--f-heading);
+    font-size: 2.5rem;
+    padding: 2rem 0 0.5rem 0;
+}
+
+#terms-n-conditions h3 {
+    font-family: var(--f-heading);
+    font-size: 1.3rem;
+    padding: 1.75rem 0 0.5rem 0;
+}
+
+#terms-n-conditions p {
+    padding: 4px 0;
+    text-align: justify;
+    line-height: 1.7;
+    font-size: 1.25rem;
+}
+
+#terms-n-conditions ul {
+    list-style: disc;
+    padding-left: 1.75em;
+}
+
+#terms-n-conditions ul li {
+    padding: 3px 0;
+    line-height: 1.25;
+}
+
+/*-----------------  FOOTER  -----------------*/
+
+#licence-footer p {
+    font-size: 1rem;
+    padding: 2px 0;
+    text-align: left;
+}
+
+#licence-footer p.footnote {
+    color: var(--c-skyblue);
+    font-size: 1.25rem;
+    padding: 2px 0;
+}
+
+#licence-footer sup {
+    font-size: 0.6em;
+    vertical-align: super;
+}
+
+#licence-footer code {
+    font-family: var(--f-jetbrains-mono);
+    font-size: 0.8em;
 }
