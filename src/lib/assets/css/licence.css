@@ -133,10 +133,13 @@ div.licence-card-text span.card-desc {
 
 .licence a {
     color: var(--c-yellowsnow);
+    text-decoration: none;
+
 }
 
 .licence a:hover {
     color: var(--c-iceblue);
+    text-decoration: none;
     transition: color 0.5s;
 }
 
