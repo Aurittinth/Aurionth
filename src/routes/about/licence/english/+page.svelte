@@ -72,8 +72,8 @@
 
     <section id="licence-footer">
         <ol>
-            <li><p class="footnote" id="up-1"><a href="#up-1">▲</a> Email address of the owner of this repository for contact purposes regarding the license and the repository itself.</p></li>
-            <li><p class="footnote" id="up-2"><a href="#up-2">▲</a> Date of last update of the license in the format <code>dd DD-MM-YYYY</code>.</p></li>
+            <li><p class="footnote" id="fn-1"><a href="#up-1">▲</a> Email address of the owner of this repository for contact purposes regarding the license and the repository itself.</p></li>
+            <li><p class="footnote" id="fn-2"><a href="#up-2">▲</a> Date of last update of the license in the format <code>dd DD-MM-YYYY</code>.</p></li>
         </ol>
     </section>
 </section>

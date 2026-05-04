@@ -65,7 +65,7 @@
     </section>
         
     <section id="last-update">
-    <b>Naposledy aktualizováno:</b> <code>pá 01-05-2026</code><sup id="up-2"><a href="#fn-2">[2]</a></sup>
+        <b>Naposledy aktualizováno:</b> <code>pá 01-05-2026</code><sup id="up-2"><a href="#fn-2">[2]</a></sup>
     </section>
 
     <hr>
