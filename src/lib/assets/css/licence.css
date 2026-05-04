@@ -155,12 +155,12 @@ div.licence-card-text span.card-desc {
 
 .licence a {
     color: var(--c-yellowsnow);
-    text-decoration: underline solid 1px currentColor;
+    text-decoration: none;
 }
 
 .licence a:hover {
     color: var(--c-iceblue);
-    text-decoration: underline solid 1px currentColor;
+    text-decoration: none;
     transition: color 0.5s;
 }
 
