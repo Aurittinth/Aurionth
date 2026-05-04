@@ -1,0 +1,53 @@
+.disable { pointer-events: none; opacity: 0.5; }
+
+/*  >------------------<||>------------------<  */
+/*---------------  BORDER COLOR  ---------------*/
+/*  >------------------<||>------------------<  */
+
+.disable.disable-border-red     { border-color: #ff0000 !important; border-width: 2.5px !important; }
+.disable.disable-border-blue    { border-color: #0000ff !important; border-width: 2.5px !important; }
+.disable.disable-border-green   { border-color: #00ff00 !important; border-width: 2.5px !important; }
+.disable.disable-border-yellow  { border-color: #ffff00 !important; border-width: 2.5px !important; }
+.disable.disable-border-magenta { border-color: #ff00ff !important; border-width: 2.5px !important; }
+.disable.disable-border-cyan    { border-color: #00ffff !important; border-width: 2.5px !important; }
+.disable.disable-border-gray    { border-color: #676767 !important; border-width: 2.5px !important; }
+.disable.disable-border-white   { border-color: #ffffff !important; border-width: 2.5px !important; }
+
+/*  >------------------<||>------------------<  */
+/*----------------  TEXT COLOR  ----------------*/
+/*  >------------------<||>------------------<  */
+
+.disable.disable-text-red     { color: #ff0000 !important; }
+.disable.disable-text-blue    { color: #0000ff !important; }
+.disable.disable-text-green   { color: #00ff00 !important; }
+.disable.disable-text-yellow  { color: #ffff00 !important; }
+.disable.disable-text-magenta { color: #ff00ff !important; }
+.disable.disable-text-cyan    { color: #00ffff !important; }
+.disable.disable-text-gray    { color: #676767 !important; }
+.disable.disable-text-white   { color: #ffffff !important; }
+
+/*  >------------------<||>------------------<  */
+/*-------------  BACKGROUND COLOR  -------------*/
+/*  >------------------<||>------------------<  */
+
+.disable.disable-background-red     { background-color: #ff0000 !important; }
+.disable.disable-background-blue    { background-color: #0000ff !important; }
+.disable.disable-background-green   { background-color: #00ff00 !important; }
+.disable.disable-background-yellow  { background-color: #ffff00 !important; }
+.disable.disable-background-magenta { background-color: #ff00ff !important; }
+.disable.disable-background-cyan    { background-color: #00ffff !important; }
+.disable.disable-background-gray    { background-color: #676767 !important; }
+.disable.disable-background-white   { background-color: #ffffff !important; }
+
+/*  >------------------<||>------------------<  */
+/*----------------  CROSS LINE  ----------------*/
+/*  >------------------<||>------------------<  */
+
+.disable.disable-cross-red     { background: linear-gradient( to bottom right, transparent calc(50% - 10px), #ff0000, transparent calc(50% + 10px) ); }
+.disable.disable-cross-blue    { background: linear-gradient( to bottom right, transparent calc(50% - 10px), #0000ff, transparent calc(50% + 10px) ); }
+.disable.disable-cross-green   { background: linear-gradient( to bottom right, transparent calc(50% - 10px), #00ff00, transparent calc(50% + 10px) ); }
+.disable.disable-cross-yellow  { background: linear-gradient( to bottom right, transparent calc(50% - 10px), #ffff00, transparent calc(50% + 10px) ); }
+.disable.disable-cross-magenta { background: linear-gradient( to bottom right, transparent calc(50% - 10px), #ff00ff, transparent calc(50% + 10px) ); }
+.disable.disable-cross-cyan    { background: linear-gradient( to bottom right, transparent calc(50% - 10px), #00ffff, transparent calc(50% + 10px) ); }
+.disable.disable-cross-gray    { background: linear-gradient( to bottom right, transparent calc(50% - 10px), #676767, transparent calc(50% + 10px) ); }
+.disable.disable-cross-white   { background: linear-gradient( to bottom right, transparent calc(50% - 10px), #ffffff, transparent calc(50% + 10px) ); }

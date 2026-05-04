@@ -26,7 +26,8 @@
 		</a>
 	</div>
 	<br>
-		<a href="{base}/" class="btn btn-secondary disable">
+		<a href="{base}/" class="btn btn-secondary
+			disable disable-border-white ">
 			––––––––––––––––<br>
 			Dále do světa<br>
 			––––––––––––––––

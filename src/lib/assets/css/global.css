@@ -1,3 +1,5 @@
+@import "./disable.css";
+
 /* https://fonts.google.com/share?selection.family=Asimovian|Audiowide|Cinzel+Decorative:wght@400;700;900|Cinzel:wght@400..900|Cormorant+Garamond:ital,wght@0,300..700;1,300..700|Cormorant+Upright:wght@300;400;500;600;700|Crimson+Pro:ital,wght@0,200..900;1,200..900|Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700|Datatype:wght@100..900|Geostar|Iceberg|JetBrains+Mono:ital,wght@0,100..800;1,100..800|Libre+Barcode+39+Text|Nunito:ital,wght@0,200..1000;1,200..1000|Playwrite+CZ:wght@100..400|Sixtyfour|Source+Code+Pro:ital,wght@0,200..900;1,200..900|Uncial+Antiqua */
 @import url('https://fonts.googleapis.com/css2?family=Asimovian&family=Audiowide&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Cormorant+Upright:wght@300;400;500;600;700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Datatype:wght@100..900&family=Geostar&family=Iceberg&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Libre+Barcode+39+Text&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+CZ:wght@100..400&family=Sixtyfour&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Uncial+Antiqua&display=swap');
 
@@ -107,16 +109,6 @@
     --f-uncial-antiqua:         "Uncial Antiqua", system-ui;
 }
 
-
-/*==============================================
-=                  COLOR SECT                  =
-==============================================*/
-
-.disable {
-    pointer-events: none;
-    opacity: 0.5;
-}
-
 /*==============================================
 =                     STARS                    =
 ==============================================*/
@@ -181,6 +173,23 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--c-deepvoid);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--c-warmgold);
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--c-bluenebula);
+}
+
 body {
     background-color: var(--c-black);
     color: var(--c-snow);
@@ -223,6 +232,7 @@ header.atlas-header {
     width: 100%;
     height: 5rem;
     z-index: 1000;
+    letter-spacing: 0.25em;
     box-shadow: 0 10px 15px var(--c-header-ghostindigo);
 }
 
@@ -282,7 +292,6 @@ header.atlas-header {
     .sec-nav a {
         font-family: var(--f-cinzel);
         font-size: 1rem;
-        letter-spacing: 0.2em;
         color: var(--c-goldpale);
         text-decoration: none;
         text-transform: uppercase;
@@ -383,8 +392,6 @@ header.atlas-header {
     font-family: var(--f-cinzel);
     font-size: 1.5rem;
     font-weight: 600;
-    letter-spacing: 0.05em;
-    letter-spacing: 0.2em;
     color: var(--c-goldpale);
     text-decoration: none;
     text-transform: uppercase;
@@ -409,7 +416,6 @@ header.atlas-header {
         font-family: var(--f-cinzel);
         font-size: 1.5rem;
         font-weight: 600;
-        letter-spacing: 0.05em;
         color: var(--c-goldpale);
         text-transform: uppercase;
         margin-left: -1.5rem;
@@ -439,7 +445,6 @@ header.atlas-header {
         padding: 0.6rem 1.5rem 0.6rem 2.75rem;
         font-size: 1.5rem;
         font-weight: 600;
-        letter-spacing: 0.05em;
         color: var(--c-goldpale);
         opacity: 0.8;
     }
@@ -453,6 +458,7 @@ header.atlas-header {
 /*==============================================
 =                  RESPONSIVE                  =
 ==============================================*/
+/*
 @media (max-width: 768px) {
 
     nav {
@@ -474,7 +480,6 @@ header.atlas-header {
 
     .hero-eyebrow {
         font-size: 1rem;
-        letter-spacing: 0.2em;
     }
 
     .hero-subtitle {
@@ -501,7 +506,7 @@ header.atlas-header {
         text-align: left;
     }
 }
-
+*/
 /*==============================================
 =                 HERO SECTION                 =
 ==============================================*/
@@ -541,18 +546,18 @@ header.atlas-header {
             var(--c-golden),
             var(--c-lightindigo),
             transparent
-            );
-    margin: 0 auto 2rem;
-}
-
+        );
+        margin: 0 auto 2rem;
+    }
+    
 .hero-subtitle {
     font-size: 2.5rem;
     font-weight: 300;
     font-style: italic;
+    letter-spacing: 0.2rem;
     color: var(--c-mistlavender);
     max-width: 50%;
     line-height: 1.8;
-    letter-spacing: 0.02em;
 }
 
 .hero-cta {
@@ -569,17 +574,18 @@ header.atlas-header {
 .btn {
     font-family: var(--f-cinzel);
     font-size: 1.25rem;
-    letter-spacing: 0.25em;
     text-transform: uppercase;
     padding: 0.9rem 2.5rem;
     cursor: pointer;
     text-decoration: none;
     transition: all 0.3s;
     border: none;
+    letter-spacing: 0.3rem;
 }
 
 .btn:hover {
     transform: scale(110%);
+    letter-spacing: 0;
 }
 
 .btn-primary {
@@ -620,7 +626,6 @@ header.atlas-header {
 .section-name {
     font-family: var(--f-cinzel);
     font-size: 0.75rem;
-    letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--c-golden);
     margin-bottom: 0.5rem;
@@ -642,7 +647,6 @@ footer {
     padding: 2rem;
     font-family: var(--f-crimson-pro);
     font-size: 1.15rem;
-    letter-spacing: 0.3em;
     color: var(--c-snow);
     background-color: var(--c-darkslategray);
     border-top: 0.5px solid var(--c-thinindigo);
@@ -663,7 +667,6 @@ footer {
 
 .footer-title {
     font-family: var(--f-crimson-pro);
-    letter-spacing: 0.3em;
     color: var(--c-golden);
     margin-bottom: 0.5rem;
 }
@@ -672,7 +675,6 @@ footer {
 .footer-col a {
     color: var(--c-lavender);
     text-decoration: none;
-    letter-spacing: 0.05em;
     line-height: 1.8;
     font-style: italic;
 }
@@ -691,14 +693,12 @@ footer {
 .footer-col ul a {
     font-style: normal;
     font-family: var(--f-crimson-pro);
-    letter-spacing: 0.15em;
 }
 
 .footer-bottom {
     text-align: center;
     padding: 1rem 2rem;
     font-family: var(--f-crimson-pro);
-    letter-spacing: 0.3em;
     color: var(--c-lavender);
     border-top: 0.5px solid var(--c-lavender);
 }
