@@ -142,6 +142,7 @@
                     <ul class="submenu">
                         <li><a href="{base}/about/me"     	onclick={closeMenu}>O tvůrci</a></li>
                         <li><a href="{base}/about/project"	onclick={closeMenu}>O projektu</a></li>
+                        <li><a href="{base}/about/licence"	onclick={closeMenu}>Licence</a></li>
                     </ul>
                 {/if}
             </li>

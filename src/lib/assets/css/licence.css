@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Uncial+Antiqua&display=swap');
+/* https://fonts.google.com/share?selection.family=Cinzel:wght@400..900|Cormorant+Garamond:ital,wght@0,300..700;1,300..700|Crimson+Pro:ital,wght@0,200..900;1,200..900|Datatype:wght@100..900|Uncial+Antiqua */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Datatype:wght@100..900&family=Uncial+Antiqua&display=swap');
 
 /*==============================================
 =               VARIABLE ROOTING               =
@@ -9,6 +10,7 @@
     --f-classic:                "Crimson Pro", serif;
     --f-titles:                 "Cormorant Garamond", serif;
     --f-cardtext:               "Cinzel", serif;
+    --f-data:                   "Datatype", monospace;
     
     /* --- COLOR --- */
     --c-snow:                   #fffafa;
@@ -24,19 +26,34 @@
     --c-smokewhite:             #f5f5f5;
     --c-iceblue:                #9ec3ff;
     --c-dodgerblue:             #1e90ff;
+    --c-heading2:               #ff7f50;
+    --c-heading3:               #ff8c00;
 }
 
 main {
     color: var(--c-snow);
-    background-color: var(--c-black);
-
 }
 
 /*==============================================
 =                  SIGNPOST                    =
 ==============================================*/
+.licence-signpost {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 75px 25%;
+    font-size: 1.5rem;
+    color: var(--c-snow);
+    font-family: var(--f-classic);
+}
 
-.licence #uptitle {
+.licence-signpost #licence-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.licence-signpost #uptitle {
     color: var(--c-mistlavender);
     font-family: var(--f-titles);
     font-weight: 900;
@@ -44,7 +61,7 @@ main {
     font-size: 1.5rem;
 }
 
-.licence #subtitle {
+.licence-signpost #subtitle {
     color: var(--c-mistlavender);
     font-family: var(--f-titles);
     font-weight: 900;
@@ -52,17 +69,22 @@ main {
     font-size: 1.5rem;
 }
 
-.licence h1#signpost {
+.licence-signpost h1#signpost {
     color: var(--c-cyan);
     font-family: var(--f-heading);
     font-size: 6rem;
 }
 
+/*------------------  GRID  ------------------*/
 div.licence-grid-table {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
     margin-top: 1rem;
+}
+
+div.licence-grid-table a {
+    text-decoration: none;
 }
 
 div.licence-card {
@@ -133,12 +155,12 @@ div.licence-card-text span.card-desc {
 
 .licence a {
     color: var(--c-yellowsnow);
-    text-decoration: underline solid 1px;
+    text-decoration: underline solid 1px currentColor;
 }
 
 .licence a:hover {
     color: var(--c-iceblue);
-    text-decoration: underline solid 1px;
+    text-decoration: underline solid 1px currentColor;
     transition: color 0.5s;
 }
 
@@ -148,8 +170,40 @@ div.licence-card-text span.card-desc {
     text-align: center;
 }
 
+.licence #licence-header span {
+    color: var(--c-skyblue);
+    font-size: 1.5rem;
+    padding: 0;
+}
+
+.licence p {
+    color: var(--c-snow);
+    font-size: 1.5rem;
+    padding: 4px 0;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+.licence sup {
+    font-family: var(--f-data);
+    font-size: 1rem;
+    vertical-align: super;
+}
+
+.licence sup a {
+    color: var(--c-snow);
+    text-decoration: none;
+}
+
+.licence sup a:hover {
+    color: var(--c-mistlavender);
+    text-decoration: none;
+    font-weight: 900;
+    transition: color 0.5s;
+}
+
 /*-----------------  HEADER  -----------------*/
-.licence #licence-header div#subtitle {
+#licence-header div#subtitle {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -160,52 +214,50 @@ div.licence-card-text span.card-desc {
     font-weight: 500;
 }
 
-.licence #licence-header a {
+#licence-header a {
     color: var(--c-iceblue);
     text-decoration: none;
 }
 
-.licence #licence-header a:hover {
+#licence-header a:hover {
     color: var(--c-dodgerblue);
     text-decoration: underline solid 1px;
     transition: color 0.5s;
 }
 
-#licence-header p {
-    color: var(--c-skyblue);
-    font-size: 1.5rem;
-    padding: 0;
-}
-
 /*------------------  MAIN  ------------------*/
 #terms-n-conditions h2 {
-    color: var(--c-snow);
-    font-family: var(--f-heading);
+    color: var(--c-heading2);   
+    font-family: var(--f-classic);
     font-size: 2.5rem;
     padding: 2rem 0 0.5rem 0;
 }
 
 #terms-n-conditions h3 {
-    font-family: var(--f-heading);
-    font-size: 1.3rem;
-    padding: 1.75rem 0 0.5rem 0;
-}
-
-#terms-n-conditions p {
-    padding: 4px 0;
-    text-align: justify;
-    line-height: 1.7;
-    font-size: 1.25rem;
+    color: var(--c-heading3);
+    font-family: var(--f-classic);
+    font-size: 1.75rem;
+    padding: 2rem 0 0.5rem 0;
 }
 
 #terms-n-conditions ul {
-    list-style: disc;
+    list-style: square;
     padding-left: 1.75em;
+    line-height: 1.4;
 }
 
 #terms-n-conditions ul li {
     padding: 3px 0;
-    line-height: 1.25;
+}
+
+#terms-n-conditions span.work {
+    color: var(--c-iceblue);
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+#terms-n-conditions code {
+    font-family: var(--f-data);
 }
 
 /*-----------------  FOOTER  -----------------*/
@@ -216,18 +268,26 @@ div.licence-card-text span.card-desc {
     text-align: left;
 }
 
+#licence-footer ol {
+    font-family: var(--f-data);
+    font-size: 1rem;
+    list-style-position: outside;
+    padding-left: 1.75rem;
+    line-height: 1;
+}
+
+#licence-footer ol li {
+    padding: 3px 0;
+}
+
 #licence-footer p.footnote {
     color: var(--c-skyblue);
+    font-family: var(--f-data);
     font-size: 1.25rem;
     padding: 2px 0;
 }
 
-#licence-footer sup {
-    font-size: 0.6em;
-    vertical-align: super;
-}
-
-#licence-footer code {
-    font-family: var(--f-jetbrains-mono);
-    font-size: 0.8em;
+/*---------------  LAST UPDATE  --------------*/
+section#last-update {
+    padding: 7.5rem 0 0 0;
 }
