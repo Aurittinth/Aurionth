@@ -1,0 +1,11 @@
+.explore {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 75px 25%;
+    font-size: 1.5rem;
+}
+
+.explore #opening {
+    
+}

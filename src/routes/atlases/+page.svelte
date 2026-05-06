@@ -1,22 +1,9 @@
 <script>
     import image from '$lib/assets/images/galery/placeholder.jpg';
+    import blindAurionth from '$lib/assets/images/galery/Aurionth-blind-map.svg';
+
     import { base } from '$app/paths';
 </script>
-
-<header class="atlas-header">
-    <nav>
-        <ul class="sec-nav">
-            <li><a href="#opening">Úvod</a></li>
-            <li><a href="#reality">Realita</a></li>
-            <li><a href="#life">Život</a></li>
-            <li><a href="#entity">Bytosti</a></li>
-            <li><a href="#magic">Magie</a></li>
-            <li><a href="#civilization">Civilizace</a></li>
-            <li><a href="#systems">Seznamy</a></li>
-            <li><a href="#lists">Seznamy</a></li>
-        </ul>
-    </nav>
-</header>
 
 <section class="atlas">
     <span class="uptitle">Rozcestník</span>
@@ -32,6 +19,19 @@
         <p>Je to čistě na Vás, co si vyberete za dnešní čtení.</p>
         <br>
         <p><b>PS:</b> Atlasy jsou rozděleny do kategorií, podle toho, čím se zabývají.</p>
+    </section>
+
+    <div class="sep"></div>
+    
+    <section id="map">
+        <h2>Mapa světa Aurionth</h2>
+        <p>Zde se nachází slepá mapa Aurionthu, která zobrazuje pouze pevninu s oceánem. Nejsou zde znázorněny žádné geografické, klimatické, politické a jiné prvky, které by mohly ovlivnit tajemnost tohoto světa.</p>
+
+        <br>
+
+        <div id="blind-image-map" class="fix justify-center">
+            <img src={blindAurionth} alt="Slepá mapa Aurionthu" loading="lazy" />
+        </div>
     </section>
 
     <div class="sep"></div>

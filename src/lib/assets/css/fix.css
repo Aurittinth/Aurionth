@@ -1,0 +1,28 @@
+.fix { display: flex; }
+
+/* CLASSIC - HORIZONTAL LINE */
+.fix.justify-start { justify-content: start; }
+.fix.justify-center { justify-content: center; }
+.fix.justify-end { justify-content: end; }
+/* levo-střed-pravo -> až na kraj */
+.fix.justify-space-between { justify-content: space-between; }
+/* between s kraji */
+.fix.justify-space-around { justify-content: space-around; }
+/* rovnoměrně */
+.fix.justify-space-evenly { justify-content: space-evenly; }
+
+/**/
+.fix.justify-flex-start { justify-content: flex-start; }
+/**/
+.fix.justify-flex-end { justify-content: flex-end; }
+
+/* textová linka */
+.fix.justify-baseline { justify-content: baseline; }
+.fix.justify-first-baseline { justify-content: first baseline; }
+.fix.justify-last-baseline { justify-content: last baseline; }
+
+/**/
+.fix.justify-safe { justify-content: safe; }
+/**/
+.fix.justify-unsafe { justify-content: unsafe; }
+
