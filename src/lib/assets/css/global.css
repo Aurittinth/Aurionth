@@ -728,6 +728,7 @@ footer {
 ==============================================*/
 section.about,
 section.atlas,
+section.atlas-inside,
 section.licence {
     display: flex;
     justify-content: center;

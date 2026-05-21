@@ -270,7 +270,7 @@
     <section id="civilization">
         <h2>Civilizace</h2>
         <div class="grid-table">
-            <div class="grid-item disable">
+            <div class="grid-item">
                 <a href="{base}/atlases/civilization/resident">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
