@@ -16,7 +16,7 @@
 	
 	/* Componets and Other imports */
     import { base } from '$app/paths';
-	import Stars from '$lib/assets/components/stars.svelte';
+	import Stars from '$lib/assets/components/Stars.svelte';
 
 	/* Other JavaScript Properties */ 
 	let { children } = $props();

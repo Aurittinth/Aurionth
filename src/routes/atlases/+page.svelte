@@ -340,7 +340,7 @@
                 </a>
             </div>
             <div class="grid-item disable">
-                <a href="{base}/atlases/system/law_world">
+                <a href="{base}/atlases/system/law-world">
                     <img src={image} alt="placeholder" width="50%" height="auto" />
                     <div class="item-text">
                         <span class="title">Zákony světa</span>

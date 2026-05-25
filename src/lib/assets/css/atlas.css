@@ -1,0 +1,171 @@
+@import "./global.css";
+
+
+/*==============================================
+=               DECLENSION TABLE               =
+==============================================*/
+
+.declension-wrapper {
+    margin: 1.5rem 0;
+    padding: 2rem 1.5rem;
+    border: #a070e040 solid 2.5px;
+    border-radius: 12px;
+    background: linear-gradient(
+        135deg,
+        #0a080f 0%,
+        #141020 50%,
+        #0a080f 100%
+    );
+    box-shadow: inset 0 0 60px #5030b040;
+}
+
+.declension-title {
+    margin: 0;
+    color: #c8b4f0;
+    font-family: 'Crimson Text', serif;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.declension-pattern {
+    margin: 0;
+    color: #c8b4f0;
+    font-family: 'Crimson Text', serif;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.declension-divider {
+    margin: 0;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #a070e0 50%,
+        transparent
+    );
+}
+
+.declension-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Crimson Text', serif;
+    font-size: 32px;
+    line-height: 2.5;
+}
+
+.declension-table thead tr {
+    border-bottom: #a070e0 solid 2.5px;
+}
+
+.declension-table thead th {
+    padding: 0 16px;
+    color: #a070e0bf;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.declension-table tbody tr {
+    border-bottom: #a070e066 solid 2.5px;
+    transition: background 0.5s ease-out;
+}
+
+.declension-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.declension-table tbody tr:hover {
+    background: #5030b040;
+    text-shadow: 0 0 3px #c8b4f0;
+}
+
+.declension-table tbody .number {
+    padding: 0 16px;
+    color: #a070e0bf;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    text-align: center;
+}
+
+.declension-table tbody td {
+    padding: 0 16px;
+    color: #e8e0f0;
+    text-align: center;
+}
+
+.declension-table .alternative {
+    display: block;
+    margin-top: -35px;
+    color: #e8e0f0d9;
+    font-size: 20px;
+}
+
+/*========  End of Declension table  =========*/
+
+
+/*==============================================
+=                   DIVIDERS                   =
+==============================================*/
+
+.section-divider {
+    margin: 5rem 0 0 0;
+    height: 15px;
+    background:
+        linear-gradient(
+            #3828a0,
+            #3828a0
+        ) top/100% 1px no-repeat,
+        linear-gradient(
+            90deg,
+            transparent,
+            #c0a0ff,
+            transparent
+        ) center/100% 3px no-repeat,
+        linear-gradient(
+            #3828a0,
+            #3828a0
+        ) bottom/100% 1px no-repeat;
+    border: none;
+}
+
+.after-table-divider {
+    margin: 5rem 0 2.5rem 0;
+    height: 1.5px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #6040c8 25%,
+        #a070e0 50%,
+        #6040c8 75%,
+        transparent
+    );
+    border: none;
+}
+
+.inner-divider {
+    margin: 2.5rem 0;
+    height: 1.5px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #6040c8 25%,
+        #a070e0 50%,
+        #6040c8 75%,
+        transparent
+    );
+    border: none;
+}
+
+/*=============  End of Divider  =============*/
+
+/*==============================================
+=            |            =
+==============================================*/
+

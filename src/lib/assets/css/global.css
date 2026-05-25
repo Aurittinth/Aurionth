@@ -609,7 +609,7 @@ header.atlas-header {
 .btn-secondary:hover {
     background-color: var(--c-fullblack);
     border-color: var(--c-glowviolet);
-    color: var(--c-cyannebula);
+    color: var(--c-white);
 }
 
 /*==============================================
@@ -850,6 +850,20 @@ section.atlas .sep::before {
     max-width: 100%;
     height: auto;
     border-radius: 12px;
+}
+
+/*==============================================
+=                   ATLASES                    =
+==============================================*/
+section.atlas-inside h1 {
+    font-family: var(--f-iceberg);
+}
+section.atlas-inside h2 {
+    font-family: var(--f-iceberg);
+}
+
+section.atlas-inside p {
+    font-family: var(--f-crimson-pro);
 }
 
 /*==============================================
