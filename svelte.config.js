@@ -15,7 +15,8 @@ export default {
             '$images': 'src/lib/assets/images',
             '$components': 'src/lib/components',
             '$styles': 'src/lib/styles',
-            '$utils': 'src/lib/utils'
+            '$utils': 'src/lib/utils',
+            '$data': 'src/lib/data'
         }
     }
 };

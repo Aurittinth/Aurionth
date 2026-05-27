@@ -1,0 +1,1136 @@
+{
+    "HumikusShapes": {
+        "pattern": "pán",
+        "shapes": [
+            {
+                "_case": 1,
+                "singular": "Humikus",
+                "alterSingular": [],
+                "plural": "Humici",
+                "alterPlural": ["Humikové"]
+            },
+            {
+                "_case": 2,
+                "singular": "Humika",
+                "alterSingular": [],
+                "plural": "Humiků",
+                "alterPlural": []
+            },
+            {
+                "_case": 3,
+                "singular": "Humiku",
+                "alterSingular": ["Humikovi"],
+                "plural": "Humikům",
+                "alterPlural": []
+            },
+            {
+                "_case": 4,
+                "singular": "Humika",
+                "alterSingular": [],
+                "plural": "Humiky",
+                "alterPlural": []
+            },
+            {
+                "_case": 5,
+                "singular": "Humiku",
+                "alterSingular": [],
+                "plural": "Humici",
+                "alterPlural": ["Humikové"]
+            },
+            {
+                "_case": 6,
+                "singular": "Humikovi",
+                "alterSingular": [],
+                "plural": "Humicích",
+                "alterPlural": ["Humikách"]
+            },
+            {
+                "_case": 7,
+                "singular": "Humikami",
+                "alterSingular": [],
+                "plural": "Humiky",
+                "alterPlural": []
+            }
+        ]
+    },
+    "mannorShapes": {
+        "pattern": "pán",
+        "shapes": [
+            {
+                "_case": 1,
+                "singular": "Mannoŕ",
+                "alterSingular": [],
+                "plural": "Mannoŕové",
+                "alterPlural": ["Mannoŕry"]
+            },
+            {
+                "_case": 2,
+                "singular": "Mannoŕa",
+                "alterSingular": [],
+                "plural": "Mannoŕů",
+                "alterPlural": []
+            },
+            {
+                "_case": 3,
+                "singular": "Mannoŕu",
+                "alterSingular": ["Mannoŕovi"],
+                "plural": "Mannoŕům",
+                "alterPlural": []
+            },
+            {
+                "_case": 4,
+                "singular": "Mannoŕa",
+                "alterSingular": [],
+                "plural": "Mannoŕy",
+                "alterPlural": []
+            },
+            {
+                "_case": 5,
+                "singular": "Mannoŕe",
+                "alterSingular": [],
+                "plural": "Mannoŕové",
+                "alterPlural": ["Mannoŕry"]
+            },
+            {
+                "_case": 6,
+                "singular": "Mannoŕovi",
+                "alterSingular": [],
+                "plural": "Mannoŕech",
+                "alterPlural": []
+            },
+            {
+                "_case": 7,
+                "singular": "Mannoŕem",
+                "alterSingular": [],
+                "plural": "Mannoŕy",
+                "alterPlural": []
+            }
+        ]
+    },
+    "monulusShapes": {
+        "pattern": "pán",
+        "shapes": [
+            {
+                "_case": 1,
+                "singular": "Monûlus",
+                "alterSingular": [],
+                "plural": "Monûlové",
+                "alterPlural": []
+            },
+            {
+                "_case": 2,
+                "singular": "Monûla",
+                "alterSingular": [],
+                "plural": "Monûlů",
+                "alterPlural": []
+            },
+            {
+                "_case": 3,
+                "singular": "Monûlovi",
+                "alterSingular": [],
+                "plural": "Monûlům",
+                "alterPlural": []
+            },
+            {
+                "_case": 4,
+                "singular": "Monûla",
+                "alterSingular": [],
+                "plural": "Monûly",
+                "alterPlural": []
+            },
+            {
+                "_case": 5,
+                "singular": "Monûle",
+                "alterSingular": [],
+                "plural": "Monûlové",
+                "alterPlural": ["Manûli"]
+            },
+            {
+                "_case": 6,
+                "singular": "Monûlovi",
+                "alterSingular": [],
+                "plural": "Monûlech",
+                "alterPlural": []
+            },
+            {
+                "_case": 7,
+                "singular": "Monûlem",
+                "alterSingular": [],
+                "plural": "Monûly",
+                "alterPlural": []
+            }
+        ]
+    },
+    "luzintrShapes": {
+        "pattern": "pán",
+        "shapes": [
+            {
+                "_case": 1,
+                "singular": "Luzintŕ",
+                "alterSingular": [],
+                "plural": "Luzintŕry",
+                "alterPlural": []
+            },
+            {
+                "_case": 2,
+                "singular": "Luzintŕa",
+                "alterSingular": [],
+                "plural": "Luzintŕů",
+                "alterPlural": []
+            },
+            {
+                "_case": 3,
+                "singular": "Luzintŕovi",
+                "alterSingular": [],
+                "plural": "Luzintŕům",
+                "alterPlural": []
+            },
+            {
+                "_case": 4,
+                "singular": "Luzintŕa",
+                "alterSingular": [],
+                "plural": "Luzintŕy",
+                "alterPlural": []
+            },
+            {
+                "_case": 5,
+                "singular": "Luzintŕe",
+                "alterSingular": ["Luzintŕre"],
+                "plural": "Luzintŕry",
+                "alterPlural": []
+            },
+            {
+                "_case": 6,
+                "singular": "Luzintŕovi",
+                "alterSingular": [],
+                "plural": "Luzintŕech",
+                "alterPlural": []
+            },
+            {
+                "_case": 7,
+                "singular": "Luzintŕy",
+                "alterSingular": [],
+                "plural": "Luzintŕrých",
+                "alterPlural": []
+            }
+        ]
+    },
+    "luzinyShapes": {
+        "pattern": "páni",
+        "shapes": [
+            {
+                "_case": 1,
+                "singular": "Luziny",
+                "alterSingular": [],
+                "plural": "Luziny",
+                "alterPlural": []
+            },
+            {
+                "_case": 2,
+                "singular": "Luzinů",
+                "alterSingular": [],
+                "plural": "Luzinů",
+                "alterPlural": []
+            },
+            {
+                "_case": 3,
+                "singular": "Luzinům",
+                "alterSingular": [],
+                "plural": "Luzinům",
+                "alterPlural": []
+            },
+            {
+                "_case": 4,
+                "singular": "Luziny",
+                "alterSingular": [],
+                "plural": "Luziny",
+                "alterPlural": []
+            },
+            {
+                "_case": 5,
+                "singular": "Luziny",
+                "alterSingular": [],
+                "plural": "Luziny",
+                "alterPlural": []
+            },
+            {
+                "_case": 6,
+                "singular": "Luzinech",
+                "alterSingular": [],
+                "plural": "Luzinech",
+                "alterPlural": []
+            },
+            {
+                "_case": 7,
+                "singular": "Luziny",
+                "alterSingular": [],
+                "plural": "Luziny",
+                "alterPlural": []
+            }
+        ]
+    },
+    "nTroidyShapes": {
+        "pattern": "páni",
+        "shapes": [
+            {
+                "_case": 1,
+                "singular": "N’Tŕoidy",
+                "alterSingular": [],
+                "plural": "N’Tŕoidy",
+                "alterPlural": []
+            },
+            {
+                "_case": 2,
+                "singular": "N’Tŕoidů",
+                "alterSingular": [],
+                "plural": "N’Tŕoidů",
+                "alterPlural": []
+            },
+            {
+                "_case": 3,
+                "singular": "N’Tŕoidům",
+                "alterSingular": [],
+                "plural": "N’Tŕoidům",
+                "alterPlural": []
+            },
+            {
+                "_case": 4,
+                "singular": "N’Tŕoidy",
+                "alterSingular": [],
+                "plural": "N’Tŕoidy",
+                "alterPlural": []
+            },
+            {
+                "_case": 5,
+                "singular": "N’Tŕoidy",
+                "alterSingular": [],
+                "plural": "N’Tŕoidy",
+                "alterPlural": []
+            },
+            {
+                "_case": 6,
+                "singular": "N’Tŕoidech",
+                "alterSingular": [],
+                "plural": "N’Tŕoidech",
+                "alterPlural": []
+            },
+            {
+                "_case": 7,
+                "singular": "N’Tŕoidy",
+                "alterSingular": [],
+                "plural": "N’Tŕoidy",
+                "alterPlural": []
+            }
+        ]
+    },
+    "hortigcShapes": {
+        "pattern": "pán",
+        "shapes": [
+            {
+                "_case": 1,
+                "singular": "Hörtigc",
+                "alterSingular": [],
+                "plural": "Hörtigcové",
+                "alterPlural": []
+            },
+            {
+                "_case": 2,
+                "singular": "Hörtigca",
+                "alterSingular": [],
+                "plural": "Hörtigců",
+                "alterPlural": []
+            },
+            {
+                "_case": 3,
+                "singular": "Hörtigcovi",
+                "alterSingular": [],
+                "plural": "Hörtigcům",
+                "alterPlural": []
+            },
+            {
+                "_case": 4,
+                "singular": "Hörtigca",
+                "alterSingular": [],
+                "plural": "Hörtigcy",
+                "alterPlural": []
+            },
+            {
+                "_case": 5,
+                "singular": "Hörtigc",
+                "alterSingular": ["Hörtigce"],
+                "plural": "Hörtigcové",
+                "alterPlural": []
+            },
+            {
+                "_case": 6,
+                "singular": "Hörtigcovi",
+                "alterSingular": [],
+                "plural": "Hörtigcých",
+                "alterPlural": ["Hörtigcech"]
+            },
+            {
+                "_case": 7,
+                "singular": "Hörtigcem",
+                "alterSingular": [],
+                "plural": "Hörtigcy",
+                "alterPlural": []
+            }
+        ]
+    },
+    "slionithShapes": {
+        "pattern": "pán",
+        "shapes": [
+            {
+                "_case": 1,
+                "singular": "Slionith",
+                "alterSingular": [],
+                "plural": "Slionithé",
+                "alterPlural": ["Slionithové"]
+            },
+            {
+                "_case": 2,
+                "singular": "Slionitha",
+                "alterSingular": [],
+                "plural": "Slionithů",
+                "alterPlural": []
+            },
+            {
+                "_case": 3,
+                "singular": "Slionithovi",
+                "alterSingular": [],
+                "plural": "Slionithům",
+                "alterPlural": []
+            },
+            {
+                "_case": 4,
+                "singular": "Slionitha",
+                "alterSingular": [],
+                "plural": "Slionithy",
+                "alterPlural": []
+            },
+            {
+                "_case": 5,
+                "singular": "Slionithe",
+                "alterSingular": [],
+                "plural": "Slionithé",
+                "alterPlural": []
+            },
+            {
+                "_case": 6,
+                "singular": "Slionithovi",
+                "alterSingular": [],
+                "plural": "Slionithech",
+                "alterPlural": []
+            },
+            {
+                "_case": 7,
+                "singular": "Slionithem",
+                "alterSingular": [],
+                "plural": "Slionithy",
+                "alterPlural": []
+            }
+        ]
+    },
+    "ocelisShapes": {
+        "pattern": "",
+        "shapes": [
+            {
+                "_case": 1,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 2,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 3,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 4,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 5,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 6,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 7,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            }
+        ]
+    },
+    "oZimusShapes": {
+        "pattern": "",
+        "shapes": [
+            {
+                "_case": 1,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 2,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 3,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 4,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 5,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 6,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 7,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            }
+        ]
+    },
+    "oErimShapes": {
+        "pattern": "",
+        "shapes": [
+            {
+                "_case": 1,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 2,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 3,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 4,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 5,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 6,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 7,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            }
+        ]
+    },
+    "oDeHollShapes": {
+        "pattern": "",
+        "shapes": [
+            {
+                "_case": 1,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 2,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 3,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 4,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 5,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 6,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 7,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            }
+        ]
+    },
+    "oCurrShapes": {
+        "pattern": "",
+        "shapes": [
+            {
+                "_case": 1,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 2,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 3,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 4,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 5,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 6,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 7,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            }
+        ]
+    },
+    "oYuFklipShapes": {
+        "pattern": "",
+        "shapes": [
+            {
+                "_case": 1,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 2,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 3,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 4,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 5,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 6,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 7,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            }
+        ]
+    },
+    "oDotteyShapes": {
+        "pattern": "",
+        "shapes": [
+            {
+                "_case": 1,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 2,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 3,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 4,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 5,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 6,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 7,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            }
+        ]
+    },
+    "elifipShapes": {
+        "pattern": "pán",
+        "shapes": [
+            {
+                "_case": 1,
+                "singular": "Elifip",
+                "alterSingular": [],
+                "plural": "Elifové",
+                "alterPlural": ["Elifipové"]
+            },
+            {
+                "_case": 2,
+                "singular": "Elifa",
+                "alterSingular": [],
+                "plural": "Elifů",
+                "alterPlural": []
+            },
+            {
+                "_case": 3,
+                "singular": "Elifovi",
+                "alterSingular": [],
+                "plural": "Elifům",
+                "alterPlural": []
+            },
+            {
+                "_case": 4,
+                "singular": "Elifa",
+                "alterSingular": [],
+                "plural": "Elify",
+                "alterPlural": []
+            },
+            {
+                "_case": 5,
+                "singular": "Elife",
+                "alterSingular": [],
+                "plural": "Elifové",
+                "alterPlural": []
+            },
+            {
+                "_case": 6,
+                "singular": "Elifovi",
+                "alterSingular": [],
+                "plural": "Elifech",
+                "alterPlural": ["Elifipové"]
+            },
+            {
+                "_case": 7,
+                "singular": "Elifem",
+                "alterSingular": [],
+                "plural": "Elify",
+                "alterPlural": ["Elifipy"]
+            }
+        ]
+    },
+    "drahiusKanusShapes": {
+        "pattern": "pán",
+        "shapes": [
+            {
+                "_case": 1,
+                "singular": "Drahius’Kânus",
+                "alterSingular": ["Drahius", "Kânus"],
+                "plural": "Drahius’Kâni",
+                "alterPlural": ["Drahius’Kânové", "Drahiové", "Kâni", "Kânové"]
+            },
+            {
+                "_case": 2,
+                "singular": "Drahius’Kâna",
+                "alterSingular": ["Drahia", "Kâna"],
+                "plural": "Drahius’Kânů",
+                "alterPlural": ["Drahiů", "Kânů"]
+            },
+            {
+                "_case": 3,
+                "singular": "Drahius’Kânovi",
+                "alterSingular": ["Drahiovi", "Kânovi"],
+                "plural": "Drahius’Kânům",
+                "alterPlural": ["Drahiům", "Kânům"]
+            },
+            {
+                "_case": 4,
+                "singular": "Drahius’Kâna",
+                "alterSingular": ["Drahia", "Kâna"],
+                "plural": "Drahius’Kâny",
+                "alterPlural": ["Drahii", "Kâny"]
+            },
+            {
+                "_case": 5,
+                "singular": "Drahius’Kâne",
+                "alterSingular": ["Drahius’Kânus", "Drahie","Drahius", "Kâne", "Kânus"],
+                "plural": "Drahius’Kâni",
+                "alterPlural": ["Drahius’Kânové", "Drahiové", "Kâni", "Kânové"]
+            },
+            {
+                "_case": 6,
+                "singular": "Drahius’Kânovi",
+                "alterSingular": ["Drahiovi", "Kânovi"],
+                "plural": "Drahius’Kânech",
+                "alterPlural": ["Drahiech", "Kânech"]
+            },
+            {
+                "_case": 7,
+                "singular": "Drahius’Kânem",
+                "alterSingular": ["Drahiem", "Kânem"],
+                "plural": "Drahius’Kâny",
+                "alterPlural": ["Drahiji", "Kâny"]
+            }
+        ]
+    },
+    "tureoShapes": {
+        "pattern": "pán",
+        "shapes": [
+            {
+                "_case": 1,
+                "singular": "Tureo",
+                "alterSingular": [],
+                "plural": "Tuŕry",
+                "alterPlural": ["Tureové"]
+            },
+            {
+                "_case": 2,
+                "singular": "Tura",
+                "alterSingular": ["Turea"],
+                "plural": "Tureů",
+                "alterPlural": ["Turů"]
+            },
+            {
+                "_case": 3,
+                "singular": "Turovi",
+                "alterSingular": [],
+                "plural": "Tureům",
+                "alterPlural": ["Turům"]
+            },
+            {
+                "_case": 4,
+                "singular": "Tura",
+                "alterSingular": ["Turea"],
+                "plural": "Tury",
+                "alterPlural": []
+            },
+            {
+                "_case": 5,
+                "singular": "Ture",
+                "alterSingular": ["Tuŕre"],
+                "plural": "Tuŕry",
+                "alterPlural": ["Tureové"]
+            },
+            {
+                "_case": 6,
+                "singular": "Turovi",
+                "alterSingular": ["Tureovi"],
+                "plural": "Turech",
+                "alterPlural": ["Tureech"]
+            },
+            {
+                "_case": 7,
+                "singular": "Turem",
+                "alterSingular": ["Tureem"],
+                "plural": "Tury",
+                "alterPlural": []
+            }
+        ]
+    },
+    "tureoGallosShapes": {
+        "pattern": "pán",
+        "shapes": [
+            {
+                "_case": 1,
+                "singular": "Tureo’Gallos",
+                "alterSingular": ["Tureo’G", "Tureog", "Tuga"],
+                "plural": "Tureo’Gally",
+                "alterPlural": ["Tureo’Gallové", "Tureo’Gy", "Tureogy", "Tugy", "Tugové", "Tugaové"]
+            },
+            {
+                "_case": 2,
+                "singular": "Tureo’Galla",
+                "alterSingular": ["Tureo’Ga", "Tureoga", "Tugy"],
+                "plural": "Tureo’Gallů",
+                "alterPlural": ["Tureo’Gů", "Tureogů", "Tugaů", "Tugů"]
+            },
+            {
+                "_case": 3,
+                "singular": "Tureo’Gallovi",
+                "alterSingular": ["Tureo’Govi", "Tureogovi", "Tugaovi", "Tugovi"],
+                "plural": "Tureo’Gallům",
+                "alterPlural": ["Tureo’Gům", "Tureogům", "Tugům", "Tugaům"]
+            },
+            {
+                "_case": 4,
+                "singular": "Tureo’Galla",
+                "alterSingular": ["Tureo’Ga", "Tureoga", "Tuga"],
+                "plural": "Tureo’Gally",
+                "alterPlural": ["Tureo’Gy", "Tureogy", "Tugy"]
+            },
+            {
+                "_case": 5,
+                "singular": "Tureo’Gallo",
+                "alterSingular": ["Tureo’Go", "Tureogo", "Tugo"],
+                "plural": "Tureo’Gally",
+                "alterPlural": ["Tureo’Gallové", "Tureo’Gy", "Tureogy", "Tugy", "Tugové", "Tugaové"]
+            },
+            {
+                "_case": 6,
+                "singular": "Tureo’Gallovi",
+                "alterSingular": ["Tureo’Govi", "Tureogovi", "Tugaovi", "Tugovi"],
+                "plural": "Tureo’Gallech",
+                "alterPlural": ["Tureo’Gech", "Tureogech", "Tugech", "Tugaech"]
+            },
+            {
+                "_case": 7,
+                "singular": "Tureo’Gallem",
+                "alterSingular": ["Tureo’Gem", "Tureogem", "Tugaem", "Tugem"],
+                "plural": "Tureo’Gally",
+                "alterPlural": ["Tureo’Gy", "Tureogy", "Tugy"]
+            }
+        ]
+    },
+    "TureoMunosShapes": {
+        "pattern": "žena",
+        "shapes": [
+            {
+                "_case": 1,
+                "singular": "Tureo’Munos",
+                "alterSingular": ["Tureo’M", "Tureom", "Tumu"],
+                "plural": "Tureo’Muny",
+                "alterPlural": ["Tureo’My", "Tureomy", "Tumy"]
+            },
+            {
+                "_case": 2,
+                "singular": "Tureo’Muny",
+                "alterSingular": ["Tureo’My", "Tureomy", "Tumy"],
+                "plural": "Tureo’Mun",
+                "alterPlural": ["Tureo’M", "Tureom", "Tum"]
+            },
+            {
+                "_case": 3,
+                "singular": "Tureo’Muně",
+                "alterSingular": ["Tureo’Mě", "Tureomě", "Tumě"],
+                "plural": "Tureo’Munám",
+                "alterPlural": ["Tureo’Mám", "Tureomám", "Tumám"]
+            },
+            {
+                "_case": 4,
+                "singular": "Tureo’Munu",
+                "alterSingular": ["Tureo’Mu", "Tureomu", "Tumu"],
+                "plural": "Tureo’Muny",
+                "alterPlural": ["Tureo’My", "Tureomy", "Tumy"]
+            },
+            {
+                "_case": 5,
+                "singular": "Tureo’Muno",
+                "alterSingular": ["Tureo’Mo", "Tureomo", "Tumo"],
+                "plural": "Tureo’Muny",
+                "alterPlural": ["Tureo’My", "Tureomy", "Tumy"]
+            },
+            {
+                "_case": 6,
+                "singular": "Tureo’Muně",
+                "alterSingular": ["Tureo’Mě", "Tureomě", "Tumě"],
+                "plural": "Tureo’Munách",
+                "alterPlural": ["Tureo’Mách", "ureomách", "Tumách"]
+            },
+            {
+                "_case": 7,
+                "singular": "Tureo’Munou",
+                "alterSingular": ["Tureo’Mou", "Tureomou", "Tumou"],
+                "plural": "Tureo’Munami",
+                "alterPlural": ["Tureo’Mami", "Tureomami", "Tumami"]
+            }
+        ]
+    },
+    "OrcLikeShapes": {
+        "pattern": "",
+        "shapes": [
+            {
+                "_case": 1,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 2,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 3,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 4,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 5,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 6,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            },
+            {
+                "_case": 7,
+                "singular": "",
+                "alterSingular": [],
+                "plural": "",
+                "alterPlural": []
+            }
+        ]
+    }
+}
