@@ -1,5 +1,5 @@
 {
-    "HumikusShapes": {
+    "humikusShapes": {
         "pattern": "pán",
         "shapes": [
             {
@@ -42,11 +42,11 @@
                 "singular": "Humikovi",
                 "alterSingular": [],
                 "plural": "Humicích",
-                "alterPlural": ["Humikách"]
+                "alterPlural": []
             },
             {
                 "_case": 7,
-                "singular": "Humikami",
+                "singular": "Humikem",
                 "alterSingular": [],
                 "plural": "Humiky",
                 "alterPlural": []
@@ -208,10 +208,10 @@
             },
             {
                 "_case": 7,
-                "singular": "Luzintŕy",
+                "singular": "Luzintŕem",
                 "alterSingular": [],
-                "plural": "Luzintŕrých",
-                "alterPlural": []
+                "plural": "Luzintŕy",
+                "alterPlural": ["Luzintŕry"]
             }
         ]
     },

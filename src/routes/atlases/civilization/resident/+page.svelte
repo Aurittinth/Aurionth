@@ -23,7 +23,7 @@
     <div class="section-divider"></div>
     
     <section class="human">
-        <ResidentSection title="Humikus" key={humikusShapes}>
+        <ResidentSection title="Humikus" key="humikusShapes">
             <p>Humikové, jinak též Lidé, představují nejrozšířenější a nejadaptabilnější linii člověka na Aurionthu. Jsou první linií, která dokázala kráčet napříč kontinentem a také první plout po mořích. Dokázala přetvářet prostředí podle svých potřeb i představ a přežít tak i v nehostinných krajích. Díky mořeplavectví se stali prvními lidmi, kteří osídlili vzdálené ostrůvky a ostrovy, čímž položili základy mnoha pozdějším civilizacím.</p>
             <p>Jejich tělesná stavba nevyniká žádnou extrémní specializací. Nemají mohutné svalstvo, tvrdé kosti či pra-zvířecí instinkt. A přesto se dokázali dostat tak vysoko, jenom díky své adaptabilitě a „normálnosti“. Humikové nejsou bytostmi jedné krajiny – jsou většinou kontinentu. Dokázali přežít v mrazech, pralesích, pustinách o na pobřeží tehdejších vod. Tam kde jiné linie potřebovaly více dokonalé podmínky, Humikové se zkrátka přizpůsobili.</p>
             <p>Jejich evoluce byla vedena schopností improvizace, strategie a neustálého hledání nových řešení. Nebyli nejsilnějšími, ale naučili se využívat prostředí, nástroje i vlastní mysl ke svému přežití. Zatímco jiné linie spoléhaly na své fyzické přednosti a adaptací opovrhovaly, Humikové se ji naučili využívat jako svou největší sílu. Města nevznikaly silou vládce, ale ze zkušeností starších a z nových poznatků.</p>
@@ -35,77 +35,77 @@
     <div class="section-divider"></div>
     
     <section class="wolf-human">
-        <ResidentSection title="Mannoŕ" key={mannorShapes}></ResidentSection>
+        <ResidentSection title="Mannoŕ" key="mannorShapes"></ResidentSection>
     </section>
 
     <div class="section-divider"></div>
 
     <section class="bear-human">
-        <ResidentSection title="Monûlus" key={monulusShapes}></ResidentSection>
+        <ResidentSection title="Monûlus" key="monulusShapes"></ResidentSection>
     </section>
     
     <div class="section-divider"></div>
     
     <section class="reptile-human">
         
-        <ResidentSection title="Luzintŕ" key={luzintrShapes}></ResidentSection>
+        <ResidentSection title="Luzintŕ" key="luzintrShapes"></ResidentSection>
 
         <div class="section-divider"></div>
 
-        <ResidentSection title="Luziny" key={luzinyShapes}></ResidentSection>
+        <ResidentSection title="Luziny" key="luzinyShapes"></ResidentSection>
 
         <div class="section-divider"></div>
 
-        <ResidentSection title="N’Tŕoidy" key={nTroidyShapes}></ResidentSection>
+        <ResidentSection title="N’Tŕoidy" key="nTroidyShapes"></ResidentSection>
     
     </section>
 
     <div class="section-divider"></div>
 
-    <ResidentSection title="Hörtigc?" key={hortigcShapes}></ResidentSection>
+    <ResidentSection title="Hörtigc?" key="hortigcShapes"></ResidentSection>
     
     <div class="section-divider"></div>
 
-    <ResidentSection title="Slionith" key={slionithShapes}></ResidentSection>
+    <ResidentSection title="Slionith" key="slionithShapes"></ResidentSection>
 
     <div class="section-divider"></div>
 
     <section class="sea-human">
         
-        <ResidentSection title="Oceliś" key={ocelisShapes}></ResidentSection>
+        <ResidentSection title="Oceliś" key="ocelisShapes"></ResidentSection>
 
         <section class="otter-human">
-            <ResidentSection title="O’Zimus" key={oZimusShapes}></ResidentSection>
+            <ResidentSection title="O’Zimus" key="oZimusShapes"></ResidentSection>
         </section>
     
         <div class="section-divider"></div>
     
         <section class="shark-human">
-            <ResidentSection title="O’Erim" key={oErimShapes}></ResidentSection>
+            <ResidentSection title="O’Erim" key="oErimShapes"></ResidentSection>
         </section>
     
         <div class="section-divider"></div>
     
         <section class="coral-human">
-            <ResidentSection title="O-de’Holl" key={oDeHollShapes}></ResidentSection>
+            <ResidentSection title="O-de’Holl" key="oDeHollShapes"></ResidentSection>
         </section>
     
         <div class="section-divider"></div>
     
         <section class="cetacean-human">
-            <ResidentSection title="O’Cūrr" key={oCurrShapes}></ResidentSection>
+            <ResidentSection title="O’Cūrr" key="oCurrShapes"></ResidentSection>
         </section>
     
         <div class="section-divider"></div>
     
         <section class="octopus-human">
-            <ResidentSection title="O-yu’Fklip" key={oYuFklipShapes}></ResidentSection>
+            <ResidentSection title="O-yu’Fklip" key="oYuFklipShapes"></ResidentSection>
         </section>
     
         <div class="section-divider"></div>
     
         <section class="jellyfish-human">
-            <ResidentSection title="O’Dōttey" key={oDotteyShapes}></ResidentSection>
+            <ResidentSection title="O’Dōttey" key="oDotteyShapes"></ResidentSection>
         </section>
     
     </section>
@@ -113,29 +113,29 @@
     <div class="section-divider"></div>
     
     <section class="needle-ear-human">
-        <ResidentSection title="Elifip" key={elifipShapes}></ResidentSection>
+        <ResidentSection title="Elifip" key="elifipShapes"></ResidentSection>
     </section>
     
     <div class="section-divider"></div>
     
     <section class="dragon-human">
-        <ResidentSection title="Drahius’Kânus" key={drahiusKanusShapes}></ResidentSection>
+        <ResidentSection title="Drahius’Kânus" key="drahiusKanusShapes"></ResidentSection>
     </section>
     
     <div class="section-divider"></div>
     
-    <section class="domesticated-animal-himan">
+    <section class="domesticated-animal-human">
 
-        <ResidentSection title="Tureo" key={tureoShapes}></ResidentSection>
+        <ResidentSection title="Tureo" key="tureoShapes"></ResidentSection>
     
         <section class="pig-human">
-            <ResidentSection title="Tureo’Gallos" key={TureoMunosShapes}></ResidentSection>
+            <ResidentSection title="Tureo’Gallos" key="tureoGallosShapes"></ResidentSection>
         </section>
     
         <div class="section-divider"></div>
     
         <section class="cow-human">
-            <ResidentSection title="Tureo’Munos" key={TureoMunosShapes}></ResidentSection>
+            <ResidentSection title="Tureo’Munos" key="TureoMunosShapes"></ResidentSection>
         </section>
     
     </section>
@@ -143,7 +143,7 @@
     <div class="section-divider"></div>
     
     <section class="orc-like-human">
-        <ResidentSection title="Orc’Like" key={OrcLikeShapes}></ResidentSection>
+        <ResidentSection title="Orc’Like" key="OrcLikeShapes"></ResidentSection>
     </section>
 
 </section>
