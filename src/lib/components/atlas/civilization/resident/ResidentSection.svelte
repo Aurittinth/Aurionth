@@ -1,5 +1,5 @@
 <script>
-    import '$lib/assets/css/atlas.css';
+    import '$styles/atlas.css';
     
     import DeclensionTable from './DeclensionTable.svelte';
 
