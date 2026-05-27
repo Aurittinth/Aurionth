@@ -1,7 +1,7 @@
 <script>
-    import '$lib/assets/css/licence.css';
-    import czech_flag from '$lib/assets/images/licence/czech_flag.svg';
-    import english_flag from '$lib/assets/images/licence/english_flag.svg';
+    import '$styles/licence.css';
+    import czech_flag from '$images/licence/czech_flag.svg';
+    import english_flag from '$images/licence/english_flag.svg';
     import { base } from '$app/paths';
 </script>
 

@@ -1,5 +1,5 @@
 <script>
-    import '$lib/assets/css/global.css';
+    import '$styles/global.css';
     import { base } from '$app/paths';
 
     let { children } = $props();

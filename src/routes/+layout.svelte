@@ -1,22 +1,22 @@
 <script>
 	/* CSS imports */
-	import '$lib/assets/css/global.css';
+	import '$styles/global.css';
 
 	/* JS imports */
 	import { afterNavigate } from '$app/navigation';
-	import { fixOrphans } from '$lib/assets/js/typography.js';
+	import { fixOrphans } from '$utils/typography.js';
 	
 	/* Favicon */
-	import favicon from '$lib/assets/images/favicon/ath-favicon.ico';
+	import favicon from '$images/favicon/ath-favicon.ico';
 
 	/* Images imports */
-	import logo from '$lib/assets/images/logo/aurionth-logo.svg';
-	import GitHubIcon from '$lib/assets/images/icons/GitHub_Invertocat_White_Clearspace.svg';
-	import GmailIcon from '$lib/assets/images/icons/Gmail_icon_(2020).svg';
+	import logo from '$images/logo/aurionth-logo.svg';
+	import GitHubIcon from '$images/icons/GitHub_Invertocat_White_Clearspace.svg';
+	import GmailIcon from '$images/icons/Gmail_icon_(2020).svg';
 	
 	/* Componets and Other imports */
     import { base } from '$app/paths';
-	import Stars from '$lib/assets/components/Stars.svelte';
+	import Stars from '$components/Stars.svelte';
 
 	/* Other JavaScript Properties */ 
 	let { children } = $props();

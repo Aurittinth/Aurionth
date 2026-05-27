@@ -1,5 +1,5 @@
 <script>
-	import logo from '$lib/assets/images/logo/aurionth-logo.svg';
+	import logo from '$images/logo/aurionth-logo.svg';
 	import { base } from '$app/paths';
 </script>
 

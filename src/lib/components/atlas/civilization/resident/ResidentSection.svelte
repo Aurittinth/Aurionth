@@ -3,7 +3,7 @@
     
     import DeclensionTable from './DeclensionTable.svelte';
 
-    export let title = '';     // např. "Humikus"
+    export let title = '';
     export let pattern = '';
     export let shapes = [];
 </script>
@@ -13,3 +13,4 @@
 <div class="content">
     <slot />
 </div>
+<!-- Hello -->

@@ -1,6 +1,6 @@
 <script>
-    import '$lib/assets/css/global.css';
-    import '$lib/assets/css/explore.css';
+    import '$styles/global.css';
+    import '$styles/explore.css';
     
     let { children } = $props();
 </script>
