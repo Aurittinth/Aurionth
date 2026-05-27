@@ -11,8 +11,8 @@ export default {
         },
         alias: {
             '$assets': 'src/lib/assets',
-            '$fonts': 'src/lib/fonts',
-            '$images': 'src/lib/images',
+            '$fonts': 'src/lib/assets/fonts',
+            '$images': 'src/lib/assets/images',
             '$components': 'src/lib/components',
             '$styles': 'src/lib/styles',
             '$utils': 'src/lib/utils'
