@@ -169,3 +169,13 @@
 =            |            =
 ==============================================*/
 
+span.name {
+    font-weight: bold;
+    font-style: italic;
+    color: #e3cc8b;
+}
+
+span.name-part {
+    font-style: italic;
+    color: #eddeb5;
+}
