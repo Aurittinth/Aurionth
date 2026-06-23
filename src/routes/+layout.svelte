@@ -7,7 +7,7 @@
 	import { fixOrphans } from '$utils/typography.js';
 	
 	/* Favicon */
-	import favicon from '$images/favicon/aurionth-extra-short-logo-fl.svg';
+	import favicon from '$images/favicon/favicon.svg';
 
 	/* Images imports */
 	import logo from '$images/logo/aurionth-logo.svg';
