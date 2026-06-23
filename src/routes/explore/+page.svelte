@@ -21,15 +21,15 @@
 
         <section class="explore-links">
             <div class="box">
-                <a href="/about/project">Chci pochopit, co je to Aurionth</a>
+                <a href="{base}/about/project">Chci pochopit, co je to Aurionth</a>
                 <p>Začněte u samotného projektu, jeho podstaty, vzniku a smyslu.</p>
             </div>
             <div class="box">
-                <a href="/atlases">Chci vstoupit do světa</a>
+                <a href="{base}/atlases">Chci vstoupit do světa</a>
                 <p>Hlavní knihovna vědění: geografie, život, magie, civilizace, bytosti a systémy.</p>
             </div>
             <div class="box">
-                <a href="/atlases/civilization/resident">Chci poznat obyvatele</a>
+                <a href="{base}/atlases/civilization/resident">Chci poznat obyvatele</a>
                 <p>Rasy, druhy, poddruhy a základní pojmy života na Aurionthu.</p>
             </div>
             <div class="box">
@@ -37,11 +37,11 @@
                 <p>Slepá mapa Aurionthu a první prostorová představa o světě.</p>
             </div>
             <div class="box">
-                <a href="/languages">Chci jazyky</a>
+                <a href="{base}/languages">Chci jazyky</a>
                 <p>Jazykové části projektu, slovníky a lingvistika. Zatím spíš připravovaná sekce.</p>
             </div>
             <div class="box">
-                <a href="/study-resources">Chci studijní poznámky</a>
+                <a href="{base}/study-resources">Chci studijní poznámky</a>
                 <p>Vedlejší znalostní část webu: programování, předměty a poznámky.</p>
             </div>
         </section>
