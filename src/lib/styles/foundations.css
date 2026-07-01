@@ -1,0 +1,108 @@
+/* https://fonts.google.com/share?selection.family=Asimovian|Audiowide|Cinzel+Decorative:wght@400;700;900|Cinzel:wght@400..900|Cormorant+Garamond:ital,wght@0,300..700;1,300..700|Cormorant+Upright:wght@300;400;500;600;700|Crimson+Pro:ital,wght@0,200..900;1,200..900|Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700|Datatype:wght@100..900|Geostar|Iceberg|JetBrains+Mono:ital,wght@0,100..800;1,100..800|Libre+Barcode+39+Text|Nunito:ital,wght@0,200..1000;1,200..1000|Playwrite+CZ:wght@100..400|Sixtyfour|Source+Code+Pro:ital,wght@0,200..900;1,200..900|Uncial+Antiqua */
+@import url('https://fonts.googleapis.com/css2?family=Asimovian&family=Audiowide&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Cormorant+Upright:wght@300;400;500;600;700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Datatype:wght@100..900&family=Geostar&family=Iceberg&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Libre+Barcode+39+Text&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+CZ:wght@100..400&family=Sixtyfour&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Uncial+Antiqua&display=swap');
+
+/*  Suport Fonts
+    FONTS                   > CES | NRD | CAPS | ✓/✗
+    Asimovian               > [✓] | [✓] |  [✗] | ✓/✗
+    Audiowide               > [✓] | [✓] |  [✗] | ✓/✗
+    Cinzel Decorative       > [✓] | [✓] |  [✓] | ✓/✗
+    Cinzel                  > [✓] | [✓] |  [✓] | ✓/✗
+    Cormorant Garamond      > [✓] | [✓] |  [✗] | ✓/✗
+    Cormorant Upright       > [✓] | [✓] |  [✗] | ✓/✗
+    Crimson Pro             > [✓] | [✓] |  [✗] | ✓/✗
+    Crimson Text            > [✓] | [✓] |  [✗] | ✓/✗
+    Datatype                > [✓] | [✓] |  [✗] | ✓/✗
+    Geostar                 > [✗] | [✗] |  [✗] | ✓/✗
+    Iceberg                 > [✗] | [✗] |  [✗] | ✓/✗
+    JetBrains Mono          > [✓] | [✓] |  [✗] | ✓/✗
+    Libre Barcode 39 Text   > [✗] | [✗] |  [✗] | ✓/✗
+    Nunito                  > [✓] | [✓] |  [✗] | ✓/✗
+    Playwrite CZ            > [✓] | [✓] |  [✗] | ✓/✗
+    Sixtyfour               > [✗] | [✗] |  [✗] | ✓/✗
+    Source Code Pro         > [✓] | [✓] |  [✗] | ✓/✗
+    Uncial Antiqua          > [✓] | [✓] |  [✗] | ✓/✗
+*/
+
+/*==============================================
+=               VARIABLE ROOTING               =
+==============================================*/
+/*
+    25% = 3F
+    50% = 80
+    75% = BF
+*/
+:root {
+    /* --- COLOR --- */
+    --c-black:                  #050508;
+    --c-snow:                   #e8e0f0;
+    --c-white:                  #ffffff;
+    --c-darkslategray:          #2f4f4fbf;
+    --c-fulldarkslategray:      #2f4f4f;
+    --c-violet:                 #6450c84d;
+    --c-golden:                 #c8a84b;
+    --c-softlavender:           #c8b4f0b3;
+    --c-cyan:                   #00ffff;
+    --c-goldpale:               #e8d5a0;
+    --c-amethyst:               #a070e0;
+    --c-lightindigo:            #6040c0;
+    --c-mistlavender:           #c8b4f0;
+    --c-golddark:               #a07830;
+    --c-voidblack:              #0a080f;
+    --c-brightgold:             #ddb855;
+    --c-warmgold:               #b08840;
+    --c-softviolet:             #a078f0cc;
+    --c-softindigo:             #6446c880;
+    --c-glowviolet:             #a078ffcc;
+    --c-lavender:               #b090f0;
+    --c-ghostindigo:            #503ca026;
+    --c-fullghostindigo:        #503ca0;
+    --c-hazeindigo:             #503ca04d;
+    --c-deepvoid:               #050508;
+    --c-shadowindigo:           #3c287866;
+    --c-fadelavender:           #b4a0dc99;
+    --c-bluenebula:             #5030c0;
+    --c-cyannebula:             #2050a0;
+    --c-violetnebula:           #8040a0;
+    --c-veilindigo:             #6450a080;
+    --c-thinindigo:             #503ca033;
+    --c-iceblue:                #9ec3ff;
+    --c-fullblack:              #000000;
+    --c-lightskyblue:           #91b6fb;
+    --c-smokewhite:             #f5f5f5;
+    --c-fullred:                #ff0000;
+    --c-skyblue:                #87ceeb;
+    --c-darkgray:               #444444;
+    --c-gray:                   #888888;
+    --c-invisibilitywhite:      #ffffff05;
+    --c-halfinvisibilitywhite:  #ffffff3f;
+    --c-crimson:                #dc143c;
+    --c-halfcrimson:            #dc143c80;
+    --c-overlaydark:            #000000bf;
+    --c-shadowblack:            #00000080;
+    --c-whisperwhite:           #ffffff1a;
+    --c-blue:                   #2222ff;
+    
+    /* SPECIAL COLOR */
+    --c-header-darkslategray:   #243c3d;
+    --c-header-ghostindigo:     #100d1f;
+    
+    /* --- FONT --- */
+    --f-asimovian:              "Asimovian", sans-serif;
+    --f-audiowide:              "Audiowide", sans-serif;
+    --f-cinzel-decorative:      "Cinzel Decorative", serif;
+    --f-cinzel:                 "Cinzel", serif;
+    --f-cormorant-garamond:     "Cormorant Garamond", serif;
+    --f-cormorant-upright:      "Cormorant Upright", serif;
+    --f-crimson-pro:            "Crimson Pro", serif;
+    --f-crimson-text:           "Crimson Text", serif;
+    --f-datatype:               "Datatype", monospace;
+    --f-geostar:                "Geostar", serif;
+    --f-iceberg:                "Iceberg", sans-serif;
+    --f-jetbrains-mono:         "JetBrains Mono", monospace;
+    --f-libre-barcode:          "Libre Barcode 39 Text", system-ui;
+    --f-nunito:                 "Nunito", sans-serif;
+    --f-playwrite-cz:           "Playwrite CZ", cursive;
+    --f-sixtyfour:              "Sixtyfour", sans-serif;
+    --f-source-code-pro:        "Source Code Pro", monospace;
+    --f-uncial-antiqua:         "Uncial Antiqua", system-ui;
+}

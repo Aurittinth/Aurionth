@@ -1,0 +1,55 @@
+/*==============================================
+=                     MAIN                     =
+==============================================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--c-deepvoid);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--c-warmgold);
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--c-bluenebula);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    color: var(--c-snow);
+    background-color: var(--c-black);
+    font-family: var(--f-crimson-pro);
+    min-height: 100vh;
+    overflow-x: hidden;
+    cursor: default;
+}
+
+a,
+a * {
+    cursor: pointer;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+header,
+main,
+footer {
+    z-index: 1000;
+}
+

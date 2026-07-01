@@ -348,6 +348,15 @@
                     </div>
                 </a>
             </div>
+            <div class="grid-item">
+                <a href="{base}/atlases/system/transport">
+                    <img src={image} alt="placeholder" width="50%" height="auto" />
+                    <div class="item-text">
+                        <span class="title">Dopravní systém</span>
+                        <span class="desc">. . .</span>
+                    </div>
+                </a>
+            </div>
         </div>
     </section>
 

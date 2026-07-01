@@ -1,0 +1,179 @@
+@import "./global.css";
+
+/*==============================================
+=              CATEGORY SECTIONS               =
+==============================================*/
+
+.transport-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.transport-category {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.transport-category h2 {
+    padding: 0 0 0.5rem 0;
+    border-bottom: var(--c-softindigo) solid 1.5px;
+    color: var(--c-brightgold);
+    font-family: var(--f-cinzel);
+    font-size: 2rem;
+    letter-spacing: 0.08em;
+}
+
+/*========  End of Category Sections  =========*/
+
+
+/*==============================================
+=                   SIGN GRID                  =
+==============================================*/
+
+.sign-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin: 0;
+}
+
+.sign-grid-row {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 1.25rem;
+}
+
+.sign-grid-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    min-height: 150px;
+    padding: 1rem;
+    border: var(--c-softindigo) solid 1.5px;
+    border-radius: 10px;
+    background: var(--c-deepvoid);
+    cursor: pointer;
+    transition: border-color 0.3s ease-out, background 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.sign-grid-box:hover,
+.sign-grid-box.active {
+    border-color: var(--c-lavender);
+    background: var(--c-hazeindigo);
+    transform: scale(105%);
+}
+
+.sign-grid-box.active {
+    border-width: 3px;
+    border-color: var(--c-brightgold);
+    background: linear-gradient(
+        135deg,
+        var(--c-hazeindigo),
+        var(--c-deepvoid)
+    );
+    box-shadow: 0 0 24px var(--c-shadowindigo), inset 0 0 18px var(--c-ghostindigo);
+}
+
+.sign-grid-thumb {
+    width: 96px;
+    height: 96px;
+    object-fit: contain;
+}
+
+.sign-grid-label {
+    color: var(--c-goldpale);
+    font-family: var(--f-crimson-text);
+    font-size: 1rem;
+    text-align: center;
+}
+
+@media (max-width: 1100px) {
+    .sign-grid-row {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 700px) {
+    .sign-grid-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/*===========  End of Sign Grid  ==============*/
+
+
+/*==============================================
+=                  SIGN DETAIL                 =
+==============================================*/
+
+.sign-detail {
+    display: flex;
+    gap: 2.5rem;
+    margin: 0 0 1rem 0;
+    padding: 2rem 1.5rem;
+    border: var(--c-softviolet) solid 2.5px;
+    border-radius: 12px;
+    background: linear-gradient(
+        135deg,
+        #0a080f 0%,
+        #141020 50%,
+        #0a080f 100%
+    );
+    box-shadow: inset 0 0 60px #5030b040;
+}
+
+.sign-detail-description {
+    flex: 1;
+}
+
+.sign-detail-description h3 {
+    margin: 0 0 0.75rem 0;
+    color: var(--c-brightgold);
+    font-family: var(--f-cinzel);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.sign-detail-description p {
+    color: var(--c-goldpale);
+    font-family: var(--f-crimson-text);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.sign-detail-colors {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding: 0;
+    list-style: none;
+}
+
+.sign-detail-colors li {
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    color: var(--c-white);
+    font-family: var(--f-jetbrains-mono);
+    font-size: 0.7rem;
+    text-shadow: 0 0 3px var(--c-fullblack);
+}
+
+.sign-detail-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-detail-image img {
+    max-width: 100%;
+    max-height: 220px;
+}
+
+/*==========  End of Sign Detail  =============*/

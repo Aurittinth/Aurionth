@@ -1,0 +1,54 @@
+/*==============================================
+=                     STARS                    =
+==============================================*/
+.stars {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.star {
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--c-white);
+}
+
+/*==============================================
+=                   GLOW ORBS                  =
+==============================================*/
+.glow-orb {
+    position: fixed;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 100;
+    filter: blur(80px);
+    opacity: 0.12;
+    transform: translate(-50%, -50%);
+}
+
+/*==============================================
+=                FLOATING BAR                  =
+==============================================*/
+.floating-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1200;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    pointer-events: none;
+}
+
+.floating-bar > * {
+    pointer-events: auto;
+}
+
+@media (max-width: 768px) {
+    .floating-bar {
+        padding: 1rem 1.5rem;
+    }
+}

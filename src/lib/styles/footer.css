@@ -1,0 +1,84 @@
+/*==============================================
+=                    FOOTER                    =
+==============================================*/
+footer {
+    position: relative;
+    padding: 2rem;
+    font-family: var(--f-crimson-pro);
+    font-size: 1.15rem;
+    color: var(--c-snow);
+    background-color: var(--c-darkslategray);
+    border-top: 0.5px solid var(--c-thinindigo);
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    padding: 2.5rem 3rem;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-title {
+    font-family: var(--f-crimson-pro);
+    color: var(--c-golden);
+    margin-bottom: 0.5rem;
+}
+
+.footer-col p,
+.footer-col a {
+    color: var(--c-lavender);
+    text-decoration: none;
+    line-height: 1.8;
+    font-style: italic;
+}
+
+.footer-col a:hover {
+    color: var(--c-cyan);
+}
+
+.footer-col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.footer-col ul a {
+    font-style: normal;
+    font-family: var(--f-crimson-pro);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 1rem 2rem;
+    font-family: var(--f-crimson-pro);
+    color: var(--c-lavender);
+    border-top: 0.5px solid var(--c-lavender);
+}
+
+.footer-logo {
+    margin: 0;
+    height: 1rem;
+    width: auto;
+}
+
+.footer-icon-github {
+    height: 1.65rem;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 0.25rem;
+}
+
+.footer-icon-gmail {
+    width: 1.65rem;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
