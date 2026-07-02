@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="konec všech zákazů.svg"
+   xml:space="preserve"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="2.2792969"
+     inkscape:cx="256"
+     inkscape:cy="256"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" /><defs
+     id="defs1" /><g
+     inkscape:label="Vrstva 1"
+     inkscape:groupmode="layer"
+     id="layer1"><path
+       id="path1"
+       style="display:inline;fill:#7d004b;fill-opacity:1;fill-rule:evenodd;stroke-width:0.328819;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+       d="M 256 0 A 256 256 0 0 0 0 256 A 256 256 0 0 0 103.17578 460.56641 L 103.01562 460.8457 C 106.87155 463.77594 110.8157 466.58518 114.83008 469.29102 A 256 256 0 0 0 120.95508 473.19531 C 122.72938 474.31939 124.46567 475.50168 126.26758 476.58203 L 129.7207 478.57617 C 134.74538 481.36769 139.89056 483.92684 145.08984 486.37305 A 256 256 0 0 0 256 512 A 256 256 0 0 0 512 256 A 256 256 0 0 0 256 0 z M 256 50 A 206 206 0 0 1 331.85352 64.486328 L 128.31641 417.02148 A 206 206 0 0 1 50 256 A 206 206 0 0 1 256 50 z M 383.79492 94.519531 A 206 206 0 0 1 462 256 A 206 206 0 0 1 256 462 A 206 206 0 0 1 180.32617 446.93945 L 383.79492 94.519531 z " /></g></svg>

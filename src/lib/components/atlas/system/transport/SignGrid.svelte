@@ -22,19 +22,19 @@
 <div class="sign-grid">
     {#each signRows as row, rowIndex (`row-${rowIndex}`)}
         <div class="sign-grid-row">
-            {#each row as sign (sign.ID)}
+            {#each row as sign (sign.id)}
                 <button
                     class="sign-grid-box"
-                    class:active={selectedSign?.ID === sign.ID}
+                    class:active={selectedSign?.id === sign.id}
                     onclick={() => onSelect(sign)}
                 >
-                    <img class="sign-grid-thumb" src={sign.svgPath} alt={sign.name} />
-                    <span class="sign-grid-label">{sign.shortName || sign.name}</span>
+                    <img class="sign-grid-thumb" src={sign.imageSrc} alt={sign.name} />
+                    <span class="sign-grid-label">{sign.code || sign.name}</span>
                 </button>
             {/each}
         </div>
 
-        {#if row.some((sign) => sign.ID === selectedSign?.ID)}
+        {#if row.some((sign) => sign.id === selectedSign?.id)}
             <SignDetail sign={selectedSign} />
         {/if}
     {/each}

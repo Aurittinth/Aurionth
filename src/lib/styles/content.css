@@ -31,6 +31,7 @@
 section.about,
 section.atlas,
 section.atlas-inside,
+section.traffic-atlas,
 section.licence {
     display: flex;
     margin: 50px 22.5%;

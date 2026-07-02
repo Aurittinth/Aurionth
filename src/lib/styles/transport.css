@@ -20,13 +20,28 @@
     padding: 0 0 0.5rem 0;
     border-bottom: var(--c-softindigo) solid 1.5px;
     color: var(--c-brightgold);
-    font-family: var(--f-cinzel);
-    font-size: 2rem;
+    font-family: var(--f-crimson-text) !important;
+    font-size: 3rem;
     letter-spacing: 0.08em;
 }
 
-/*========  End of Category Sections  =========*/
+.transport-gallery {
+    margin-top: 2.5rem;
+}
 
+.opening h1 {
+    font-family: var(--f-crimson-text);
+}
+
+.opening {
+    padding-bottom: 2.5rem;
+}
+
+.table-section {
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+    border-top: var(--c-softindigo) solid 1.5px;
+}
 
 /*==============================================
 =                   SIGN GRID                  =
@@ -69,7 +84,7 @@
 
 .sign-grid-box.active {
     border-width: 3px;
-    border-color: var(--c-brightgold);
+    border-color: var(--c-lavender);
     background: linear-gradient(
         135deg,
         var(--c-hazeindigo),
@@ -88,23 +103,9 @@
     color: var(--c-goldpale);
     font-family: var(--f-crimson-text);
     font-size: 1rem;
+    text-transform: uppercase;
     text-align: center;
 }
-
-@media (max-width: 1100px) {
-    .sign-grid-row {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-}
-
-@media (max-width: 700px) {
-    .sign-grid-row {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-/*===========  End of Sign Grid  ==============*/
-
 
 /*==============================================
 =                  SIGN DETAIL                 =
@@ -131,12 +132,18 @@
 }
 
 .sign-detail-description h3 {
-    margin: 0 0 0.75rem 0;
     color: var(--c-brightgold);
-    font-family: var(--f-cinzel);
+    font-family: var(--f-crimson-text);
     font-size: 1.5rem;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 0.1em;
+}
+
+.sign-detail-description span {
+    margin-bottom: 1rem;
+    color: var(--c-warmgold);
+    font-family: var(--f-jetbrains-mono);
+    font-size: 0.75rem;
 }
 
 .sign-detail-description p {
@@ -160,7 +167,7 @@
     border-radius: 4px;
     color: var(--c-white);
     font-family: var(--f-jetbrains-mono);
-    font-size: 0.7rem;
+    font-size: 1rem;
     text-shadow: 0 0 3px var(--c-fullblack);
 }
 
@@ -176,4 +183,70 @@
     max-height: 220px;
 }
 
-/*==========  End of Sign Detail  =============*/
+/*==============================================
+=                   NRD TABLE                   =
+==============================================*/
+
+.table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 0.5rem 0;
+    border: var(--c-softviolet) solid 1.5px;
+    border-radius: 2rem;
+    background: var(--c-deepvoid);
+    overflow: hidden;
+}
+
+.table th {
+    padding: 1rem 1.5rem;
+    background: var(--c-hazeindigo);
+    color: var(--c-brightgold);
+    font-family: var(--f-crimson-text);
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: left;
+    border-bottom: var(--c-softviolet) solid 1.5px;
+}
+
+.table td {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--c-softindigo);
+    color: var(--c-goldpale);
+    font-family: var(--f-crimson-text);
+    font-size: 1.5rem;
+}
+
+.table tr:last-child td {
+    border-bottom: none;
+}
+
+.table tbody tr:hover {
+    background: var(--c-hazeindigo);
+    transition: background 0.3s ease-out;
+}
+
+.code-id {
+    padding: 0.25rem 0.6rem;
+    font-family: var(--f-jetbrains-mono);
+    font-size: 1.25rem;
+    color: var(--c-white);
+    background: var(--c-softviolet);
+    border-radius: 1rem;
+}
+
+.code {
+    font-family: var(--f-jetbrains-mono);
+    font-weight: bold;
+}
+
+span.text-code {
+    padding: 0.15rem 0.45rem;
+    font-family: var(--f-jetbrains-mono);
+    font-size: 0.80em;
+    color: currentColor;
+    background: var(--c-thinindigo);
+    border: 1px solid var(--c-softindigo);
+    border-radius: 0.4rem;
+}
