@@ -161,164 +161,110 @@
             }
         ]
     },
-    "luzintrShapes": {
-        "pattern": "pán",
-        "shapes": [
-            {
-                "_case": 1,
-                "singular": "Luzintŕ",
-                "alterSingular": [],
-                "plural": "Luzintŕry",
-                "alterPlural": []
-            },
-            {
-                "_case": 2,
-                "singular": "Luzintŕa",
-                "alterSingular": [],
-                "plural": "Luzintŕů",
-                "alterPlural": []
-            },
-            {
-                "_case": 3,
-                "singular": "Luzintŕovi",
-                "alterSingular": [],
-                "plural": "Luzintŕům",
-                "alterPlural": []
-            },
-            {
-                "_case": 4,
-                "singular": "Luzintŕa",
-                "alterSingular": [],
-                "plural": "Luzintŕy",
-                "alterPlural": []
-            },
-            {
-                "_case": 5,
-                "singular": "Luzintŕe",
-                "alterSingular": ["Luzintŕre"],
-                "plural": "Luzintŕry",
-                "alterPlural": []
-            },
-            {
-                "_case": 6,
-                "singular": "Luzintŕovi",
-                "alterSingular": [],
-                "plural": "Luzintŕech",
-                "alterPlural": []
-            },
-            {
-                "_case": 7,
-                "singular": "Luzintŕem",
-                "alterSingular": [],
-                "plural": "Luzintŕy",
-                "alterPlural": ["Luzintŕry"]
-            }
-        ]
-    },
-    "luzinyShapes": {
+    "luziniShapes": {
         "pattern": "páni",
         "shapes": [
             {
                 "_case": 1,
-                "singular": "Luziny",
+                "singular": "Luzin",
                 "alterSingular": [],
-                "plural": "Luziny",
-                "alterPlural": []
+                "plural": "Luzini",
+                "alterPlural": ["Luzinové"]
             },
             {
                 "_case": 2,
-                "singular": "Luzinů",
+                "singular": "Luzina",
                 "alterSingular": [],
                 "plural": "Luzinů",
                 "alterPlural": []
             },
             {
                 "_case": 3,
-                "singular": "Luzinům",
-                "alterSingular": [],
+                "singular": "Luzinu",
+                "alterSingular": ["Luzinovi"],
                 "plural": "Luzinům",
                 "alterPlural": []
             },
             {
                 "_case": 4,
-                "singular": "Luziny",
+                "singular": "Luzina",
                 "alterSingular": [],
                 "plural": "Luziny",
                 "alterPlural": []
             },
             {
                 "_case": 5,
-                "singular": "Luziny",
+                "singular": "Luzine",
                 "alterSingular": [],
-                "plural": "Luziny",
-                "alterPlural": []
+                "plural": "Luzini",
+                "alterPlural": ["Luzinové"]
             },
             {
                 "_case": 6,
-                "singular": "Luzinech",
-                "alterSingular": [],
+                "singular": "Luzinovi",
+                "alterSingular": ["Luzinu"],
                 "plural": "Luzinech",
                 "alterPlural": []
             },
             {
                 "_case": 7,
-                "singular": "Luziny",
+                "singular": "Luzinem",
                 "alterSingular": [],
                 "plural": "Luziny",
                 "alterPlural": []
             }
         ]
     },
-    "nTroidyShapes": {
+    "troidyShapes": {
         "pattern": "páni",
         "shapes": [
             {
                 "_case": 1,
-                "singular": "N’Tŕoidy",
+                "singular": "Tŕoidy",
                 "alterSingular": [],
-                "plural": "N’Tŕoidy",
+                "plural": "Tŕoidy",
                 "alterPlural": []
             },
             {
                 "_case": 2,
-                "singular": "N’Tŕoidů",
+                "singular": "Tŕoidů",
                 "alterSingular": [],
-                "plural": "N’Tŕoidů",
+                "plural": "Tŕoidů",
                 "alterPlural": []
             },
             {
                 "_case": 3,
-                "singular": "N’Tŕoidům",
+                "singular": "Tŕoidům",
                 "alterSingular": [],
-                "plural": "N’Tŕoidům",
+                "plural": "Tŕoidům",
                 "alterPlural": []
             },
             {
                 "_case": 4,
-                "singular": "N’Tŕoidy",
+                "singular": "Tŕoidy",
                 "alterSingular": [],
-                "plural": "N’Tŕoidy",
+                "plural": "Tŕoidy",
                 "alterPlural": []
             },
             {
                 "_case": 5,
-                "singular": "N’Tŕoidy",
+                "singular": "Tŕoidy",
                 "alterSingular": [],
-                "plural": "N’Tŕoidy",
+                "plural": "Tŕoidy",
                 "alterPlural": []
             },
             {
                 "_case": 6,
-                "singular": "N’Tŕoidech",
+                "singular": "Tŕoidech",
                 "alterSingular": [],
-                "plural": "N’Tŕoidech",
+                "plural": "Tŕoidech",
                 "alterPlural": []
             },
             {
                 "_case": 7,
-                "singular": "N’Tŕoidy",
+                "singular": "Tŕoidy",
                 "alterSingular": [],
-                "plural": "N’Tŕoidy",
+                "plural": "Tŕoidy",
                 "alterPlural": []
             }
         ]
@@ -863,223 +809,135 @@
             }
         ]
     },
-    "drahiusKanusShapes": {
+    "drahikanusShapes": {
         "pattern": "pán",
         "shapes": [
             {
                 "_case": 1,
-                "singular": "Drahius’Kânus",
-                "alterSingular": ["Drahius", "Kânus"],
+                "singular": "Drahikânus",
+                "plural": "Drahikâni",
+                "alterPlural": ["Drahikânové"]
+            },
+            {
+                "_case": 2,
+                "singular": "Drahikâna",
+                "plural": "Drahikânů"
+            },
+            {
+                "_case": 3,
+                "singular": "Drahikânovi",
+                "plural": "Drahikânům"
+            },
+            {
+                "_case": 4,
+                "singular": "Drahikâna",
+                "plural": "Drahikâny"
+            },
+            {
+                "_case": 5,
+                "singular": "Drahikâne",
                 "plural": "Drahius’Kâni",
-                "alterPlural": ["Drahius’Kânové", "Drahiové", "Kâni", "Kânové"]
-            },
-            {
-                "_case": 2,
-                "singular": "Drahius’Kâna",
-                "alterSingular": ["Drahia", "Kâna"],
-                "plural": "Drahius’Kânů",
-                "alterPlural": ["Drahiů", "Kânů"]
-            },
-            {
-                "_case": 3,
-                "singular": "Drahius’Kânovi",
-                "alterSingular": ["Drahiovi", "Kânovi"],
-                "plural": "Drahius’Kânům",
-                "alterPlural": ["Drahiům", "Kânům"]
-            },
-            {
-                "_case": 4,
-                "singular": "Drahius’Kâna",
-                "alterSingular": ["Drahia", "Kâna"],
-                "plural": "Drahius’Kâny",
-                "alterPlural": ["Drahii", "Kâny"]
-            },
-            {
-                "_case": 5,
-                "singular": "Drahius’Kâne",
-                "alterSingular": ["Drahius’Kânus", "Drahie","Drahius", "Kâne", "Kânus"],
-                "plural": "Drahius’Kâni",
-                "alterPlural": ["Drahius’Kânové", "Drahiové", "Kâni", "Kânové"]
+                "alterPlural": ["Drahikânové"]
             },
             {
                 "_case": 6,
-                "singular": "Drahius’Kânovi",
-                "alterSingular": ["Drahiovi", "Kânovi"],
-                "plural": "Drahius’Kânech",
-                "alterPlural": ["Drahiech", "Kânech"]
+                "singular": "Drahikânovi",
+                "plural": "Drahikânech"
             },
             {
                 "_case": 7,
-                "singular": "Drahius’Kânem",
-                "alterSingular": ["Drahiem", "Kânem"],
-                "plural": "Drahius’Kâny",
-                "alterPlural": ["Drahiji", "Kâny"]
+                "singular": "Drahikânem",
+                "plural": "Drahikâny"
             }
         ]
     },
-    "tureoShapes": {
+    "gallosShapes": {
         "pattern": "pán",
         "shapes": [
             {
                 "_case": 1,
-                "singular": "Tureo",
-                "alterSingular": [],
-                "plural": "Tuŕry",
-                "alterPlural": ["Tureové"]
+                "singular": "Gallos",
+                "plural": "Gally",
+                "alterPlural": ["Gallové"]
             },
             {
                 "_case": 2,
-                "singular": "Tura",
-                "alterSingular": ["Turea"],
-                "plural": "Tureů",
-                "alterPlural": ["Turů"]
+                "singular": "Galla",
+                "plural": "Gallů"
             },
             {
                 "_case": 3,
-                "singular": "Turovi",
-                "alterSingular": [],
-                "plural": "Tureům",
-                "alterPlural": ["Turům"]
+                "singular": "Gallovi",
+                "plural": "Gallům"
             },
             {
                 "_case": 4,
-                "singular": "Tura",
-                "alterSingular": ["Turea"],
-                "plural": "Tury",
-                "alterPlural": []
+                "singular": "Galla",
+                "plural": "Gally"
             },
             {
                 "_case": 5,
-                "singular": "Ture",
-                "alterSingular": ["Tuŕre"],
-                "plural": "Tuŕry",
-                "alterPlural": ["Tureové"]
+                "singular": "Galle",
+                "plural": "Gally",
+                "alterPlural": ["Gallové"]
             },
             {
                 "_case": 6,
-                "singular": "Turovi",
-                "alterSingular": ["Tureovi"],
-                "plural": "Turech",
-                "alterPlural": ["Tureech"]
+                "singular": "Gallovi",
+                "plural": "Gallech"
             },
             {
                 "_case": 7,
-                "singular": "Turem",
-                "alterSingular": ["Tureem"],
-                "plural": "Tury",
-                "alterPlural": []
+                "singular": "Gallem",
+                "plural": "Gally"
             }
         ]
     },
-    "tureoGallosShapes": {
+    "munosShapes": {
         "pattern": "pán",
         "shapes": [
             {
                 "_case": 1,
-                "singular": "Tureo’Gallos",
-                "alterSingular": ["Tureo’G", "Tureog", "Tuga"],
-                "plural": "Tureo’Gally",
-                "alterPlural": ["Tureo’Gallové", "Tureo’Gy", "Tureogy", "Tugy", "Tugové", "Tugaové"]
+                "singular": "Munos",
+                "plural": "Muni",
+                "alterPlural": ["Munové"]
             },
             {
                 "_case": 2,
-                "singular": "Tureo’Galla",
-                "alterSingular": ["Tureo’Ga", "Tureoga", "Tugy"],
-                "plural": "Tureo’Gallů",
-                "alterPlural": ["Tureo’Gů", "Tureogů", "Tugaů", "Tugů"]
+                "singular": "Muna",
+                "plural": "Munů"
             },
             {
                 "_case": 3,
-                "singular": "Tureo’Gallovi",
-                "alterSingular": ["Tureo’Govi", "Tureogovi", "Tugaovi", "Tugovi"],
-                "plural": "Tureo’Gallům",
-                "alterPlural": ["Tureo’Gům", "Tureogům", "Tugům", "Tugaům"]
+                "singular": "Munu",
+                "alterSingular": ["Munovi"],
+                "plural": "Munů"
             },
             {
                 "_case": 4,
-                "singular": "Tureo’Galla",
-                "alterSingular": ["Tureo’Ga", "Tureoga", "Tuga"],
-                "plural": "Tureo’Gally",
-                "alterPlural": ["Tureo’Gy", "Tureogy", "Tugy"]
+                "singular": "Muna",
+                "plural": "Muny"
             },
             {
                 "_case": 5,
-                "singular": "Tureo’Gallo",
-                "alterSingular": ["Tureo’Go", "Tureogo", "Tugo"],
-                "plural": "Tureo’Gally",
-                "alterPlural": ["Tureo’Gallové", "Tureo’Gy", "Tureogy", "Tugy", "Tugové", "Tugaové"]
+                "singular": "Mune",
+                "plural": "Muni",
+                "alterPlural": ["Munové"]
             },
             {
                 "_case": 6,
-                "singular": "Tureo’Gallovi",
-                "alterSingular": ["Tureo’Govi", "Tureogovi", "Tugaovi", "Tugovi"],
-                "plural": "Tureo’Gallech",
-                "alterPlural": ["Tureo’Gech", "Tureogech", "Tugech", "Tugaech"]
+                "singular": "Munu",
+                "alterSingular": ["Munovi"],
+                "plural": "Munech"
             },
             {
                 "_case": 7,
-                "singular": "Tureo’Gallem",
-                "alterSingular": ["Tureo’Gem", "Tureogem", "Tugaem", "Tugem"],
-                "plural": "Tureo’Gally",
-                "alterPlural": ["Tureo’Gy", "Tureogy", "Tugy"]
+                "singular": "Munem",
+                "plural": "Muny"
             }
         ]
     },
-    "TureoMunosShapes": {
-        "pattern": "žena",
-        "shapes": [
-            {
-                "_case": 1,
-                "singular": "Tureo’Munos",
-                "alterSingular": ["Tureo’M", "Tureom", "Tumu"],
-                "plural": "Tureo’Muny",
-                "alterPlural": ["Tureo’My", "Tureomy", "Tumy"]
-            },
-            {
-                "_case": 2,
-                "singular": "Tureo’Muny",
-                "alterSingular": ["Tureo’My", "Tureomy", "Tumy"],
-                "plural": "Tureo’Mun",
-                "alterPlural": ["Tureo’M", "Tureom", "Tum"]
-            },
-            {
-                "_case": 3,
-                "singular": "Tureo’Muně",
-                "alterSingular": ["Tureo’Mě", "Tureomě", "Tumě"],
-                "plural": "Tureo’Munám",
-                "alterPlural": ["Tureo’Mám", "Tureomám", "Tumám"]
-            },
-            {
-                "_case": 4,
-                "singular": "Tureo’Munu",
-                "alterSingular": ["Tureo’Mu", "Tureomu", "Tumu"],
-                "plural": "Tureo’Muny",
-                "alterPlural": ["Tureo’My", "Tureomy", "Tumy"]
-            },
-            {
-                "_case": 5,
-                "singular": "Tureo’Muno",
-                "alterSingular": ["Tureo’Mo", "Tureomo", "Tumo"],
-                "plural": "Tureo’Muny",
-                "alterPlural": ["Tureo’My", "Tureomy", "Tumy"]
-            },
-            {
-                "_case": 6,
-                "singular": "Tureo’Muně",
-                "alterSingular": ["Tureo’Mě", "Tureomě", "Tumě"],
-                "plural": "Tureo’Munách",
-                "alterPlural": ["Tureo’Mách", "ureomách", "Tumách"]
-            },
-            {
-                "_case": 7,
-                "singular": "Tureo’Munou",
-                "alterSingular": ["Tureo’Mou", "Tureomou", "Tumou"],
-                "plural": "Tureo’Munami",
-                "alterPlural": ["Tureo’Mami", "Tureomami", "Tumami"]
-            }
-        ]
-    },
-    "OrcLikeShapes": {
+    "orcLikeShapes": {
         "pattern": "",
         "shapes": [
             {

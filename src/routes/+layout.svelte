@@ -2,6 +2,9 @@
 	/* CSS imports */
 	import '$styles/global.css';
 
+	/* Deaktivace odkazů */
+	import '$utils/link-bloker.js';
+
 	/* JS imports */
 	import { afterNavigate } from '$app/navigation';
 	import { fixOrphans } from '$utils/typography.js';

@@ -1,308 +1,794 @@
 <script>
     import '$styles/atlas.css';
 
-    import { ResidentSection } from '$components/atlas/civilization/resident';
+    import ResidentSection from '$components/atlas/civilization/resident/ResidentSection.svelte';
+    import ClassificationTable from '$components/atlas/ClassificationTable.svelte';
 </script>
 
 <section class="atlas-inside">
-    <section class="opening">
-        <h1>Obyvatelé</h1>
-        
+
+    <nav>
+        <ul>
+            <li><a href="#opening">              Prolog         </a></li>
+            <li><a href="#human-humanoid">       Humikus        </a></li>
+            <li><a href="#wolf-humanoid">        Mannoŕ         </a></li>
+            <li><a href="#bear-humanoid">        Monûlus        </a></li>
+            <li><a href="#reptile-humanoids">    Luzintŕ        </a></li>
+            <li><a href="#lizard-humanoid">      Luzini         </a></li>
+            <li><a href="#snake-humanoid">       N’Tŕoidy       </a></li>
+            <li><a href="#hybrid-humanoid">      Hörtigc        </a></li>
+            <li><a href="#slime-humanoid">       Slionith       </a></li>
+            <li><a href="#sea-humanoids">        Oceliś         </a></li>
+            <li><a href="#otter-humanoid">       O’Zimus        </a></li>
+            <li><a href="#shark-humanoid">       O’Erim         </a></li>
+            <li><a href="#coral-humanoid">       O’de’Holl      </a></li>
+            <li><a href="#cetacean-humanoid">    O’Cūrr         </a></li>
+            <li><a href="#octopus-humanoid">     O’yu’Fklip     </a></li>
+            <li><a href="#jellyfish-humanoid">   O’Dōttey       </a></li>
+            <li><a href="#needle-ear-humanoid">  Elifip         </a></li>
+            <li><a href="#dragon-humanoid">      Drahius’Kânus  </a></li>
+            <li><a href="#pig-humanoid">         Gallos         </a></li>
+            <li><a href="#cow-humanoid">         Munos          </a></li>
+            <li><a href="#orc-like-humanoid">    Orc’like       </a></li>
+        </ul>
+    </nav>
+<!--
+0.0.    Základní pojmy  Prolog                  opening
+1.0.    Humikus         Člověk pravý            human-humanoid
+2.0.    Mannoŕ          Člověk vlčí             wolf-humanoid
+3.0.    Monûlus         Člověk medvědí          bear-humanoid
+4.0.    Luzintŕ         Lidé plazí              reptile-humanoids
+  4.1.  Luzini          Člověk ještěří          lizard-humanoid
+  4.2.  N’Tŕoidy        Člověk hadí             snake-humanoid
+5.0.    Hörtigc?        Člověk kříženci         hybrid-humanoid
+6.0.    Slionith        Člověk slizovití        slime-humanoid
+7.0.    Oceliś          Lidé mořští             sea-humanoids
+  7.1.  O’Zimus         Člověk vydří            otter-humanoid
+  7.2.  O’Erim          Člověk žraločí          shark-humanoid
+  7.3.  O’de’Holl       Člověk korálový         coral-humanoid
+  7.4.  O’Cūrr          Člověk kytovcovití      cetacean-humanoid
+  7.5.  O’yu’Fklip      Člověk chobotnicovití   octopus-humanoid
+  7.6.  O’Dōttey        Člověk medúzovití       jellyfish-humanoid
+8.0.    Elifip          Člověk jehlouší         needle-ear-humanoid
+9.0.    Drahius’Kânus   Člověk dračí            dragon-humanoid
+10.0.   Gallos          Člověk prasečí          pig-humanoid
+11.0.   Munos           Člověk kravští          cow-humanoid
+12.0.   Orc’like        Člověk orc’like         orc-like-humanoid
+-->
+    
+    <h1>Obyvatelé</h1>
+    
+    <section id="opening">
         <h2>Základní pojmy a jejich význam</h2>
-        
-        <p>Hned ze začátku si musíme ujasnit, jak budeme zapisovat pojmy, které se týkají obyvatel.</p>
-        <p>Jako první je třeba si uvědomit, že jazyky nám známé jako čeština mají mnohdy jenom jedno pojmenování pro humanoidní postavy, a to slovo  <i>člověk</i>, v množném čísle pak <i>lidé</i>.</p>
-        <p>Ačkoli se nám může zdát, že tento pojem je dostačující, pro svět Aurionth je potřeba rozlišovat tento pojem na dvě různé vrstvy, které třeba v angličtině lze částečně vyřešit více slovy.</p>
-        <p>Primárním problémem pozemských jazyků, je rozdělení pojmu člověka a humanoida. Na Zemi jsou tyto pojmy chápany jako dvě rozdílné kategorie, přičemž člověk je považován za biologický druh, zatímco humanoid je spíše popisný termín pro tvory, kteří mají podobné rysy jako lidé, ale nejsou jimi z hlediska biologie. V kontextu Aurionthu však tyto pojmy nabývají zcela shodného významu. Je to převážně kvůli přitomnosti takových to tvorů. Oproti Zemi má Aurionth mnohem větší rozmanitost humanoidních ras, takže tyto pojmy nejsou nápomocné.</p>
-        <p>Pro jejich rozlišení v češkém jazyce použijeme funkci velkého písmene.</p>
-        <p>Když budeme mluvit o <b class="differentiality">Č</b>lověku s velkým č, budeme tím myslet pouze biologickou větech rasy nejvíce se podobající našemi homo sapiens, tedy lidské rase. Když však budeme mluvit o <b class="differentiality">č</b>lověku s malým č, budeme tím myslet jakéhokoliv druha Aurionth’ana (obyvatel Aurionthu).</p>
-        <p>To samé platí i pro množný tvar: <b>L</b>idé a <b class="differentiality">l</b>idé.</p>
-        <p>Nyní se ale pustme do jejich popisu.</p>
-    </section>
-    
-    <div class="section-divider"></div>
-    
-    <section class="human">
-        <ResidentSection title="Humikus" key="humikusShapes">
-            <p>Humikové, jinak též Lidé, představují nejrozšířenější a nejadaptabilnější linii člověka na Aurionthu. Jsou první linií, která dokázala kráčet napříč kontinentem a také první plout po mořích. Dokázala přetvářet prostředí podle svých potřeb i představ a přežít tak i v nehostinných krajích. Díky mořeplavectví se stali prvními lidmi, kteří osídlili vzdálené ostrůvky a ostrovy, čímž položili základy mnoha pozdějším civilizacím.</p>
-            <p>Jejich tělesná stavba nevyniká žádnou extrémní specializací. Nemají mohutné svalstvo, tvrdé kosti či pra-zvířecí instinkt. A přesto se dokázali dostat tak vysoko, jenom díky své adaptabilitě a „normálnosti“. Humikové nejsou bytostmi jedné krajiny – jsou většinou kontinentu. Dokázali přežít v mrazech, pralesích, pustinách o na pobřeží tehdejších vod. Tam kde jiné linie potřebovaly více dokonalé podmínky, Humikové se zkrátka přizpůsobili.</p>
-            <p>Jejich evoluce byla vedena schopností improvizace, strategie a neustálého hledání nových řešení. Nebyli nejsilnějšími, ale naučili se využívat prostředí, nástroje i vlastní mysl ke svému přežití. Zatímco jiné linie spoléhaly na své fyzické přednosti a adaptací opovrhovaly, Humikové se ji naučili využívat jako svou největší sílu. Města nevznikaly silou vládce, ale ze zkušeností starších a z nových poznatků.</p>
-            <p>Vývoj Humiků se táhne skrze nespočet generací, které se po statisíciletí měnily, zdokonalovaly a přetvářely. Každá generace nesla kus minulosti a kus nové lepší budoucnosti. Díky této neustálé proměně se Humikové stali největší, nejrozšířenější a nejrozmanitější linií člověka.</p>
-            <p>I přes svou adaptační vyspělost a rozmanitost se Humikové nedokázali napojit na sílu přírody. Magie, proudící celým Aurionthem tak musela zůstat záhadou a novou příležitostí pro jinou linii.</p>
-        </ResidentSection>
-    </section>
-    
-    <div class="section-divider"></div>
-    
-    <section class="wolf-human">
-        <ResidentSection title="Mannoŕ" key="mannorShapes">
         <p>
-            Mannoŕové, známí také jako Vlčí lidé, představují druhou nejrozšířenější linii člověka. Po dlouhá staletí byli považování za tajemný národ rozmazán v hluboké mlze historie, pověr a legend. Jejich původ se odhaduje do oblastní v jižních Tērrských lesích, kde se zrodili z prastaré linie, která se odtrhla od Humiků a začala se vyvíjet v souladu s divočinou. Jejich první známá osídlení se nacházela v hustých hlubokých lesích, které jim poskytovali útočiště a honosné zdroje potravy.
+            Hned na začátku je potřeba ujasnit si, jak budeme zapisovat a používat některé základní pojmy týkající se obyvatel Aurionthu. Důvodem je především skutečnost, že označení, která v češtině běžně používáme pro člověka, nemají v prostředí Aurionthu tak jednoznačný význam jako na Zemi.
         </p>
         <p>
-            Po několik tisíciletí žili Mannoŕové v symbióze s přírodou, rozvíjeli své dovednosti lovu, sběru a přežití v divočině a na nějaké osídlování neměli ani pomyšlení. Jejich kultura byla a dnes stále je hluboce zakořeněná v úctě k přírodě, duchům lesů, tůní a jezer, které považují za posvátné. Jejich společnost je často organizována do smeček, podobně jako vlci, s jasně definovanými rolemi a hierarchií. Jejich společenské struktury jsou založeny na vzájemné podpoře, spolupráci a respektu k přírodě, což se odráží v jejich každodenním životě a tradicích. Mannoŕové jsou proslulí svou schopností ladně komunikovat s přírodou, jejími živly a zvířaty, což jim umožňuje přežít i v těch nejtěžších podmínkách.
+            V pozemských jazycích bývá slovo <i>člověk</i> zpravidla spojováno s konkrétním biologickým druhem. V češtině se jím označuje příslušník lidského druhu a v množném čísle pak používáme označení <i>lidé</i>. Vedle toho existuje pojem <i>humanoid</i>, který označuje obecnější skupinu tvorů s tělesnou stavbou podobnou člověku, aniž by nutně náleželi k lidskému druhu.
         </p>
         <p>
-            Jejich rozšíření po kontinentu bylo pomalé, nejisté, ale neodvratné. V této době se začali více zbližovat s již rozšířenou linií Humiků a pomalu se rozpínající linií Monûlů. Jejich vztahy s těmito liniemi nebyly zprvu příliš přátelské, ale postupem času se začali navzájem tolerovat a dokonce i spolupracovat v určitých oblastech. Mannoŕové se tak stali nedílnou součástí lidské mozaiky Aurionthu, přinášející do ní svou odlišnou perspekivu, kulturu a především způsob myšlení.
+            V Aurionthu však takové rozdělení není dostačující. Zdejší svět obývá velké množství různých humanoidních ras, které se od sebe mohou výrazně lišit svým původem, stavbou těla, vlastnostmi i způsobem života. Přesto však všechny spadají do společné širší skupiny, pro kterou v českém jazyce budeme používat označení <i>člověk</i>, případně v množném čísle <i>lidé</i>.
         </p>
         <p>
-            Jejich evoluce udělala své. Z pradávno Humických vzhledů se pomalu stalo něco překrásného. Jejich těla jsou oproti jiným velmi diverzní. Nejvýraznějším znakem jsou oči – velké, s kulatou sutě černou zorničkou a duhovkou často zbarvenou do až absurních barev k prostředí kde žili (od sytě zelené, přes fialově modrou až po žářivě ametistovou, či ledově modrou nebo popelavě rudou). Jejich uši jsou vždy špičaté, často s chloupky na špičkách, které jim napomáhají ve vnímání zvuků. Jejich nosy jsou často zploštělé, ale mohou být i výrazně špičaté.
+            Toto označení tedy v širším významu neodkazuje na jediný biologický druh. Je zastřešujícím pojmem pro celou skupinu humanoidních ras Aurionthu. Teprve jednotlivá pojmenování určují, o kterou konkrétní rasu či skupinu ras se jedná.
         </p>
         <p>
-            Jejich těla jsou v tomto ohledu nejvíce odlišná. Jižní Mannoŕové mají často robustní, svalnatou postavu, s objemnými pažemi, silnými nahami a často výraznějšími kulatými břichy, které jsou důsledkem jejich stravy bohaté na maso a tuk. Naopak serverní Mannoŕové jsou oproti jižním až extrémně vyhublí, s dlouhými končetinami, štíhlími lehce svalenými těly, které jsou přizpůsobené pro rychlý pohyb a lov v otevřenějších krajinách lesů.
+            Abychom však mohli v českém textu jednoznačně rozlišit tento obecný význam od označení konkrétní lidské rasy, budeme využívat velikost počátečního písmene.
         </p>
         <p>
-        Samotný název <b>Mannoŕ</b> vychází z z pratērrštiny, konkrétnějí ze spojení „<span class="name">Ma nia’Noŕ Kaiy</span>“. <span class="name-part">Ma</span> znamená „muž“, <span class="name-part">nia’Noŕ</span> symbolizuje „v přírodě“ a <span class="name-part">Kaiy</span> by se dalo přeložit jako „divoká šelma“ (vlk). Znamená to tedy doslova <span class="name">Muž v přírodě vlků</span>. To je metaforické pojmenování, které se dodnes používá Tērrany pro lidi, žijící odděleně od civilizace, v izolaci, či jak bychom mohli říct „v divočině“.
+            Pokud budeme mluvit o <b>Člověku</b> (s velkým Č), budeme tím označovat pouze příslušníka konkrétní rasy <i>Humikus</i>, tedy takzvaného <i>Člověka pravého</i>. Jedná se o rasu, která se svou tělesnou stavbou a dalšími vlastnostmi nejvíce podobá pozemskému člověku.
         </p>
         <p>
-            Navzdory rychlému rozvoji městského života a technologického pokroku si Mannoŕové zachovali silné spojení s přírodou a svou jedinečnou kulturu. Jejich vlastní tradice a zvyky se dnes velmi odráží v novodobých tradicích, které kombinují několik vrstev a to nejenom Mannoŕskou, Humickou či Monûlskou, ale i další.
+            Pokud však použijeme označení <b>člověk</b> (s malým č), půjde o obecný pojem zahrnující všechny humanoidní rasy spadající do této širší skupiny. Vlčí, medvědí, plazí, mořští, dračí i další podobní tvorové jsou tedy v tomto smyslu stále lidé, přestože nejsou Člověkem v užším významu.
         </p>
-        </ResidentSection>
-    </section>
-
-    <div class="section-divider"></div>
-
-    <section class="bear-human">
-        <ResidentSection title="Monûlus" key="monulusShapes">
         <p>
-            Monûlové, jinak též Medvědí lidé, jsou třetí a dosud poslední nejrozšířenější linií člověka na Aurionthu. Jejich příběh začal o mnoho později než u ostatních rozšířených linií, což mělo za následek jejich téměř úplné vymření.
+            Stejné rozlišení platí také v množném čísle. <b>Lidé</b> s velkým L označují příslušníky rasy Člověka pravého, zatímco <b>lidé</b> s malým l označují celou širší skupinu humanoidních ras.
         </p>
-<!--
-Monûlové, jinak též Medvědí lidé, jsou třetí a dosud poslední nejrozšířenější linií člověka na Aurionthu. Jejich příběh začal o mnoho později než u ostatních linií — a málem vůbec nezačal. Zatímco Humikové již dávno kráčeli napříč kontinentem a Mannoŕové se zabydlovali v hlubokých lesích, Monûlové teprve hledali své místo ve světě. A světu se jim příliš nechtělo ustupovat.
-
-Jejich původní rozšíření sahalo napříč severní částí dnešního Deru. Tehdy ještě primitivní, srstnatí a těžkopádní — něco na pomezí Humika a zvířete, jako by příroda teprve zkoušela, kam až může zajít. Příchod Humiků je ale zatlačil. Postupně, neúprosně, bez jediné velké bitvy — jen tichým, každodenním tlakem civilizace na divočinu. Poslední přeživší se uchýlili do středozemí, k úpatí Derských hor. A tam se všechno změnilo.
-
-Hory je přetvořily. Krutá podhůří, řídký vzduch a zimy, které se táhnou příliš dlouho, vybraly ze srstnatých přeživších něco nového — těžkého, robustního, pomalého a takřka nezničitelného. Tělo Monûla je stavěno jako hora sama: mohutná, těžká, překvapivě měkká na dotek. Silné, husté kosti nesou statnou postavu pohybující se nejčastěji kolem dvou metrů, ačkoli jedinci pod sto sedmdesát centimetrů nejsou žádnou vzácností. Celé tělo pokrývá hustá srst a pod ní silná vrstva podkožního tuku, který v horském prostředí není slabostí, ale výsadou. Jejich drápy — spíše nehty, avšak silné, dlouhé a výrazné — jsou poslední připomínkou pradávného zvířete, z něhož linie vzešla.
-
-Monûlové nikdy nebyli národem. Největší tlupou, kterou lze od nich čekat, je volné uskupení čtyř či pěti jedinců — a i to bývá jen dočasné. Žijí rozptýleně v horách a podhůří, kde se naučili číst krajinu způsobem, který jiným liniím zůstává nepřístupný. Jejich prostorová paměť je mimořádná: znají každý průsmyk, každý převis, každý svah, který v zimě zabije a v létě uživí.
-
-Der a celé západozemí kontinentu je prostoupeno magií tak samozřejmě, jako je prostoupeno větrem. Magické rostliny rostou podél horských potoků, zvířata nesou v sobě síly, které jinde neexistují, a krajina sama jako by dýchala něčím starším než pamětí. Monûlové v tomto světě nežijí vedle magie — žijí skrze ni, aniž by ji pojmenovali nebo ovládali. Je součástí jejich prostředí stejně jako sníh a kámen.
-
-Samotné jméno *Monûlus* se objevuje teprve asi padesát tisíc let nazpět a pochází z prastarého horského slangu. *Mon* označuje něco velkého, mohutného, robustního — doslova „velký jako hora". *Ûlusii* pak znamená horu, monument, ale i stavbu a zázemí. Monûlus je tedy doslova *Velký jako hora, hora sama* — pojmenování, které nevzniklo jako označení rasy, ale jako popis jedince. Teprve časem se z přezdívky stalo jméno linie.
--->
-
-            <!--
-„Monûlové“ jinak též Medvědí lidé jsou třetí a dosud poslední nejrozšířenější linií člověka na kontinentu.
-Jejich vývoj začal o mnohem později, až po osídlení Lidmi (Humiky), díky čemuž málem vymřely. Jejich původní rozšíření, tehdy ještě na primitivní úrovni, bylo v celé severní části dnešního Deru, ale díky Lidem se poslední z přeživších uchýlily do středozemí k Derským horám, díky čemuž získaly mohutný vzhled a statnou vysokou postavu.
-Jejich statná postava jim tak umožnila kruté zimy v podhůří, čímž získali potřebnou vytrvalost, odolnost, a především prostorovou paměť.
-            -->
-        </ResidentSection>
+        <p>
+            Toto rozlišení budeme v českých textech používat důsledně. Umožňuje nám totiž zachovat rozdíl mezi obecným pojmem označujícím celou skupinu obyvatel a konkrétní rasou, aniž bychom pro tento účel museli vytvářet zcela nové české označení.
+        </p>
+        <p>
+            Nyní se můžeme pustit do jednotlivých skupin a ras, které do této kategorie spadají.
+        </p>
     </section>
     
     <div class="section-divider"></div>
     
-    <section class="reptile-human">
-        
-        <ResidentSection title="Luzintŕ" key="luzintrShapes">
-            <!--
-„Luzintŕry“ jinak Plazí lidé se nachází především v pouštních oblastech Aurionthu.
-Dále se dělí na Luziny a N’Tŕoidy, tedy ještěří a hadí lidí.
+    <section id="human-humanoid">
+        <ResidentSection
+            title="Humikus"
+            key="humikusShapes"
+        />
+        <ClassificationTable
+            scientific={['śemmeth roenig', 'člověk pravý']}
+            linguistic={['Humikus', 'Člověk']}
+            popular={[['', '']]}
+        />
 
-„Luzintŕry“ jinak též plazí lidé jsou lidmi pouštních a horských plání.
-Dělí se na dva poddruhy:
-	Luziny – Ještěří lidé
-	N’Tŕoidy – Hadí lidé
-
-Oba druhy se pyšní šupinatou kůží a termoregulačním tělesným systémem.
-            -->
-        </ResidentSection>
-
-        <div class="section-divider"></div>
-
-        <ResidentSection title="Luziny" key="luzinyShapes">
-<!--
-„Luziny“ jinak též Ještěří lidé se nacházejí především v horských pláních a kamenných pouštích.
-Kromě již zmíněný šupinaté kůže a termoregulačního organismu se Luziny pyšní silnou tělesnou stavbou, a především čtyřmi končetinami, kde dva jsou nohy a dva ruce.
-Oproti N’Tŕoidům byli vždy vděční za jakýkoli shovívavý kontakt s jinými rasami.
--->
-        </ResidentSection>
-
-        <div class="section-divider"></div>
-
-        <ResidentSection title="N’Tŕoidy" key="nTroidyShapes">
-<!--
-„N’Tŕoidy“ jinak též Hadí lidé se nachází především v pouštních písčitých oblastech.
-Oproti Luzinům mají pouze dvě končetiny v podobě rukou a dlouhý hadí ocas na kterém také „stojí“. To jim umožňuje jednoduchý pohyb v písčitých dunách.
-Oproti Luzinům se jiným rasám vyhýbali, a i dnes je berou s velkou rezervou.
--->
-        </ResidentSection>
-    
-    </section>
-
-    <div class="section-divider"></div>
-
-    <ResidentSection title="Hörtigc?" key="hortigcShapes">
-<!--
-„Hörtigcové“ jinak též Kříženci jsou lidé, kteří nevznikli evolučně.
-Jejich vznik je přisuzován neznámé magií, která je před dávnými lety (asi 1 miliardu let nazpět) nečekaně zasáhla. Největší „poškození“ zasáhla linie Humiků, ale Mannoŕry či Monûly. Tato magie způsobila, že se jejich těla, často dolní části, transformovala do některého z Aurionthských tvorů…
-Za tuto dobu si i tak stihly sami projít hned několik evolučních vrstev, které jim umožnili především lepší sžití s novými hybridními těly.
-Jejich rozšíření dnes není časté, ale stále existují. A z evolučního hlediska ukazují, že i nehoda může být prvkem nového života a důkaz, že původ není víc než udržení v čase.
--->
-    </ResidentSection>
-    
-    <div class="section-divider"></div>
-
-    <ResidentSection title="Slionith" key="slionithShapes">
-<!--
-„Slionithé“ jinak též Slizovití lidé či Rozteklí jsou unikátní linií naprosto evolučně odtrženou od ostatních linií. S pohybem ostrova Mallēm se i oni evolučně posouvali…
-Mallēm se pyšní měkkými až želatinovými plody, které tato linie musela jíst… Díky tomu se i jejich těla zželatila a změkla… Nakonec ztratili poslední pevní části až se stali plnohodnotným slizem, podobným jako na kontinentu.
-Jejich tvar vzhledem ke slizovité povaze se může zdát jako velmi vědomě náročný, ale toto je jejich podstata. Bez velkých myšlenek jejich tělo drží tvar… S velmi důkladným pozorováním si můžeme všimnout malých, avšak na pohled velmi rychlých proudů, který slouží jako kostra.
-Jejich těla se ve výsledku můžou natáhnout do nepředstavitelných šířek, ale také se smrštit – to však již vědomí potřebuje.
-Tímto způsobem, i když neplánovitě, dokazují, že lidskost není ve tvaru, vzhledu či velikosti, ale ve vědomí a schopnosti vytrvalosti a strategie.
--->
-    </ResidentSection>
-
-    <div class="section-divider"></div>
-
-    <section class="sea-human">
-        
-        <ResidentSection title="Oceliś" key="ocelisShapes">
-<!--
-„Oceliśové“ jinak mořský lid je velmi bohatá skupina žijící ve vodě, či při pobřeží Aurionthu.
-Tato skupina má tedy pod druhy:
-* O’Zimus neboli vydří lid,
-* O’Erim neboli žraločí lid,
-* O-de’Holl neboli Korálový (mělčinný) lid,
-* O’Cūrr neboli Kytovcovití (velrybí) lid,
-* O-yu’Fklip neboli Chobotnicový lid a
-* O’Dōttey neboli Medúzovití lid.
--->
-        </ResidentSection>
-
-        <section class="otter-human">
-            <ResidentSection title="O’Zimus" key="oZimusShapes">
-<!--
-není zápis
--->
-            </ResidentSection>
-        </section>
-    
-        <div class="section-divider"></div>
-    
-        <section class="shark-human">
-            <ResidentSection title="O’Erim" key="oErimShapes">
-<!--
-není zápis
--->
-            </ResidentSection>
-        </section>
-    
-        <div class="section-divider"></div>
-    
-        <section class="coral-human">
-            <ResidentSection title="O-de’Holl" key="oDeHollShapes">
-<!--
-není zápis
--->
-            </ResidentSection>
-        </section>
-    
-        <div class="section-divider"></div>
-    
-        <section class="cetacean-human">
-            <ResidentSection title="O’Cūrr" key="oCurrShapes">
-<!--
-není zápis
--->
-            </ResidentSection>
-        </section>
-    
-        <div class="section-divider"></div>
-    
-        <section class="octopus-human">
-            <ResidentSection title="O-yu’Fklip" key="oYuFklipShapes">
-<!--
-není zápis
--->
-            </ResidentSection>
-        </section>
-    
-        <div class="section-divider"></div>
-    
-        <section class="jellyfish-human">
-            <ResidentSection title="O’Dōttey" key="oDotteyShapes">
-<!--
-není zápis
--->
-            </ResidentSection>
-        </section>
-    
+        <p class="heading">
+            Anatomický popis
+        </p>
+        <p>
+            Tělesná stavba Humiků nevyniká žádnou výraznou anatomickou specializací či biologickým přizpůsobením pro konkrétní prostředí. Představují fyzický základ člověka na Aurionthu. Nemají mohutné svalstvo, mimořádně tvrdé kosti ani vyvinuté pra-zvířecí instinkty či smyslové orgány přizpůsobené lovu v temnotě.
+        </p>
+        <p>
+            Humikové mají mimořádně proměnlivé rysy podle své geografické lokace, avšak bez vytváření hlubších vizuálních odchylek. Barva kůže, vlasů či očí se přirozeně přizpůsobuje míře slunečního svitu a danému podnebí.
+        </p>
+        <p>
+            Pro některé Aurionth’any by vzhled Humiků mohl působit nevýrazně, avšak právě tato fyzická „univerzálnost“ a absence úzké specializace jim umožňuje efektivně fungovat v jakémkoliv podnebném pásmu.
+        </p>
+        <p class="heading">
+            Rozšiřování
+        </p>
+        <p>
+            Humikové byli první linií, která dokázala překročit hranice svého původního prostředí, projít napříč kontinentem a osídlit moře i vzdálené ostrovy. Jejich vývoj se táhne přes nespočet generací po statisíciletí.
+        </p>
+        <p>
+            Na rozdíl od jiných linií nebyli nejsilnějšími ani nejrychlejšími, ale dokázali přežít díky hromadění zkušeností, technologiím a strategii. Místo adaptace vlastního těla se naučili přetvářet okolní prostředí podle svých potřeb, čímž položili základy měst a raných civilizací.
+        </p>
+        <p class="heading">
+            Společnost
+        </p>
+        <p>
+            Společnost Humiků je založena na předávání znalostí, využívání nástrojů a neustálém získávání nových poznatků. Způsob jejich života se odvíjí od schopnosti organizace a přizpůsobování krajiny svým potřebám.
+        </p>
+        <p>
+            Humikové se tak naučili využívat své okolí, nástroje i vlastní mysl ve svůj prospěch. První města této civilizace byla postavena již v raných fázích jejich rozšiřování, a to především díky spolupráci a sdílení zkušeností.
+        </p>
+        <p class="heading">
+            Magické vlastnosti
+        </p>
+        <p>
+            I přes svou mimořádnou adaptační schopnost a rozmanitost však Humikové nedokázali přirozeně navázat spojení se silou přírody. Magie, která proudila celým Aurionthem, pro ně proto po dlouhou dobu zůstávala především záhadou a nevyužitou možností. To, co pro Humiky představovalo hranici jejich vlastního vývoje, se však mohlo stát příležitostí pro jinou linii člověka.
+        </p>
+        <p class="heading">
+            Původ slova
+        </p>
+        <p>
+            Slovo <i>Humikus</i> pochází z latinošského slova <b>humaellitikes</b>, které můžeme přeložit jako <i>„tvor inteligentní“</i>, což bylo označení pro veškerý život vykazující známky inteligence. Označovalo to nejenom lidi, ale i psy, kočky a jiné inteligentní tvory.
+        </p>
+        <p>
+            Jeho přibližné chápání zůstalo, ale pravý význam, co vše pod to spadá a především samotný vzhled slova se měnil. Už v raném Starorodě se toto slovo psalo <i>Humalitikes</i> a již označovalo tvory vzhledově připomínající člověka. V konečném vývoji Starorodu a s přechodem na Novorod se slovo psalo <i>Humalitikus</i> a označovalo pouze tvory podobné člověku a v češtině je jeho ekvivalentem slovo humanoid. Ale samotné <i>Humikus</i> vzniklo již v pozní latinoše, kdy se s příchodem Mannoŕů a Monûlů potřebovalo rozlišit mezi člověkem a Člověkem. Slovo prošlo škrtancema: <b>hum</b><span class="lined">aell</span><b>i</b><span class="lined">ti</span><b>k</b><span class="lined">e</span><span class="added">u</span><b>s</b> a tedy dnešní Humikus (anglicky human).
+        </p>
+        <p>
+            Více najdete na podstránce  <a href="/semmeth-roenig" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk pravý</a>.
+        </p>
     </section>
     
     <div class="section-divider"></div>
-    
-    <section class="needle-ear-human">
-        <ResidentSection title="Elifip" key="elifipShapes">
-<!--
-„Elifové“ jinak též Jehlouchý lidé či Horalové jsou lid, který byl začal žít v horských až velehorských kopcích Derských velehor.
-Jejich tělo je přizpůsobeno řídkému vzduchu, čímž se z nich stávají jedni z nejlepších běžců v nížinách, nižších tlakem, a především vibračním vlnám skalního prostředí. Toto prostředí je životu téměř nehostinné, a přesto tu vznikla nejimpozantnější linie člověka.
-Díky řidšímu vzduchu jejich uši zešpičatěli a tělo nabylo na objemu plic a menšímu klidnějšímu oběhu krve i ve stresových situacích. Špičaté uši fungují především jako přijímač měkkých a dunivých vibrací.
--->
-        </ResidentSection>
+
+    <section id="wolf-humanoid">
+        <ResidentSection
+            title="Mannoŕ"
+            key="mannorShapes"
+        />
+
+        <ClassificationTable
+            scientific={['śemmeth woefleeth', 'člověk vlčí']}
+            linguistic={['Mannoŕ', 'vlčí člověk / Vlkouš']}
+            popular={[['', '']]}
+        />
+
+        <p class="heading">
+            Anatomický popis
+        </p>
+        <p>
+            Tělesná stavba Mannoŕů je výsledkem stovek let adaptace a přizpůsobení lesnímu bytí. Jejich dlouhý evoluční vývoj tak postupně proměnil původní humické rysy v podobu, která je dnes pro Mannoŕy charakteristická. Jejich tělesná stavba je mimořádně rozmanitá a výrazně se liší podle oblastí, v niž jednotlivé skupiny po generace žily. Nejvýraznějším znakem pomineme-li často široký a mohutný ocas a špičaté uši, které jsou často pokryté jemnými chloupky, které napomáhají lepšímu zachycování a rozlišování zvuků v hustém porostu. Mimo tyto doslova vlčí rysy se u Mannorů rozšířily zornice a duhovky očí. Zornice jsou kulaté a velmi tmavé s hlubokým vlčím nitrem, zatímco duhovky nabývají širokého vzhledu a taktéž barevné škály od sytě zelené přes fialově modrou až po výrazně ametystovou, ledově modrou nebo popelavě rudou. Zbarvení očí často přímo souvisí s prostředím a podmínkami konkrétní populace.
+        </p>
+        <p>
+            Výrazné rysy lze pozorovat také v celkové stavbě těla. Zatímco jižní Mannoŕry bývají silní, robustní se svalnatě mohutnými končetinami, což podtrhává místní habitat a stravu bohatou na maso a tuky. Severní Mannoŕry jsou naopak štíhlejší, s jemně delšími končetinami a lehce osvalenou postavou, která jim umožňuje rychlejší pohyb a efektivnější lov v otevřenějších a řidčeji porostlých částech lesních oblastí. A nesmíme zapomenout na tzv. měsíční Mannoŕy, kteří jsou pozdním potomstvem koloniálních Tērranů na Měsíčním ostrově. Tito Mannoŕry byli díky malému množství masa odkázáni především na rostlinou stravu. Ta však byla vysokokalorická a velmi bohatá na bílkoviny, tuky, sacharidy, ale i minerály a vitamíny. Díky tomu jsou měsíční Mannoŕry objemnější, mohutnější a robustnější než jejich severní předci.
+        </p>
+        <p class="heading">
+            Rozšiřování
+        </p>
+        <p>
+            Jejich rozšíření po kontinentu bylo pomalé, nejisté, ale postupně neodvratné. S rostoucím počtem Mannoŕů se jejich skupiny začaly vzdalovat od původních jižních oblastí a pronikat do dalších částí Aurionthu. Během této doby se stále častěji dostávali do kontaktu s již rozšířenými Humiky a postupně se rozpínajícími Monûly. Vztahy mezi jednotlivými liniemi nebyly zpočátku vždy přátelské. Rozdílný způsob života, odlišné hodnoty i rozdílný pohled na využívání krajiny vedly k četným sporům. Postupem času však začala převládat vzájemná tolerance a spolupráce.
+        </p>
+        <p>
+            Mannoŕové se tak postupně stali nedílnou součástí lidské mozaiky Aurionthu. Do společností, s nimiž přicházeli do kontaktu, přinášeli vlastní způsob života, odlišnou perspektivu a především jiný pohled na vztah mezi člověkem a přírodou. Zatímco Humikové se naučili především přizpůsobovat prostředí vlastním potřebám, Mannoŕové se po tisíciletí učili přizpůsobovat sami sobě prostředí, v němž žili.
+        </p>
+        <p class="heading">
+            Společnost
+        </p>
+        <p>
+            Mannoŕská společnost se tradičně organizuje do smeček po vzoru vlků, kde jednotlivé role stojí na vzájemné podpoře, spolupráci a odpovědnosti vůči ostatním. Kultura je hluboce zakořeněná v úctě k přírodním silám. Za posvátná místa považují staré lesy, tůně a jezera, v nichž vnímají přítomnost duchů přírody. Divočinu nechápou jako překážku k podrobení, ale jako domov, jehož jsou přirozenou součástí.
+        </p>
+        <p class="heading">
+            Magické vlastnosti
+        </p>
+        <p>
+            Mannoŕové jsou známí svou mimořádnou schopností vnímat okolní prostředí. Dokážou citlivě reagovat na změny počasí, pohyb zvířat i stav krajiny a své znalosti předávají z generace na generaci. Jejich vztah k přírodě proto není založen pouze na duchovním přesvědčení, ale také na hluboké znalosti jejího fungování.
+        </p>
+        <p>
+            Mannoŕry byli prvními, kdo objevil potenciál magie a dokázal s ním pracovat. Byli prvními, kdo vytvořil runové písmo, které umožňovalo s magií pracovat. Později byli také prvními, kdo magii plně zdokumentovali a popsali pro ostatní méně znalé linie. Mannoŕové tak položili základy dnešní magie.
+        </p>
+        <p class="heading">
+            Původ slova
+        </p>
+        <p>
+            Samotný název <i>Mannoŕ</i> pochází ze staré tērianštiny. Předpokládá se, že vznikl ze spojení <b>Ma nia’Noŕ Kaiy</b>, kde <i>Ma</i> znamená „muž“, <i>nia’Noŕ</i> vyjadřuje „v přírodě“ a <i>Kaiy</i> označuje „divokou šelmu“, konkrétně vlka. Název lze tedy doslovně přeložit jako <i>Muž v přírodě vlků</i>. Původní význam však nebyl nutně označením konkrétního druhu člověka. Tērrané tímto spojením označovali především lidi žijící mimo tehdejší civilizovaná sídla, v izolaci a v těsném soužití s divočinou.
+        </p>
+        <p>
+            Postupem času se původně obecné označení začalo spojovat právě s Mannoŕy, jejichž způsob života nejlépe odpovídal jeho původnímu významu. Slovo tak postupně přestalo označovat pouze člověka žijícího v divočině a stalo se vlastním označením celé linie.
+        </p>
+        <p>
+            Více najdete na podstránce  <a href="/semmeth-woefleeth" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk vlčí</a>.
+        </p>
     </section>
-    
+
+
     <div class="section-divider"></div>
-    
-    <section class="dragon-human">
-        <ResidentSection title="Drahius’Kânus" key="drahiusKanusShapes">
-<!--
-„Drahius’Kâni“ jinak též dračí lidé jsou reliktní (zbytkovou) linií člověka z dávné historie. Jejich původ sahá až k prvopočátkům lidí.
-Příběhy se dělí do dvou větví a věda, zde klopýtá o pravěké kořeny…
-První příběh vypráví o tom, jak se dávným drakům nelíbil prapůvodní lid, a tak vybrali ze svých a přetvořili je na humanoidy. Jejich prokletí, ale také osvobození bylo velmi složité. Draci je časem zavrhli a lidé se jich báli. Draci se rozhodly při vodním pádu (moře klesalo) přejít do teď neosídleného prostředí, na ostrov Fope, kde však zjistili, že jejich předpoklad nevyšel. Zdejší lidé, které zde našli, byly však shovívavější a vzali je mezi sebe.
 
-Druhý příběh je divnější a více mytologický. Vypráví o tom, jak Pradrak Kânus Drâhus oplodnil 200 lidí, ze kterých následně vzešlo sémě Drahius’Kânů.
+    <section id="bear-humanoid">
+        <ResidentSection
+            title="Monûlus"
+            key="monulusShapes"
+        />
+        <ClassificationTable
+            scientific={['śemmeth faebert', 'člověk medvědí']}
+            linguistic={['Monûlus', 'medvědí člověk / Medvěďák']}
+            popular={[['', '']]}
+        />
 
-Ať tomu bylo jakkoli, věda nemá pádný důkaz o tvrzení jejich původu.
+        <p class="heading">
+            Anatomický popis
+        </p>
+        <p>
+            Tělo Monûla je přetvořeno drsnými podmínkami horského prostředí a stavěno jako hora sama — je mohutné, těžké a překvapivě měkké na dotek. Silné a husté kosti nesou statnou postavu pohybující se nejčastěji kolem dvou metrů, ačkoliv jedinci pod sto sedmdesát centimetrů nejsou žádnou vzácností.
+        </p>
+        <p>
+            Celé tělo pak pokrývá hustá srst a pod ní silná vrstva podkožního tuku, který v horském a chladném prostředí není slabostí, ale výsadou. Jejich drápy — spíše nehty, avšak silné, dlouhé a výrazné — představují poslední připomínku pradávného zvířete, z něhož tato linie vzešla.
+        </p>
+        <p class="heading">
+            Rozšiřování
+        </p>
+        <p>
+            Příběh Monûlů začal o mnoho později než u ostatních linií — a málem vůbec nezačal. Jejich původní rozšíření sahalo napříč severní částí dnešního Deru, kde žili jako primitivní, srstnatí a těžkopádní tvorové na pomezí Humika a zvířete. Příchod Humiků je však postupně a neúprosně zatlačil bez jediné velké bitvy, pouze tichým tlakem civilizace na divočinu.
+        </p>
+        <p>
+            Poslední přeživší se uchýlili do středozemí k úpatí Pêrrunských hor. Krutá podhůří, řídký vzduch a dlouhé zimy z nich vytvořily novou, těžkou, robustní a takřka nezničitelnou linii, která si dokázala osvojit i nejnehostinnější výšiny.
+        </p>
+        <p class="heading">
+            Společnost
+        </p>
+        <p>
+            Monûlové nikdy nebyli národem. Žijí rozptýleně v horách a podhůří a největším uskupením, které u nich lze očekávat, je volná skupina čtyř či pěti jedinců, která bývá pouze dočasná.
+        </p>
+        <p>
+            Naučili se číst krajinu způsobem, který jiným liniím zůstává nepřístupný. Jejich prostorová paměť je mimořádná — znají každý průsmyk, převis i svah, který v zimě představuje hrozbu a v létě naopak obživu.
+        </p>
+        <p class="heading">
+            Magické vlastnosti
+        </p>
+        <p>
+            Jako každé území i toto je prostoupeno magickými pásy. Magické rostliny rostou podél horských potoků a zvířata v sobě nesou síly, které jinde neexistují.
+        </p>
+        <p>
+            Monûlové v tomto světě nežijí vedle magie, ale žijí skrze ni, aniž by ji cílěně pojmenovávali nebo systematicky ovládali. Je přirozenou součástí jejich prostředí stejně jako sníh a kámen.
+        </p>
+        <p class="heading">
+            Původ slova
+        </p>
+        <p>
+            Samotné jméno <i>Monûlus</i> se objevuje teprve asi padesát tisíc let nazpět a pochází z prastarého horského slangu. Prvek <b>Mon</b> označuje něco velkého, mohutného a robustního — doslova <i>„velký jako hora“</i>. Slovo <b>Ûlusii</b> pak znamená horu či monument, ale i stavbu či zázemí.
+        </p>
+        <p>
+            <i>Monûlus</i> tedy doslovně znamená <i>„Velký jako hora“</i>. Toto pojmenování původně nevzniklo jako označení rasy, ale jako popis vlastností jedince, a teprve s odstupem času se z přezdívky stalo vlastní jméno celé linie.
+        </p>
+        <p>
+            Více najdete na podstránce  <a href="/semmeth-faebert" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk medvědí</a>.
+        </p>
 
-Z evolučního hlediska se i za sta tisíce let téměř nezměnili, což podporuje verzi, že nejsou místní.
--->
-        </ResidentSection>
-    </section>
-    
-    <div class="section-divider"></div>
-    
-    <section class="domesticated-animal-human">
-
-        <ResidentSection title="Tureo" key="tureoShapes">
-<!--
-„Tuŕry“ nemají jiný název. Jsou to nejmenší skupina člověka na Aurionthu.
-
-Dělí se na dva poddruhy:
-	Tureo’Gallos neboli prasečí lid.
-	Tureo’Munos neboli kravský lid.
--->
-        </ResidentSection>
-    
-        <section class="pig-human">
-            <ResidentSection title="Tureo’Gallos" key="GallosShapes">
-<!--
-„Tureo’Gally“ jinak též prasečí lidé.
-Lze jim však říkat i pouhým „Tureo“ oslovením.
--->
-            </ResidentSection>
-        </section>
-    
-        <div class="section-divider"></div>
-    
-        <section class="cow-human">
-            <ResidentSection title="Tureo’Munos" key="TureoMunosShapes">
-<!--
-„Tureo’Muny“ jinak též kravský lid.
-Lze jim však říkat i pouhým „Tureo“ oslovením.
--->
-            </ResidentSection>
-        </section>
-    
     </section>
     
     <div class="section-divider"></div>
     
-    <section class="orc-like-human">
-        <ResidentSection title="Orc’Like" key="OrcLikeShapes">
-<!--
-zápis neexistuje vůbec — nejpozději vymyšlené. Teoreticky nemusí ani původně pocházet z Aurionthu. Už teď mám bohy, kteří jsou vlastně jenom humanoidi z jiného světa, nebo samotná kniha je psaná o pozemském člověku, který se na Aurionth dostane přes záhadný portál…
--->
-        </ResidentSection>
+    <section id="lizard-humanoid">
+        <ResidentSection
+            title="Luzini"
+            key="luziniShapes"
+        />
+
+        <ClassificationTable
+            scientific={['śemmeth ?', 'člověk ?']}
+            linguistic={['Luzin', 'ještěří člověk / Ještěrák']}
+            popular={[['', '']]}
+        />
+
+        <p class="heading">
+            Anatomický popis
+        </p>
+        <p>
+            Luzini mají svou kůži velmi zvláštní. Disponují měkkými kožešinovými šupanami a specializovaným termoregulačním organismem. Jejich tělo má jako tělo Mannoŕů či Monûlů čtyři končetiny a páteř zakončenou ocasem – dvě nohy, dvě ruce.
+        </p>
+        <p>
+            Oproti nim však nevznikli z linie Humiků, nýbrž z linie Drahikânů. Jejich pleť je zbarvená do pískových barev od pískově žluté, přes okrovou až po tmavě šedou. Tak zvaně novodobí Luzini disponují navíc i zelenou či zelenomodrou barvou pleti.
+        </p>
+        <p>
+            Mohutná kostra a silné svalové úpony jim dávají značnou sílu a schopnost lézt. Jejich tělo je sice primárně pro teplé, žhavé pouště a louky, ale díky termoregulaci jsou oproti ještěrkám schopni žít, a především fungovat i v těch nejsevernějších a nejchladnějších oblastech Aurionthu. Jejich tělo v těchto oblastech, však vyžaduje extrémní přísun živin, aby mohlo z čeho vytvářet teplo.
+        </p>
+        <p class="heading">
+            Rozšiřování
+        </p>
+        <p>
+            Jejich největší rozšíření je v Poušti. Ta je obehnaná hned dvěma pohořími. Pohořím Trojhřbetenní Bōnnerie, konkrétně tedy Severní Bōnnerií a Dlouhou Jižní Bōnnerií, která Poušť svírá ze západní strany. Na východě je však pohoří Zarveth, které se rozestírá po celé výši kontinentu. Poušť se na severu a jihu rozprašuje na teplé louky, kde na severu je chrání velekopec Tawrîl a na jihu navazují louky na teplejší moře Kôrbonio.
+        </p>
+        <p>
+            Poušť tak představuje nejteplejší území na Aurionthu a primární teritórium jak Luzinů tak Tŕoidů.
+        </p>
+        <p class="heading">
+            Společnost
+        </p>
+        <p>
+            Oproti Tŕoidům byli Luzini vždy vděční za jakýkoli shovívavý kontakt s jinými rasami. Vzhledem k drsnosti pouštního vnitrozemí si cenili obchodu a výměny surovin, které sami nemohli v kamenných a pískových pustinách získat. Jejich komunity se soustředí především v blízkosti skalních převisů, stíněných kaňonů a podzemních průduchů, kde se přes noc drží akumulované teplo. Vztahy mezi jednotlivými skupinami stojí na sdílení zpráv o zdrojích vody a bezpečných trasách napříč žhavými pláněmi.
+        </p>
+        <p class="heading">
+            Magické vlastnosti
+        </p>
+        <p>
+            Protože je Poušť primárním centrem tepelné magii, jsou právě Luzini i Tŕoidi skvělými vládci ohně. Poušť je masivní studna magie a právě oheň tuhle studnu potřebuje. Nejsou sice skvělými vládci vody, ale pomocí ní ji dokáží schopně vyhledat i v těch nejhorších místech.
+        </p>
+        <p class="heading">
+            Původ slova
+        </p>
+        <p>
+            Výraz <i>Luzin</i> je s největší pravděpodobností slangového nebo mytologického původu. V dnešní době je tomu nejbližší slovo <i>Luzaz</i>, což označuje šupinu, nebo <i>Lazente</i> označující sluneční paprsek dopadající na povrch písku.
+        </p>
+        <p>
+            Někteří se domnívají, že tento výraz mohl vzniknout z pradávného dodnes nezjištěného jazyka nazvaného Harmazarr, kde existovalo slovo <i>Hanob</i>, které se ale čte velmi podobně jako dnešní Luzin, a předpokládá se, že označovalo tvora připodobněného pouštnímu bohu Zarthewu, který vypadá právě jako Luzini.
+        </p>
+        <p>
+            Více najdete na podstránce <a href="/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+        </p>
     </section>
 
+<!--
+    <div class="section-divider"></div>
+
+    <section id="snake-humanoid">
+        <ResidentSection
+            title="Tŕoidy"
+            key="troidyShapes"
+        />
+
+        <ClassificationTable
+            scientific={['śemmeth ?', 'člověk ?']}
+            linguistic={['Tŕoidy', 'hadí člověk']}
+            popular={[['', '']]}
+        />
+
+        <p class="heading">
+            Anatomický popis
+        </p>
+        <p class="heading">
+            Rozšiřování
+        </p>
+        <p class="heading">
+            Společnost
+        </p>
+        <p class="heading">
+            Magické vlastnosti
+        </p>
+        <p class="heading">
+            Původ slova
+        </p>
+        <p>
+            Více najdete na podstránce <a href="/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+        </p>
+    </section>
+    
+    <div class="section-divider"></div>
+
+    <section id="hybrid-humanoid">
+        <ResidentSection
+            title="Hörtigc?"
+            key="hortigcShapes"
+        />
+
+        <ClassificationTable
+            scientific={['śemmeth ?', 'člověk ?']}
+            linguistic={['', '']}
+            popular={[['', '']]}
+        />
+
+        <p class="heading">
+            Anatomický popis
+        </p>
+        <p class="heading">
+            Rozšiřování
+        </p>
+        <p class="heading">
+            Společnost
+        </p>
+        <p class="heading">
+            Magické vlastnosti
+        </p>
+        <p class="heading">
+            Původ slova
+        </p>
+        <p>
+            Více najdete na podstránce <a href="/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+        </p>
+    </section>
+    
+    <div class="section-divider"></div>
+
+    <section id="slime-humanoid">
+        <ResidentSection
+            title="Slionith"
+            key="slionithShapes"
+        />
+
+        <ClassificationTable
+            scientific={['śemmeth ?', 'člověk ?']}
+            linguistic={['', '']}
+            popular={[['', '']]}
+        />
+
+        <p class="heading">
+            Anatomický popis
+        </p>
+        <p class="heading">
+            Rozšiřování
+        </p>
+        <p class="heading">
+            Společnost
+        </p>
+        <p class="heading">
+            Magické vlastnosti
+        </p>
+        <p class="heading">
+            Původ slova
+        </p>
+        <p>
+            Více najdete na podstránce <a href="/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+        </p>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section id="otter-humanoid">
+        <ResidentSection
+            title="O’Zimus"
+            key="oZimusShapes"
+        />
+
+        <ClassificationTable
+            scientific={['śemmeth ?', 'člověk ?']}
+            linguistic={['', '']}
+            popular={[['', '']]}
+        />
+
+        <p class="heading">
+            Anatomický popis
+        </p>
+        <p class="heading">
+            Rozšiřování
+        </p>
+        <p class="heading">
+            Společnost
+        </p>
+        <p class="heading">
+            Magické vlastnosti
+        </p>
+        <p class="heading">
+            Původ slova
+        </p>
+        <p>
+            Více najdete na podstránce <a href="/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+        </p>
+    </section>
+    
+    <div class="section-divider"></div>
+    
+    <section id="shark-humanoid">
+        <ResidentSection
+            title="O’Erim"
+            key="oErimShapes"
+        />
+
+        <ClassificationTable
+            scientific={['śemmeth ?', 'člověk ?']}
+            linguistic={['', '']}
+            popular={[['', '']]}
+        />
+
+        <p class="heading">
+            Anatomický popis
+        </p>
+        <p class="heading">
+            Rozšiřování
+        </p>
+        <p class="heading">
+            Společnost
+        </p>
+        <p class="heading">
+            Magické vlastnosti
+        </p>
+        <p class="heading">
+            Původ slova
+        </p>
+        <p>
+            Více najdete na podstránce <a href="/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+        </p>
+    </section>
+    
+    <div class="section-divider"></div>
+    
+    <section id="coral-humanoid">
+        <ResidentSection title="O-de’Holl" key="oDeHollShapes" />
+    </section>
+    
+    <div class="section-divider"></div>
+    
+    <section id="cetacean-humanoid">
+        <ResidentSection
+            title="O’Cūrr"
+            key="oCurrShapes"
+        />
+
+        <ClassificationTable
+            scientific={['śemmeth ?', 'člověk ?']}
+            linguistic={['', '']}
+            popular={[['', '']]}
+        />
+
+        <p class="heading">
+            Anatomický popis
+        </p>
+        <p class="heading">
+            Rozšiřování
+        </p>
+        <p class="heading">
+            Společnost
+        </p>
+        <p class="heading">
+            Magické vlastnosti
+        </p>
+        <p class="heading">
+            Původ slova
+        </p>
+        <p>
+            Více najdete na podstránce <a href="/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+        </p>
+    </section>
+    
+    <div class="section-divider"></div>
+    
+    <section id="octopus-humanoid">
+        <ResidentSection
+            title="O-yu’Fklip"
+            key="oYuFklipShapes"
+        />
+
+        <ClassificationTable
+            scientific={['śemmeth ?', 'člověk ?']}
+            linguistic={['', '']}
+            popular={[['', '']]}
+        />
+
+        <p class="heading">
+            Anatomický popis
+        </p>
+        <p class="heading">
+            Rozšiřování
+        </p>
+        <p class="heading">
+            Společnost
+        </p>
+        <p class="heading">
+            Magické vlastnosti
+        </p>
+        <p class="heading">
+            Původ slova
+        </p>
+        <p>
+            Více najdete na podstránce <a href="/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+        </p>
+    </section>
+    
+        <div class="section-divider"></div>
+    
+    <section id="jellyfish-humanoid">
+        <ResidentSection
+            title="O’Dōttey"
+            key="oDotteyShapes"
+        />
+
+        <ClassificationTable
+            scientific={['śemmeth ?', 'člověk ?']}
+            linguistic={['', '']}
+            popular={[['', '']]}
+        />
+
+        <p class="heading">
+            Anatomický popis
+        </p>
+        <p class="heading">
+            Rozšiřování
+        </p>
+        <p class="heading">
+            Společnost
+        </p>
+        <p class="heading">
+            Magické vlastnosti
+        </p>
+        <p class="heading">
+            Původ slova
+        </p>
+        <p>
+            Více najdete na podstránce <a href="/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+        </p>
+    </section>
+    
+    <div class="section-divider"></div>
+    
+    <section id="needle-ear-humanoid">
+        <ResidentSection
+            title="Elifip"
+            key="elifipShapes"
+        />
+
+        <ClassificationTable
+            scientific={['śemmeth ?', 'člověk ?']}
+            linguistic={['', '']}
+            popular={[['', '']]}
+        />
+
+        <p class="heading">
+            Anatomický popis
+        </p>
+        <p class="heading">
+            Rozšiřování
+        </p>
+        <p class="heading">
+            Společnost
+        </p>
+        <p class="heading">
+            Magické vlastnosti
+        </p>
+        <p class="heading">
+            Původ slova
+        </p>
+        <p>
+            Více najdete na podstránce <a href="/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+        </p>
+    </section>
+    
+    <div class="section-divider"></div>
+    
+    <section id="dragon-humanoid">
+        <ResidentSection
+            title="Drahikânus"
+            key="DrahikanusShapes"
+        />
+
+        <ClassificationTable
+            scientific={['śemmeth ?', 'člověk ?']}
+            linguistic={['', '']}
+            popular={[['', '']]}
+        />
+
+        <p class="heading">
+            Anatomický popis
+        </p>
+        <p class="heading">
+            Rozšiřování
+        </p>
+        <p class="heading">
+            Společnost
+        </p>
+        <p class="heading">
+            Magické vlastnosti
+        </p>
+        <p class="heading">
+            Původ slova
+        </p>
+        <p>
+            Více najdete na podstránce <a href="/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+        </p>
+    </section>
+    
+    <div class="section-divider"></div>
+    
+    <section id="pig-humanoid">
+        <ResidentSection
+            title="Tureo’Gallos"
+            key="gallosShapes"
+        />
+
+        <ClassificationTable
+            scientific={['śemmeth ?', 'člověk ?']}
+            linguistic={['', '']}
+            popular={[['', '']]}
+        />
+
+        <p class="heading">
+            Anatomický popis
+        </p>
+        <p class="heading">
+            Rozšiřování
+        </p>
+        <p class="heading">
+            Společnost
+        </p>
+        <p class="heading">
+            Magické vlastnosti
+        </p>
+        <p class="heading">
+            Původ slova
+        </p>
+        <p>
+            Více najdete na podstránce <a href="/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+        </p>
+    </section>
+    
+    <div class="section-divider"></div>
+    
+    <section id="cow-humanoid">
+        <ResidentSection
+            title="Tureo’Munos"
+            key="munosShapes"
+        />
+
+        <ClassificationTable
+            scientific={['śemmeth ?', 'člověk ?']}
+            linguistic={['', '']}
+            popular={[['', '']]}
+        />
+
+        <p class="heading">
+            Anatomický popis
+        </p>
+        <p class="heading">
+            Rozšiřování
+        </p>
+        <p class="heading">
+            Společnost
+        </p>
+        <p class="heading">
+            Magické vlastnosti
+        </p>
+        <p class="heading">
+            Původ slova
+        </p>
+        <p>
+            Více najdete na podstránce <a href="/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+        </p>
+    </section>
+    
+    <div class="section-divider"></div>
+    
+    <section id="orc-like-humanoid">
+        <ResidentSection
+            title="Orc’Like"
+            key="orcLikeShapes"
+        />
+
+        <ClassificationTable
+            scientific={['śemmeth ?', 'člověk ?']}
+            linguistic={['', '']}
+            popular={[['', '']]}
+        />
+
+        <p class="heading">
+            Anatomický popis
+        </p>
+        <p class="heading">
+            Rozšiřování
+        </p>
+        <p class="heading">
+            Společnost
+        </p>
+        <p class="heading">
+            Magické vlastnosti
+        </p>
+        <p class="heading">
+            Původ slova
+        </p>
+        <p>
+            Více najdete na podstránce <a href="/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+        </p>
+    </section>
+-->
 </section>

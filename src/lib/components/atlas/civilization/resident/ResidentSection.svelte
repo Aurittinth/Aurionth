@@ -12,6 +12,3 @@
 
 <h2>{title}</h2>
 <DeclensionTable {pattern} {shapes} />
-<div class="content">
-    <slot />
-</div>

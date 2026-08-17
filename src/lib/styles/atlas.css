@@ -169,6 +169,17 @@
 =            |            =
 ==============================================*/
 
+a {
+  color: var(--c-skyblue);
+  text-decoration: none;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+a:hover, a:focus {
+    text-decoration: underline solid;
+}
+
 span.name {
     font-weight: bold;
     font-style: italic;
@@ -178,4 +189,48 @@ span.name {
 span.name-part {
     font-style: italic;
     color: #eddeb5;
+}
+
+.classification {
+    padding-bottom: 1.25rem;
+    color: var(--c-goldpale);
+}
+
+.classification span {
+    font-weight: bold;
+    color: var(--c-golden);
+}
+
+.classification table {
+    background: var(--c-fullblack);
+    border: 2px solid var(--c-golden);
+    border-top-left-radius: 0px;
+    border-radius: 10px;
+}
+
+.classification th,
+.classification td {
+    padding: 5px;
+}
+
+.verticalTop {
+    vertical-align: top;
+}
+
+p.heading {
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--c-golden);
+    padding-bottom: 5px;
+}
+
+span.lined {
+    color: brown;
+}
+span.added {
+    color: var(--c-skyblue);
+}
+
+.link-blocked {
+    color: var(--c-crimson);
 }
