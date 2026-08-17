@@ -13,12 +13,10 @@
             <li><a href="#human-humanoid">       Humikus        </a></li>
             <li><a href="#wolf-humanoid">        Mannoŕ         </a></li>
             <li><a href="#bear-humanoid">        Monûlus        </a></li>
-            <li><a href="#reptile-humanoids">    Luzintŕ        </a></li>
             <li><a href="#lizard-humanoid">      Luzini         </a></li>
             <li><a href="#snake-humanoid">       N’Tŕoidy       </a></li>
             <li><a href="#hybrid-humanoid">      Hörtigc        </a></li>
             <li><a href="#slime-humanoid">       Slionith       </a></li>
-            <li><a href="#sea-humanoids">        Oceliś         </a></li>
             <li><a href="#otter-humanoid">       O’Zimus        </a></li>
             <li><a href="#shark-humanoid">       O’Erim         </a></li>
             <li><a href="#coral-humanoid">       O’de’Holl      </a></li>
