@@ -15,11 +15,16 @@
             <li><a href="#human-humanoid">       Humikus        </a></li>
             <li><a href="#wolf-humanoid">        Mannoŕ         </a></li>
             <li><a href="#bear-humanoid">        Monûlus        </a></li>
-            <li><a href="#lizard-humanoid">      Luzini         </a></li>
-            <!--
-            <li><a href="#snake-humanoid">       Tŕoidy         </a></li>
+            <li><a href="#lizard-humanoid">      Luzin          </a></li>
+            <li><a href="#snake-humanoid">       Tŕoid          </a></li>
             <li><a href="#hybrid-humanoid">      Hörtigc        </a></li>
             <li><a href="#slime-humanoid">       Slionith       </a></li>
+            <!--
+            <li><a href="#dragon-humanoid">      Drahikânus     </a></li>
+            <li><a href="#pig-humanoid">         Gallos         </a></li>
+            <li><a href="#cow-humanoid">         Munos          </a></li>
+            <li><a href="#orc-like-humanoid">    Orc’like       </a></li>
+            
             <li><a href="#otter-humanoid">       O’Zimus        </a></li>
             <li><a href="#shark-humanoid">       O’Erim         </a></li>
             <li><a href="#coral-humanoid">       O’de’Holl      </a></li>
@@ -27,35 +32,21 @@
             <li><a href="#octopus-humanoid">     O’yu’Fklip     </a></li>
             <li><a href="#jellyfish-humanoid">   O’Dōttey       </a></li>
             <li><a href="#needle-ear-humanoid">  Elifip         </a></li>
-            <li><a href="#dragon-humanoid">      Drahius’Kânus  </a></li>
-            <li><a href="#pig-humanoid">         Gallos         </a></li>
-            <li><a href="#cow-humanoid">         Munos          </a></li>
-            <li><a href="#orc-like-humanoid">    Orc’like       </a></li>
             -->
         </ul>
     </nav>
 <!--
-0.0.    Základní pojmy  Prolog                  opening
-1.0.    Humikus         Člověk pravý            human-humanoid
-2.0.    Mannoŕ          Člověk vlčí             wolf-humanoid
-3.0.    Monûlus         Člověk medvědí          bear-humanoid
-4.0.    Luzintŕ         Lidé plazí              reptile-humanoids
-  4.1.  Luzini          Člověk ještěří          lizard-humanoid
-  4.2.  N’Tŕoidy        Člověk hadí             snake-humanoid
-5.0.    Hörtigc?        Člověk kříženci         hybrid-humanoid
-6.0.    Slionith        Člověk slizovití        slime-humanoid
-7.0.    Oceliś          Lidé mořští             sea-humanoids
-  7.1.  O’Zimus         Člověk vydří            otter-humanoid
-  7.2.  O’Erim          Člověk žraločí          shark-humanoid
-  7.3.  O’de’Holl       Člověk korálový         coral-humanoid
-  7.4.  O’Cūrr          Člověk kytovcovití      cetacean-humanoid
-  7.5.  O’yu’Fklip      Člověk chobotnicovití   octopus-humanoid
-  7.6.  O’Dōttey        Člověk medúzovití       jellyfish-humanoid
-8.0.    Elifip          Člověk jehlouší         needle-ear-humanoid
-9.0.    Drahius’Kânus   Člověk dračí            dragon-humanoid
-10.0.   Gallos          Člověk prasečí          pig-humanoid
-11.0.   Munos           Člověk kravští          cow-humanoid
-12.0.   Orc’like        Člověk orc’like         orc-like-humanoid
+Zimus           člověk vydří
+Erim            člověk žraločí
+O’de’Holl       člověk korálový
+Cūrr            člověk kytovcovití
+O’yu’Fklip      člověk chobotnicovití
+Dōttey          člověk medúzovití
+Elifip          člověk jehlouší
+Drahikânus      člověk dračí
+Gallos          člověk prasečí
+Munos           člověk kravští
+Orc’like        člověk orc’like
 -->
     
     <h1>Obyvatelé</h1>
@@ -287,12 +278,12 @@
     
     <section id="lizard-humanoid">
         <ResidentSection
-            title="Luzini"
+            title="Luzin"
             key="luziniShapes"
         />
 
         <ClassificationTable
-            scientific={['śemmeth ?', 'člověk ?']}
+            scientific={['śemmeth ?', 'člověk ještěří']}
             linguistic={['Luzin', 'ještěří člověk / Ještěrák']}
             popular={[['', '']]}
         />
@@ -340,42 +331,71 @@
             Někteří se domnívají, že tento výraz mohl vzniknout z pradávného dodnes nezjištěného jazyka nazvaného Harmazarr, kde existovalo slovo <i>Hanob</i>, které se ale čte velmi podobně jako dnešní Luzin, a předpokládá se, že označovalo tvora připodobněného pouštnímu bohu Zarthewu, který vypadá právě jako Luzini.
         </p>
         <p>
-            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ještěří</a>.
         </p>
     </section>
 
-<!--
     <div class="section-divider"></div>
 
     <section id="snake-humanoid">
         <ResidentSection
-            title="Tŕoidy"
-            key="troidyShapes"
+            title="Tŕoid"
+            key="troidShapes"
         />
 
         <ClassificationTable
-            scientific={['śemmeth ?', 'člověk ?']}
-            linguistic={['Tŕoidy', 'hadí člověk']}
+            scientific={['śemmeth ?', 'člověk hadí']}
+            linguistic={['Tŕoidy', 'hadí člověk / Had']}
             popular={[['', '']]}
         />
 
         <p class="heading">
             Anatomický popis
         </p>
+        <p>
+            Oproti Luzinům mají Tŕoidi pouze dvě horní končetiny v podobě rukou. Spodní část jejich těla přechází v dlouhý, svalnatý hadí ocas, na kterém také stojí. Tato stavba těla jim umožňuje plynulý, rychlý a mimořádně efektivní pohyb v jemných písčitých dunách, kde by klasické nohy zapadaly.
+        </p>
+        <p>
+            Stejně jako Luzini nevznikli z linie Humiků, ale odvozují svůj původ z linie Drahikânů. Oproti Luzinům však mají hladkou holou kůži, pokrytou jemnými, téměř nehmatatelnými šupinkami. Jejich pleť je od vínově fialové, přes rudě písčitou až po zlatavě oranžovou a písčitě žlutou. Jejich zrak je přizpůsoben slunečnímu světlu a tepelným mžitkám nad obzorem.
+        </p>
+        <p>
+            Jejich těla jsou zkrátka monumentem sami o sobě. Když opomeneme jejich doslova obrovitánský ocas, který často měří až 7 metrů, tak jejich samotný trup od pasu nahoru není nijak pozadu. Široká ramena, statné svaly a především a často vypouklé břicho a ještě větší prsa. Pokud bychom opravdu chtěli tvrdit, že Monûlové jsou hory, Tŕoidi pak musí být světadíly.
+        </p>
         <p class="heading">
             Rozšiřování
+        </p>
+        <p>
+            Tŕoidi jsou vládci Pouště. Obývají nejteplejší a nejžhavější písečné duny, které zde existují. Oni jsou krály nestabilního a zrnitého povrchu. Jejich mohutný ocas po tomto povrchu pluje stejně jako po balvanu.
+        </p>
+        <p>
+            Podobně jako Luzini i oni mají termoregulační organismus a oproti klasickým hadům jsou taktéž schopni přežít i v nejsevernějších oblastech. Ale jejich denní spotřeba jídla je oproti Luzinům ještě větší, a to už oni sami mají silnou hostinu, jsou-li v chladu.
         </p>
         <p class="heading">
             Společnost
         </p>
+        <p>
+            Oproti přístupnějším Luzinům se Tŕoidi jiným rasám vždy raději vyhýbali a i dnes je berou s velkou odtažitostí a rezervou.
+        </p>
+        <p>
+            Jejich domovy jsou pod zemí v dunách písku. Je to velmi precizní práce, ale mnoho architektů to odsekává. Přitom postavit takové skvosty jako dělají Tŕoidi a ještě k tomu do písku, je alespoň chválihodné.
+        </p>
+        <p>
+            Jejich společnost není sice zrovna dvakrát sdílná, ale když zmíníte písek, stavby či jídlo, hned se dají do řeči.
+        </p>
         <p class="heading">
             Magické vlastnosti
+        </p>
+        <p>
+            Jako obyvatelé Pouště jsou Tŕoidi společně s Luziny skvělými vládci ohně. Právě díky ohni dokáží stavět monumenty v podzemí. Tepelná úprava písku ze sypkého na pevné vlastnosti jim v tom jen a jen napomáhá.
         </p>
         <p class="heading">
             Původ slova
         </p>
         <p>
-            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+            Slovo <i>Tŕoid</i> podle odhadů pochází z prastarého jazyka Gaaharamantimishe. Spojením slov <i>Tŕaya</i> znamenající podle odhadů vlnitý pohyb a <i>Idamid</i> jako symbol písku. Do nějaké smysluplné podoby se to dalo překložit jako <i>„vlnitý písek“</i>, což krásně odráží nestálost písečných dun, připomínající mořské vlny, ale také typický pohyb Tŕoidů.
+        </p>
+        <p>
+            Více najdete na podstránce <a href="/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk hadí</a>.
         </p>
     </section>
     
@@ -383,36 +403,61 @@
 
     <section id="hybrid-humanoid">
         <ResidentSection
-            title="Hörtigc?"
+            title="Hörtigc"
             key="hortigcShapes"
         />
 
         <ClassificationTable
-            scientific={['śemmeth ?', 'člověk ?']}
-            linguistic={['', '']}
-            popular={[['', '']]}
+            scientific={['?', '?']}
+            linguistic={['Hörtigc', 'kříženec / hybrid']}
+            popular={[
+                ['Mazariag', 'mutant'],
+                ['Mâzzatī', 'míšenec'],
+                ['Fûlig', 'zmetek']
+            ]}
         />
 
         <p class="heading">
             Anatomický popis
         </p>
+        <p>
+            Hörtigcové představují obrovskou skupinu, která nevznikla přirozenou evoluční cestou. Jejich vznik je přisuzován neznámé magii, která je před dávnými lety (přibližně 1 miliardu let nazpět) nečekaně zasáhla. Největší transformace postihla linii Humiků, ale zasaženi byli i Mannoŕové či Monûlové.
+        </p>
+        <p>
+            Tato magie způsobila, že se jejich těla — nejčastěji v dolní polovině — transformovala do forem nejrůznějších aurionthských tvorů. Za nepředstavitelně dlouhou dobu od tohoto zásahu si však stihli projít hned několika vlastními evolučními vrstvami. Tyto postupné změny jim umožnily především lepší biologické sžití s novými hybridními těly a stabilizaci jejich organismu.
+        </p>
+        <p>
+            Anatomie jednotlivých Hörtigců je velmi rozmanitá. Záleží na tom, s jakým tvorem se jejich původní linie spojila. Ačkoliv byla původní transformace náhlou mutací, dnešní Hörtigcové mají pevně propojenou nervovou i svalovou soustavu, díky čemuž svá hybridní těla ovládají s naprostou přirozeností.
+        </p>
         <p class="heading">
             Rozšiřování
+        </p>
+        <p>
+            Jejich rozšíření dnes již není tak časté, ale na Aurionthu stále existují. Nevytvářejí obří souvislé říše, ale nalézt je lze napříč různými zeměmi.
+        </p>
+        <p>
+            Z evolučního hlediska jsou živým důkazem toho, že i nehoda může být počátkem nového druhu a že původ není ničím víc než udržením v čase.
         </p>
         <p class="heading">
             Společnost
         </p>
-        <p class="heading">
-            Magické vlastnosti
+        <p>
+            Vzhledem k jejich pestrosti bývá společnost Hörtigců buď pevně integrovaná do komunit jiných linií, nebo vytváří menší, velmi rozmanité osady, kde vedle sebe žijí jedinci s úplně odlišnými anatomickými znaky.
         </p>
         <p class="heading">
             Původ slova
         </p>
         <p>
-            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+            Slovo <i>Hörtigc</i> je akorát trochu více odborně znějící slova <i>Höregc</i>, tedy kříženec, hybrid.
+        </p>
+        <p>
+            Samotné slovo <i>Höregc</i> pak pochází ze Starorodu a znamená <i>„výsledek dvou“</i>.
+        </p>
+        <p>
+            Více najdete na podstránce <a href="/?" class="link-blocked" onclick={(e) => e.preventDefault()}>[placeholder]</a>.
         </p>
     </section>
-    
+
     <div class="section-divider"></div>
 
     <section id="slime-humanoid">
@@ -422,31 +467,58 @@
         />
 
         <ClassificationTable
-            scientific={['śemmeth ?', 'člověk ?']}
-            linguistic={['', '']}
+            scientific={['śemmeth ?', 'člověk slizovitý']}
+            linguistic={['Slionith', 'slizovitý člověk / Rozteklý']}
             popular={[['', '']]}
         />
 
         <p class="heading">
             Anatomický popis
         </p>
+        <p>
+            Slionithé představují zcela unikátní linii, která se v průběhu věků evolučně odtrhla od svých původních předků z linie Monûlů. Zatímco původní Monûlové se vyznačovali mohutnou stavbou těla, silnými kostmi a hustou srstí přizpůsobenou mrazivým horám, tělesná schránka Slionithů si prošla radikální proměnou. Postupnou adaptací ztratili veškeré pevné části, kosti i tuhé tkáně, až se jejich těla proměnila v plnohodnotnou, přizpůsobivou slizovitou hmotu. Přesto si v základním nastavení zachovávají humanoidní siluetu, která sice na první pohled působí jako vědomě náročná na udržení, avšak představuje jejich přirozenou podstatu.
+        </p>
+        <p>
+            Struktura jejich těla drží tvar bez nutnosti neustálého soustředění. Při velmi důkladném pozorování lze uvnitř jejich rosolovité hmoty zaznamenat malé, ale na pohled mimořádně rychlé proudění a mikroskopické proudy, které v organismu plní funkci jakési vnitřní hydrodynamické kostry. Vzhledem k nepřítomnosti pevných zábran se jejich tělesná schránka dokáže natáhnout do nepředstavitelných šířek nebo se naopak extrémně smrštit. Tyto výrazné tvarové změny však již vyžadují zapojení samotného vědomí. Vizuálně si tak Slionithé i přes svou želatinovou povahu uchovávají široká ramena či náznak celkově masivnější stavby těla, což je estetickým dědictvím po jejich monûlských předcích.
+        </p>
+
         <p class="heading">
             Rozšiřování
+        </p>
+        <p>
+            Vývoj Slionithů jako jedna z posledních vývojových vrstev úzce souvisí s kolonizací ostrova Mallēm rasou Monûlů. Ostrov už v době jejich příchodu nabízel specifické prostředí s dominancí rostlin plodících měkké až želatinové plody, které se pro kolonizátory staly hlavním zdrojem obživy.
+        </p>
+        <p>
+            Dlouhodobá konzumace této stravy a biochemické procesy s ní spojené vedly k postupnému zželatínění a rozvolnění jejich tkání. V důsledku této adaptace na prostředí ostrova se původní monûlští obyvatelé proměnili v samostatnou slizovitou linii.
         </p>
         <p class="heading">
             Společnost
         </p>
+        <p>
+            Přestože vnější pozorovatelé mohou mít sklon posuzovat Slionithy podle jejich neobvyklé fyzické struktury, jejich existence nepřehlédnutelně dokazuje, že lidskost nespočívá ve tvaru, vzhledu ani velikosti tělesné schránky, ale ve vědomí, vytrvalosti a schopnosti myšlenkového plánování. Společenské uspořádání Slionithů bývá velmi klidné a rozvážné.
+        </p>
         <p class="heading">
             Magické vlastnosti
         </p>
+        <p>
+            Magická podstata Slionithů je úzce spjata s hydrokinetickým a tvarovým prvkem magie, který napájí vnitřní proudění jejich těl. Nebojují hrubou fyzickou silou, ale dokáží absorbovat nárazy nebo procházet drobnými průduchy v terénu.
+        </p>
+
         <p class="heading">
             Původ slova
         </p>
         <p>
-            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+            Slovo <i>Slionith</i> je vytvořeno jedním ze členů této rasy. Nikdo neví, proč právě toto, či z čeho vzniklo. Sám autor to nikdy neuvedl a vzal si toto tajemství taktéž do hrobu.
+        </p>
+        <p>
+            Ohledně samotného slova existuje nespočet teorií, hypotéz i domněnek. Nikdo nikdy nepřišel na původ. Vědci se proto domnívají, že slo o pouhé splinutí náhodné sady písmen, tedy lidsky řečeno: prostě si to vymyslel.
+        </p>
+
+        <p>
+            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk slizovitý</a>.
         </p>
     </section>
-
+<!--
     <div class="section-divider"></div>
 
     <section id="otter-humanoid">
@@ -477,7 +549,7 @@
             Původ slova
         </p>
         <p>
-            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>.
         </p>
     </section>
     
@@ -511,7 +583,7 @@
             Původ slova
         </p>
         <p>
-            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>.
         </p>
     </section>
     
@@ -551,7 +623,7 @@
             Původ slova
         </p>
         <p>
-            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>.
         </p>
     </section>
     
@@ -585,7 +657,7 @@
             Původ slova
         </p>
         <p>
-            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>.
         </p>
     </section>
     
@@ -619,7 +691,7 @@
             Původ slova
         </p>
         <p>
-            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>.
         </p>
     </section>
     
@@ -653,7 +725,7 @@
             Původ slova
         </p>
         <p>
-            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>.
         </p>
     </section>
     
@@ -687,7 +759,7 @@
             Původ slova
         </p>
         <p>
-            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>.
         </p>
     </section>
     
@@ -721,7 +793,7 @@
             Původ slova
         </p>
         <p>
-            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>.
         </p>
     </section>
     
@@ -755,7 +827,7 @@
             Původ slova
         </p>
         <p>
-            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>.
         </p>
     </section>
     
@@ -789,7 +861,7 @@
             Původ slova
         </p>
         <p>
-            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>.
         </p>
     </section>
 -->

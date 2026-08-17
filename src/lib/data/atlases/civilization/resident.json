@@ -162,7 +162,7 @@
         ]
     },
     "luziniShapes": {
-        "pattern": "páni",
+        "pattern": "pán",
         "shapes": [
             {
                 "_case": 1,
@@ -215,54 +215,54 @@
             }
         ]
     },
-    "troidyShapes": {
-        "pattern": "páni",
+    "troidShapes": {
+        "pattern": "pán",
         "shapes": [
             {
                 "_case": 1,
-                "singular": "Tŕoidy",
+                "singular": "Tŕoid",
                 "alterSingular": [],
-                "plural": "Tŕoidy",
-                "alterPlural": []
+                "plural": "Tŕoidi",
+                "alterPlural": ["Tŕoidové"]
             },
             {
                 "_case": 2,
-                "singular": "Tŕoidů",
+                "singular": "Tŕoida",
                 "alterSingular": [],
                 "plural": "Tŕoidů",
                 "alterPlural": []
             },
             {
                 "_case": 3,
-                "singular": "Tŕoidům",
-                "alterSingular": [],
+                "singular": "Tŕoidovi",
+                "alterSingular": ["Tŕoidu"],
                 "plural": "Tŕoidům",
                 "alterPlural": []
             },
             {
                 "_case": 4,
-                "singular": "Tŕoidy",
+                "singular": "Tŕoida",
                 "alterSingular": [],
                 "plural": "Tŕoidy",
                 "alterPlural": []
             },
             {
                 "_case": 5,
-                "singular": "Tŕoidy",
+                "singular": "Tŕoide",
                 "alterSingular": [],
-                "plural": "Tŕoidy",
+                "plural": "Tŕoidi",
                 "alterPlural": []
             },
             {
                 "_case": 6,
                 "singular": "Tŕoidech",
-                "alterSingular": [],
+                "alterSingular": ["Tŕoidu"],
                 "plural": "Tŕoidech",
                 "alterPlural": []
             },
             {
                 "_case": 7,
-                "singular": "Tŕoidy",
+                "singular": "Tŕoidem",
                 "alterSingular": [],
                 "plural": "Tŕoidy",
                 "alterPlural": []
