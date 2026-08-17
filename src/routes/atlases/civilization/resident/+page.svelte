@@ -3,6 +3,8 @@
 
     import ResidentSection from '$components/atlas/civilization/resident/ResidentSection.svelte';
     import ClassificationTable from '$components/atlas/ClassificationTable.svelte';
+
+    import { base } from '$app/paths';
 </script>
 
 <section class="atlas-inside">
@@ -149,7 +151,7 @@
             Jeho přibližné chápání zůstalo, ale pravý význam, co vše pod to spadá a především samotný vzhled slova se měnil. Už v raném Starorodě se toto slovo psalo <i>Humalitikes</i> a již označovalo tvory vzhledově připomínající člověka. V konečném vývoji Starorodu a s přechodem na Novorod se slovo psalo <i>Humalitikus</i> a označovalo pouze tvory podobné člověku a v češtině je jeho ekvivalentem slovo humanoid. Ale samotné <i>Humikus</i> vzniklo již v pozní latinoše, kdy se s příchodem Mannoŕů a Monûlů potřebovalo rozlišit mezi člověkem a Člověkem. Slovo prošlo škrtancema: <b>hum</b><span class="lined">aell</span><b>i</b><span class="lined">ti</span><b>k</b><span class="lined">e</span><span class="added">u</span><b>s</b> a tedy dnešní Humikus (anglicky human).
         </p>
         <p>
-            Více najdete na podstránce  <a href="/semmeth-roenig" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk pravý</a>.
+            Více najdete na podstránce  <a href="{base}/semmeth-roenig" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk pravý</a>.
         </p>
     </section>
     
@@ -210,7 +212,7 @@
             Postupem času se původně obecné označení začalo spojovat právě s Mannoŕy, jejichž způsob života nejlépe odpovídal jeho původnímu významu. Slovo tak postupně přestalo označovat pouze člověka žijícího v divočině a stalo se vlastním označením celé linie.
         </p>
         <p>
-            Více najdete na podstránce  <a href="/semmeth-woefleeth" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk vlčí</a>.
+            Více najdete na podstránce  <a href="{base}/semmeth-woefleeth" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk vlčí</a>.
         </p>
     </section>
 
@@ -274,7 +276,7 @@
             <i>Monûlus</i> tedy doslovně znamená <i>„Velký jako hora“</i>. Toto pojmenování původně nevzniklo jako označení rasy, ale jako popis vlastností jedince, a teprve s odstupem času se z přezdívky stalo vlastní jméno celé linie.
         </p>
         <p>
-            Více najdete na podstránce  <a href="/semmeth-faebert" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk medvědí</a>.
+            Více najdete na podstránce  <a href="{base}/semmeth-faebert" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk medvědí</a>.
         </p>
 
     </section>
@@ -336,7 +338,7 @@
             Někteří se domnívají, že tento výraz mohl vzniknout z pradávného dodnes nezjištěného jazyka nazvaného Harmazarr, kde existovalo slovo <i>Hanob</i>, které se ale čte velmi podobně jako dnešní Luzin, a předpokládá se, že označovalo tvora připodobněného pouštnímu bohu Zarthewu, který vypadá právě jako Luzini.
         </p>
         <p>
-            Více najdete na podstránce <a href="/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
         </p>
     </section>
 
@@ -371,7 +373,7 @@
             Původ slova
         </p>
         <p>
-            Více najdete na podstránce <a href="/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
         </p>
     </section>
     
@@ -405,7 +407,7 @@
             Původ slova
         </p>
         <p>
-            Více najdete na podstránce <a href="/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
         </p>
     </section>
     
@@ -439,7 +441,7 @@
             Původ slova
         </p>
         <p>
-            Více najdete na podstránce <a href="/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
         </p>
     </section>
 
@@ -473,7 +475,7 @@
             Původ slova
         </p>
         <p>
-            Více najdete na podstránce <a href="/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
         </p>
     </section>
     
@@ -507,7 +509,7 @@
             Původ slova
         </p>
         <p>
-            Více najdete na podstránce <a href="/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
         </p>
     </section>
     
@@ -547,7 +549,7 @@
             Původ slova
         </p>
         <p>
-            Více najdete na podstránce <a href="/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
         </p>
     </section>
     
@@ -581,7 +583,7 @@
             Původ slova
         </p>
         <p>
-            Více najdete na podstránce <a href="/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
         </p>
     </section>
     
@@ -615,7 +617,7 @@
             Původ slova
         </p>
         <p>
-            Více najdete na podstránce <a href="/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
         </p>
     </section>
     
@@ -649,7 +651,7 @@
             Původ slova
         </p>
         <p>
-            Více najdete na podstránce <a href="/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
         </p>
     </section>
     
@@ -683,7 +685,7 @@
             Původ slova
         </p>
         <p>
-            Více najdete na podstránce <a href="/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
         </p>
     </section>
     
@@ -717,7 +719,7 @@
             Původ slova
         </p>
         <p>
-            Více najdete na podstránce <a href="/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
         </p>
     </section>
     
@@ -751,7 +753,7 @@
             Původ slova
         </p>
         <p>
-            Více najdete na podstránce <a href="/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
         </p>
     </section>
     
@@ -785,7 +787,7 @@
             Původ slova
         </p>
         <p>
-            Více najdete na podstránce <a href="/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
+            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>
         </p>
     </section>
 -->
