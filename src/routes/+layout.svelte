@@ -185,7 +185,6 @@
 					<li><a href="{base}/languages" class="disable">Jazyky</a></li>
 					<li><a href="{base}/about/me">O tvůrci</a></li>
 					<li><a href="{base}/about/project">O projektu</a></li>
-					<li><a href="{base}/kroket-page">Kroket GAME</a></li>
 				</ul>
 			</div>
 		</div>

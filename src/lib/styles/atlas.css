@@ -234,3 +234,9 @@ span.added {
 .link-blocked {
     color: var(--c-crimson);
 }
+
+ul.sec-nav > li > a {
+    font-size: 15px;
+    font-family: var(--f-audiowide);
+    letter-spacing: 0.15em;
+}

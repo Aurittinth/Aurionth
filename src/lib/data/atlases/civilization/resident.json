@@ -5,51 +5,40 @@
             {
                 "_case": 1,
                 "singular": "Humikus",
-                "alterSingular": [],
                 "plural": "Humici",
                 "alterPlural": ["Humikové"]
             },
             {
                 "_case": 2,
                 "singular": "Humika",
-                "alterSingular": [],
-                "plural": "Humiků",
-                "alterPlural": []
+                "plural": "Humiků"
             },
             {
                 "_case": 3,
                 "singular": "Humiku",
                 "alterSingular": ["Humikovi"],
-                "plural": "Humikům",
-                "alterPlural": []
+                "plural": "Humikům"
             },
             {
                 "_case": 4,
                 "singular": "Humika",
-                "alterSingular": [],
-                "plural": "Humiky",
-                "alterPlural": []
+                "plural": "Humiky"
             },
             {
                 "_case": 5,
                 "singular": "Humiku",
-                "alterSingular": [],
                 "plural": "Humici",
                 "alterPlural": ["Humikové"]
             },
             {
                 "_case": 6,
                 "singular": "Humikovi",
-                "alterSingular": [],
-                "plural": "Humicích",
-                "alterPlural": []
+                "plural": "Humicích"
             },
             {
                 "_case": 7,
                 "singular": "Humikem",
-                "alterSingular": [],
-                "plural": "Humiky",
-                "alterPlural": []
+                "plural": "Humiky"
             }
         ]
     },
@@ -59,51 +48,40 @@
             {
                 "_case": 1,
                 "singular": "Mannoŕ",
-                "alterSingular": [],
                 "plural": "Mannoŕové",
                 "alterPlural": ["Mannoŕry"]
             },
             {
                 "_case": 2,
                 "singular": "Mannoŕa",
-                "alterSingular": [],
-                "plural": "Mannoŕů",
-                "alterPlural": []
+                "plural": "Mannoŕů"
             },
             {
                 "_case": 3,
                 "singular": "Mannoŕu",
                 "alterSingular": ["Mannoŕovi"],
-                "plural": "Mannoŕům",
-                "alterPlural": []
+                "plural": "Mannoŕům"
             },
             {
                 "_case": 4,
                 "singular": "Mannoŕa",
-                "alterSingular": [],
-                "plural": "Mannoŕy",
-                "alterPlural": []
+                "plural": "Mannoŕy"
             },
             {
                 "_case": 5,
                 "singular": "Mannoŕe",
-                "alterSingular": [],
                 "plural": "Mannoŕové",
                 "alterPlural": ["Mannoŕry"]
             },
             {
                 "_case": 6,
                 "singular": "Mannoŕovi",
-                "alterSingular": [],
-                "plural": "Mannoŕech",
-                "alterPlural": []
+                "plural": "Mannoŕech"
             },
             {
                 "_case": 7,
                 "singular": "Mannoŕem",
-                "alterSingular": [],
-                "plural": "Mannoŕy",
-                "alterPlural": []
+                "plural": "Mannoŕy"
             }
         ]
     },
@@ -113,51 +91,38 @@
             {
                 "_case": 1,
                 "singular": "Monûlus",
-                "alterSingular": [],
-                "plural": "Monûlové",
-                "alterPlural": []
+                "plural": "Monûlové"
             },
             {
                 "_case": 2,
                 "singular": "Monûla",
-                "alterSingular": [],
-                "plural": "Monûlů",
-                "alterPlural": []
+                "plural": "Monûlů"
             },
             {
                 "_case": 3,
                 "singular": "Monûlovi",
-                "alterSingular": [],
-                "plural": "Monûlům",
-                "alterPlural": []
+                "plural": "Monûlům"
             },
             {
                 "_case": 4,
                 "singular": "Monûla",
-                "alterSingular": [],
-                "plural": "Monûly",
-                "alterPlural": []
+                "plural": "Monûly"
             },
             {
                 "_case": 5,
                 "singular": "Monûle",
-                "alterSingular": [],
                 "plural": "Monûlové",
                 "alterPlural": ["Manûli"]
             },
             {
                 "_case": 6,
                 "singular": "Monûlovi",
-                "alterSingular": [],
-                "plural": "Monûlech",
-                "alterPlural": []
+                "plural": "Monûlech"
             },
             {
                 "_case": 7,
                 "singular": "Monûlem",
-                "alterSingular": [],
-                "plural": "Monûly",
-                "alterPlural": []
+                "plural": "Monûly"
             }
         ]
     },
@@ -167,35 +132,28 @@
             {
                 "_case": 1,
                 "singular": "Luzin",
-                "alterSingular": [],
                 "plural": "Luzini",
                 "alterPlural": ["Luzinové"]
             },
             {
                 "_case": 2,
                 "singular": "Luzina",
-                "alterSingular": [],
-                "plural": "Luzinů",
-                "alterPlural": []
+                "plural": "Luzinů"
             },
             {
                 "_case": 3,
                 "singular": "Luzinu",
                 "alterSingular": ["Luzinovi"],
-                "plural": "Luzinům",
-                "alterPlural": []
+                "plural": "Luzinům"
             },
             {
                 "_case": 4,
                 "singular": "Luzina",
-                "alterSingular": [],
-                "plural": "Luziny",
-                "alterPlural": []
+                "plural": "Luziny"
             },
             {
                 "_case": 5,
                 "singular": "Luzine",
-                "alterSingular": [],
                 "plural": "Luzini",
                 "alterPlural": ["Luzinové"]
             },
@@ -203,15 +161,12 @@
                 "_case": 6,
                 "singular": "Luzinovi",
                 "alterSingular": ["Luzinu"],
-                "plural": "Luzinech",
-                "alterPlural": []
+                "plural": "Luzinech"
             },
             {
                 "_case": 7,
                 "singular": "Luzinem",
-                "alterSingular": [],
-                "plural": "Luziny",
-                "alterPlural": []
+                "plural": "Luziny"
             }
         ]
     },
@@ -221,105 +176,40 @@
             {
                 "_case": 1,
                 "singular": "Tŕoid",
-                "alterSingular": [],
                 "plural": "Tŕoidi",
                 "alterPlural": ["Tŕoidové"]
             },
             {
                 "_case": 2,
                 "singular": "Tŕoida",
-                "alterSingular": [],
-                "plural": "Tŕoidů",
-                "alterPlural": []
+                "plural": "Tŕoidů"
             },
             {
                 "_case": 3,
                 "singular": "Tŕoidovi",
                 "alterSingular": ["Tŕoidu"],
-                "plural": "Tŕoidům",
-                "alterPlural": []
+                "plural": "Tŕoidům"
             },
             {
                 "_case": 4,
                 "singular": "Tŕoida",
-                "alterSingular": [],
-                "plural": "Tŕoidy",
-                "alterPlural": []
+                "plural": "Tŕoidy"
             },
             {
                 "_case": 5,
                 "singular": "Tŕoide",
-                "alterSingular": [],
-                "plural": "Tŕoidi",
-                "alterPlural": []
+                "plural": "Tŕoidi"
             },
             {
                 "_case": 6,
                 "singular": "Tŕoidech",
                 "alterSingular": ["Tŕoidu"],
-                "plural": "Tŕoidech",
-                "alterPlural": []
+                "plural": "Tŕoidech"
             },
             {
                 "_case": 7,
                 "singular": "Tŕoidem",
-                "alterSingular": [],
-                "plural": "Tŕoidy",
-                "alterPlural": []
-            }
-        ]
-    },
-    "hortigcShapes": {
-        "pattern": "pán",
-        "shapes": [
-            {
-                "_case": 1,
-                "singular": "Hörtigc",
-                "alterSingular": [],
-                "plural": "Hörtigcové",
-                "alterPlural": []
-            },
-            {
-                "_case": 2,
-                "singular": "Hörtigca",
-                "alterSingular": [],
-                "plural": "Hörtigců",
-                "alterPlural": []
-            },
-            {
-                "_case": 3,
-                "singular": "Hörtigcovi",
-                "alterSingular": [],
-                "plural": "Hörtigcům",
-                "alterPlural": []
-            },
-            {
-                "_case": 4,
-                "singular": "Hörtigca",
-                "alterSingular": [],
-                "plural": "Hörtigcy",
-                "alterPlural": []
-            },
-            {
-                "_case": 5,
-                "singular": "Hörtigc",
-                "alterSingular": ["Hörtigce"],
-                "plural": "Hörtigcové",
-                "alterPlural": []
-            },
-            {
-                "_case": 6,
-                "singular": "Hörtigcovi",
-                "alterSingular": [],
-                "plural": "Hörtigcých",
-                "alterPlural": ["Hörtigcech"]
-            },
-            {
-                "_case": 7,
-                "singular": "Hörtigcem",
-                "alterSingular": [],
-                "plural": "Hörtigcy",
-                "alterPlural": []
+                "plural": "Tŕoidy"
             }
         ]
     },
@@ -329,51 +219,188 @@
             {
                 "_case": 1,
                 "singular": "Slionith",
-                "alterSingular": [],
                 "plural": "Slionithé",
                 "alterPlural": ["Slionithové"]
             },
             {
                 "_case": 2,
                 "singular": "Slionitha",
-                "alterSingular": [],
-                "plural": "Slionithů",
-                "alterPlural": []
+                "plural": "Slionithů"
             },
             {
                 "_case": 3,
                 "singular": "Slionithovi",
-                "alterSingular": [],
-                "plural": "Slionithům",
-                "alterPlural": []
+                "plural": "Slionithům"
             },
             {
                 "_case": 4,
                 "singular": "Slionitha",
-                "alterSingular": [],
-                "plural": "Slionithy",
-                "alterPlural": []
+                "plural": "Slionithy"
             },
             {
                 "_case": 5,
                 "singular": "Slionithe",
-                "alterSingular": [],
-                "plural": "Slionithé",
-                "alterPlural": []
+                "plural": "Slionithé"
             },
             {
                 "_case": 6,
                 "singular": "Slionithovi",
-                "alterSingular": [],
-                "plural": "Slionithech",
-                "alterPlural": []
+                "plural": "Slionithech"
             },
             {
                 "_case": 7,
                 "singular": "Slionithem",
-                "alterSingular": [],
-                "plural": "Slionithy",
-                "alterPlural": []
+                "plural": "Slionithy"
+            }
+        ]
+    },
+    "elifipShapes": {
+        "pattern": "pán",
+        "shapes": [
+            {
+                "_case": 1,
+                "singular": "Elif",
+                "plural": "Elifi",
+                "alterPlural": ["Elifové"]
+            },
+            {
+                "_case": 2,
+                "singular": "Elifa",
+                "plural": "Elifů"
+            },
+            {
+                "_case": 3,
+                "singular": "Elifovi",
+                "plural": "Elifům"
+            },
+            {
+                "_case": 4,
+                "singular": "Elifa",
+                "plural": "Elify"
+            },
+            {
+                "_case": 5,
+                "singular": "Elife",
+                "plural": "Elifi",
+                "alterPlural": ["Elifové"]
+            },
+            {
+                "_case": 6,
+                "singular": "Elifovi",
+                "plural": "Elifech"
+            },
+            {
+                "_case": 7,
+                "singular": "Elifem",
+                "plural": "Elify"
+            }
+        ]
+    },
+    "drahikanusShapes": {
+        "pattern": "pán",
+        "shapes": [
+            {
+                "_case": 1,
+                "singular": "Drahikânus",
+                "alterSingular": ["Drahius’Kânus"],
+                "plural": "Drahikâni",
+                "alterPlural": ["Drahius’Kâni"]
+            },
+            {
+                "_case": 2,
+                "singular": "Drahikâna",
+                "alterSingular": ["Drahius’Kâna"],
+                "plural": "Drahikânů",
+                "alterPlural": ["Drahius’Kânů"]
+            },
+            {
+                "_case": 3,
+                "singular": "Drahikânovi",
+                "alterSingular": ["Drahius’Kânovi"],
+                "plural": "Drahikânům",
+                "alterPlural": ["Drahius’Kânům"]
+            },
+            {
+                "_case": 4,
+                "singular": "Drahikâna",
+                "alterSingular": ["Drahius’Kâna"],
+                "plural": "Drahikâny",
+                "alterPlural": ["Drahius’Kâny"]
+            },
+            {
+                "_case": 5,
+                "singular": "Drahikâne",
+                "alterSingular": ["Drahius’Kâne"],
+                "plural": "Drahikâni",
+                "alterPlural": ["Drahius’Kâni"]
+            },
+            {
+                "_case": 6,
+                "singular": "Drahikânovi",
+                "alterSingular": ["Drahius’Kânovi"],
+                "plural": "Drahikânech",
+                "alterPlural": ["Drahius’Kânech"]
+            },
+            {
+                "_case": 7,
+                "singular": "Drahikânem",
+                "alterSingular": ["Drahius’Kânem"],
+                "plural": "Drahikâny",
+                "alterPlural": ["Drahius’Kâny"]
+            }
+        ]
+    },
+    "mokkShapes": {
+        "pattern": "",
+        "shapes": [
+            {
+                "_case": 1,
+                "singular": "Mokk",
+                "alterSingular": ["Mokkun"],
+                "plural": "Mocci",
+                "alterPlural": ["Mokkuni"]
+            },
+            {
+                "_case": 2,
+                "singular": "Mokka",
+                "alterSingular": ["Mokkuna"],
+                "plural": "Mokků",
+                "alterPlural": ["Mokkunů"]
+            },
+            {
+                "_case": 3,
+                "singular": "Mokkovi",
+                "alterSingular": ["Mokkunovi"],
+                "plural": "Mokkům",
+                "alterPlural": ["Mokkunům"]
+            },
+            {
+                "_case": 4,
+                "singular": "Mokka",
+                "alterSingular": ["Mokkuna"],
+                "plural": "Mokky",
+                "alterPlural": ["Mokkuny"]
+            },
+            {
+                "_case": 5,
+                "singular": "Mokke",
+                "alterSingular": ["Mokkune"],
+                "plural": "Mocci",
+                "alterPlural": ["Mokkuni"]
+            },
+            {
+                "_case": 6,
+                "singular": "Mokkovi",
+                "alterSingular": ["Mokkunovi"],
+                "plural": "Mokkech",
+                "alterPlural": ["Mokkunech"]
+            },
+            {
+                "_case": 7,
+                "singular": "Mokkem",
+                "alterSingular": ["Mokkunem"],
+                "plural": "Mokky",
+                "alterPlural": ["Mokkuny"]
             }
         ]
     },
@@ -382,52 +409,38 @@
         "shapes": [
             {
                 "_case": 1,
-                "singular": "",
-                "alterSingular": [],
-                "plural": "",
-                "alterPlural": []
+                "singular": "Oceliś",
+                "plural": "Ocely"
             },
             {
                 "_case": 2,
-                "singular": "",
-                "alterSingular": [],
-                "plural": "",
-                "alterPlural": []
+                "singular": "Ocela",
+                "plural": "Ocelů"
             },
             {
                 "_case": 3,
-                "singular": "",
-                "alterSingular": [],
-                "plural": "",
-                "alterPlural": []
+                "singular": "Ocelovi",
+                "plural": "Ocelům"
             },
             {
                 "_case": 4,
-                "singular": "",
-                "alterSingular": [],
-                "plural": "",
-                "alterPlural": []
+                "singular": "Ocely",
+                "plural": "Ocely"
             },
             {
                 "_case": 5,
-                "singular": "",
-                "alterSingular": [],
-                "plural": "",
-                "alterPlural": []
+                "singular": "Oceli",
+                "plural": "Ocelové"
             },
             {
                 "_case": 6,
-                "singular": "",
-                "alterSingular": [],
-                "plural": "",
-                "alterPlural": []
+                "singular": "Ocelovi",
+                "plural": "Ocelech"
             },
             {
                 "_case": 7,
-                "singular": "",
-                "alterSingular": [],
-                "plural": "",
-                "alterPlural": []
+                "singular": "Ocelem",
+                "plural": "Ocely"
             }
         ]
     },
@@ -755,99 +768,45 @@
             }
         ]
     },
-    "elifipShapes": {
+    "hortigcShapes": {
         "pattern": "pán",
         "shapes": [
             {
                 "_case": 1,
-                "singular": "Elifip",
-                "alterSingular": [],
-                "plural": "Elifové",
-                "alterPlural": ["Elifipové"]
+                "singular": "Hörtigc",
+                "plural": "Hörtigcové"
             },
             {
                 "_case": 2,
-                "singular": "Elifa",
-                "alterSingular": [],
-                "plural": "Elifů",
-                "alterPlural": []
+                "singular": "Hörtigca",
+                "plural": "Hörtigců"
             },
             {
                 "_case": 3,
-                "singular": "Elifovi",
-                "alterSingular": [],
-                "plural": "Elifům",
-                "alterPlural": []
+                "singular": "Hörtigcovi",
+                "plural": "Hörtigcům"
             },
             {
                 "_case": 4,
-                "singular": "Elifa",
-                "alterSingular": [],
-                "plural": "Elify",
-                "alterPlural": []
+                "singular": "Hörtigca",
+                "plural": "Hörtigcy"
             },
             {
                 "_case": 5,
-                "singular": "Elife",
-                "alterSingular": [],
-                "plural": "Elifové",
-                "alterPlural": []
+                "singular": "Hörtigc",
+                "alterSingular": ["Hörtigce"],
+                "plural": "Hörtigcové"
             },
             {
                 "_case": 6,
-                "singular": "Elifovi",
-                "alterSingular": [],
-                "plural": "Elifech",
-                "alterPlural": ["Elifipové"]
+                "singular": "Hörtigcovi",
+                "plural": "Hörtigcých",
+                "alterPlural": ["Hörtigcech"]
             },
             {
                 "_case": 7,
-                "singular": "Elifem",
-                "alterSingular": [],
-                "plural": "Elify",
-                "alterPlural": ["Elifipy"]
-            }
-        ]
-    },
-    "drahikanusShapes": {
-        "pattern": "pán",
-        "shapes": [
-            {
-                "_case": 1,
-                "singular": "Drahikânus",
-                "plural": "Drahikâni",
-                "alterPlural": ["Drahikânové"]
-            },
-            {
-                "_case": 2,
-                "singular": "Drahikâna",
-                "plural": "Drahikânů"
-            },
-            {
-                "_case": 3,
-                "singular": "Drahikânovi",
-                "plural": "Drahikânům"
-            },
-            {
-                "_case": 4,
-                "singular": "Drahikâna",
-                "plural": "Drahikâny"
-            },
-            {
-                "_case": 5,
-                "singular": "Drahikâne",
-                "plural": "Drahius’Kâni",
-                "alterPlural": ["Drahikânové"]
-            },
-            {
-                "_case": 6,
-                "singular": "Drahikânovi",
-                "plural": "Drahikânech"
-            },
-            {
-                "_case": 7,
-                "singular": "Drahikânem",
-                "plural": "Drahikâny"
+                "singular": "Hörtigcem",
+                "plural": "Hörtigcy"
             }
         ]
     },
@@ -934,60 +893,6 @@
                 "_case": 7,
                 "singular": "Munem",
                 "plural": "Muny"
-            }
-        ]
-    },
-    "orcLikeShapes": {
-        "pattern": "",
-        "shapes": [
-            {
-                "_case": 1,
-                "singular": "",
-                "alterSingular": [],
-                "plural": "",
-                "alterPlural": []
-            },
-            {
-                "_case": 2,
-                "singular": "",
-                "alterSingular": [],
-                "plural": "",
-                "alterPlural": []
-            },
-            {
-                "_case": 3,
-                "singular": "",
-                "alterSingular": [],
-                "plural": "",
-                "alterPlural": []
-            },
-            {
-                "_case": 4,
-                "singular": "",
-                "alterSingular": [],
-                "plural": "",
-                "alterPlural": []
-            },
-            {
-                "_case": 5,
-                "singular": "",
-                "alterSingular": [],
-                "plural": "",
-                "alterPlural": []
-            },
-            {
-                "_case": 6,
-                "singular": "",
-                "alterSingular": [],
-                "plural": "",
-                "alterPlural": []
-            },
-            {
-                "_case": 7,
-                "singular": "",
-                "alterSingular": [],
-                "plural": "",
-                "alterPlural": []
             }
         ]
     }

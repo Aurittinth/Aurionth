@@ -163,10 +163,10 @@ section.atlas .sep::before {
 =                   ATLASES                    =
 ==============================================*/
 section.atlas-inside h1 {
-    font-family: var(--f-iceberg);
+    font-family: var(--f-audiowide);
 }
 section.atlas-inside h2 {
-    font-family: var(--f-iceberg);
+    font-family: var(--f-audiowide);
 }
 
 section.atlas-inside p {

@@ -7,48 +7,28 @@
     import { base } from '$app/paths';
 </script>
 
-<section class="atlas-inside">
 
+<header class="atlas-header">
     <nav>
-        <ul>
+        <ul class="sec-nav">
             <li><a href="#opening">              Prolog         </a></li>
             <li><a href="#human-humanoid">       Humikus        </a></li>
             <li><a href="#wolf-humanoid">        Mannoŕ         </a></li>
             <li><a href="#bear-humanoid">        Monûlus        </a></li>
             <li><a href="#lizard-humanoid">      Luzin          </a></li>
             <li><a href="#snake-humanoid">       Tŕoid          </a></li>
-            <li><a href="#hybrid-humanoid">      Hörtigc        </a></li>
             <li><a href="#slime-humanoid">       Slionith       </a></li>
-            <!--
             <li><a href="#dragon-humanoid">      Drahikânus     </a></li>
-            <li><a href="#pig-humanoid">         Gallos         </a></li>
-            <li><a href="#cow-humanoid">         Munos          </a></li>
-            <li><a href="#orc-like-humanoid">    Orc’like       </a></li>
+            <li><a href="#needle-ear-humanoid">  Elif           </a></li>
+            <li><a href="#mass-body-humanoid">   Mokk           </a></li>
             
-            <li><a href="#otter-humanoid">       O’Zimus        </a></li>
-            <li><a href="#shark-humanoid">       O’Erim         </a></li>
-            <li><a href="#coral-humanoid">       O’de’Holl      </a></li>
-            <li><a href="#cetacean-humanoid">    O’Cūrr         </a></li>
-            <li><a href="#octopus-humanoid">     O’yu’Fklip     </a></li>
-            <li><a href="#jellyfish-humanoid">   O’Dōttey       </a></li>
-            <li><a href="#needle-ear-humanoid">  Elifip         </a></li>
-            -->
+            <li><a href="#hybrid-humanoids">     Hörtigc        </a></li>
+            <li><a href="#sea-humanoids">        Oceliś         </a></li>
         </ul>
     </nav>
-<!--
-Zimus           člověk vydří
-Erim            člověk žraločí
-O’de’Holl       člověk korálový
-Cūrr            člověk kytovcovití
-O’yu’Fklip      člověk chobotnicovití
-Dōttey          člověk medúzovití
-Elifip          člověk jehlouší
-Drahikânus      člověk dračí
-Gallos          člověk prasečí
-Munos           člověk kravští
-Orc’like        člověk orc’like
--->
-    
+</header>
+
+<section class="atlas-inside">
     <h1>Obyvatelé</h1>
     
     <section id="opening">
@@ -209,7 +189,6 @@ Orc’like        člověk orc’like
         </p>
     </section>
 
-
     <div class="section-divider"></div>
 
     <section id="bear-humanoid">
@@ -298,7 +277,7 @@ Orc’like        člověk orc’like
             Oproti nim však nevznikli z linie Humiků, nýbrž z linie Drahikânů. Jejich pleť je zbarvená do pískových barev od pískově žluté, přes okrovou až po tmavě šedou. Tak zvaně novodobí Luzini disponují navíc i zelenou či zelenomodrou barvou pleti.
         </p>
         <p>
-            Mohutná kostra a silné svalové úpony jim dávají značnou sílu a schopnost lézt. Jejich tělo je sice primárně pro teplé, žhavé pouště a louky, ale díky termoregulaci jsou oproti ještěrkám schopni žít, a především fungovat i v těch nejsevernějších a nejchladnějších oblastech Aurionthu. Jejich tělo v těchto oblastech, však vyžaduje extrémní přísun živin, aby mohlo z čeho vytvářet teplo.
+            Mohutná kostra a silné svalové úpony jim dávají značnou sílu a schopnost lézt. Jejich tělo je sice primárně pro teplé, žhavé pouště a louky, ale díky termoregulaci jsou oproti ještěrkám schopni žít, a především fungovat i v těch nejsevernějších a nejchladnějších oblastech Aurionthu. Jejich tělo v těchto oblastech však vyžaduje extrémní přísun živin, aby mohlo z čeho vytvářet teplo.
         </p>
         <p class="heading">
             Rozšiřování
@@ -359,7 +338,7 @@ Orc’like        člověk orc’like
             Stejně jako Luzini nevznikli z linie Humiků, ale odvozují svůj původ z linie Drahikânů. Oproti Luzinům však mají hladkou holou kůži, pokrytou jemnými, téměř nehmatatelnými šupinkami. Jejich pleť je od vínově fialové, přes rudě písčitou až po zlatavě oranžovou a písčitě žlutou. Jejich zrak je přizpůsoben slunečnímu světlu a tepelným mžitkám nad obzorem.
         </p>
         <p>
-            Jejich těla jsou zkrátka monumentem sami o sobě. Když opomeneme jejich doslova obrovitánský ocas, který často měří až 7 metrů, tak jejich samotný trup od pasu nahoru není nijak pozadu. Široká ramena, statné svaly a především a často vypouklé břicho a ještě větší prsa. Pokud bychom opravdu chtěli tvrdit, že Monûlové jsou hory, Tŕoidi pak musí být světadíly.
+            Jejich těla jsou zkrátka monumentem sama o sobě. Když opomeneme jejich doslova obrovitánský ocas, který často měří až 7 metrů, tak jejich samotný trup od pasu nahoru není nijak pozadu. Široká ramena, statné svaly a především a často vypouklé břicho a ještě větší prsa. Pokud bychom opravdu chtěli tvrdit, že Monûlové jsou hory, Tŕoidi pak musí být světadíly.
         </p>
         <p class="heading">
             Rozšiřování
@@ -398,10 +377,235 @@ Orc’like        člověk orc’like
             Více najdete na podstránce <a href="/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk hadí</a>.
         </p>
     </section>
+
+    <div class="section-divider"></div>
+
+    <section id="slime-humanoid">
+        <ResidentSection
+            title="Slionith"
+            key="slionithShapes"
+        />
+
+        <ClassificationTable
+            scientific={['śemmeth ?', 'člověk slizovitý']}
+            linguistic={['Slionith', 'Rozteklý']}
+            popular={[['', '']]}
+        />
+
+        <p class="heading">
+            Anatomický popis
+        </p>
+        <p>
+            Slionithé představují zcela unikátní linii, která se v průběhu věků evolučně odtrhla od svých původních předků z linie Monûlů. Zatímco původní Monûlové se vyznačovali mohutnou stavbou těla, silnými kostmi a hustou srstí přizpůsobenou mrazivým horám, tělesná schránka Slionithů si prošla radikální proměnou. Postupnou adaptací ztratili veškeré pevné části, kosti i tuhé tkáně, až se jejich těla proměnila v plnohodnotnou, přizpůsobivou slizovitou hmotu. Přesto si v základním nastavení zachovávají humanoidní siluetu, která sice na první pohled působí jako vědomě náročná na udržení, avšak představuje jejich přirozenou podstatu.
+        </p>
+        <p>
+            Struktura jejich těla drží tvar bez nutnosti neustálého soustředění. Při velmi důkladném pozorování lze uvnitř jejich rosolovité hmoty zaznamenat malé, ale na pohled mimořádně rychlé proudění a mikroskopické proudy, které v organismu plní funkci jakési vnitřní hydrodynamické kostry. Vzhledem k nepřítomnosti pevných zábran se jejich tělesná schránka dokáže natáhnout do nepředstavitelných šířek nebo se naopak extrémně smrštit. Tyto výrazné tvarové změny však již vyžadují zapojení samotného vědomí. Vizuálně si tak Slionithé i přes svou želatinovou povahu uchovávají široká ramena či náznak celkově masivnější stavby těla, což je estetickým dědictvím po jejich monûlských předcích.
+        </p>
+
+        <p class="heading">
+            Rozšiřování
+        </p>
+        <p>
+            Vývoj Slionithů jako jedna z posledních vývojových vrstev úzce souvisí s kolonizací ostrova Mallēm rasou Monûlů. Ostrov už v době jejich příchodu nabízel specifické prostředí s dominancí rostlin plodících měkké až želatinové plody, které se pro kolonizátory staly hlavním zdrojem obživy.
+        </p>
+        <p>
+            Dlouhodobá konzumace této stravy a biochemické procesy s ní spojené vedly k postupnému zželatínění a rozvolnění jejich tkání. V důsledku této adaptace na prostředí ostrova se původní monûlští obyvatelé proměnili v samostatnou slizovitou linii.
+        </p>
+        <p class="heading">
+            Společnost
+        </p>
+        <p>
+            Přestože vnější pozorovatelé mohou mít sklon posuzovat Slionithy podle jejich neobvyklé fyzické struktury, jejich existence nepřehlédnutelně dokazuje, že lidskost nespočívá ve tvaru, vzhledu ani velikosti tělesné schránky, ale ve vědomí, vytrvalosti a schopnosti myšlenkového plánování. Společenské uspořádání Slionithů bývá velmi klidné a rozvážné.
+        </p>
+        <p class="heading">
+            Magické vlastnosti
+        </p>
+        <p>
+            Magická podstata Slionithů je úzce spjata s hydrokinetickým a tvarovým prvkem magie, který napájí vnitřní proudění jejich těl. Nebojují hrubou fyzickou silou, ale dokáží absorbovat nárazy nebo procházet drobnými průduchy v terénu.
+        </p>
+
+        <p class="heading">
+            Původ slova
+        </p>
+        <p>
+            Slovo <i>Slionith</i> je vytvořeno jedním ze členů této rasy. Nikdo neví, proč právě toto, či z čeho vzniklo. Sám autor to nikdy neuvedl a vzal si toto tajemství taktéž do hrobu.
+        </p>
+        <p>
+            Ohledně samotného slova existuje nespočet teorií, hypotéz i domněnek. Nikdo nikdy nepřišel na původ. Vědci se proto domnívají, že šlo o pouhé splinutí náhodné sady písmen, tedy lidsky řečeno: prostě si to vymyslel.
+        </p>
+        <p>
+            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk slizovitý</a>.
+        </p>
+    </section>
     
     <div class="section-divider"></div>
 
-    <section id="hybrid-humanoid">
+    <section id="dragon-humanoid">
+        <ResidentSection
+            title="Drahikânus"
+            key="drahikanusShapes"
+        />
+
+        <ClassificationTable
+            scientific={['śemmeth ?', 'člověk dračí']}
+            linguistic={['Drahikânus', 'Drakovci / Draci']}
+            popular={[['', '']]}
+        />
+
+        <p class="heading">
+            Anatomický popis
+        </p>
+        <p>
+            Drahikâni představují humanoidní linii spojenou s prastarámi dračími rysy. Jejich tělesná stavba je znatelně šlachovitější a pevnější než u běžného člověka, s vyšší hustotou svalové hmoty a zpevněnou kosterní strukturou. Hlava je je protáhlejší a v zadní části brady často s výčnělky. Hlava má také ruhy, které jsou typické pro draky.
+        </p>
+        <p class="heading">
+            Rozšiřování
+        </p>
+        <p>
+            Historický přesun a výskyt Drahikânů je úzce spjat s ostrovem Fope. V období vodního pádu, kdy klesala hladina moře, přešli na tento ostrov s předpokladem, že vstupují do neosídleného prostředí. Po příchodu však zjistili, že ostrov již obývají jiné lidské skupiny.
+        </p>
+        <p class="heading">
+            Společnost
+        </p>
+        <p>
+            Před příchodem na Fope čelili Drahikâni složitému postavení. Lidé na kontinentu z nich měli strach a samotní draci je časem zcela zavrhli. Na ostrově Fope však narazili na shovívavější lidské obyvatelstvo, které je přijalo a vzalo mezi sebe, což umožnilo jejich dlouhodobé začlenění a koexistenci.
+        </p>
+        <p class="heading">
+            Magické vlastnosti
+        </p>
+        <p>
+            Drahikâni jsou nelepšími vládci magie, ať jde o základní (přírodní) živly jako jsou oheň, voda země či vzduch, tak i ty těžší primární živly jako ether, čas či život se smrtí.
+        </p>
+        <p>
+            Sami taktéž velmi dobře odolávají jednoduché magii. A sami mají již od narození lurickou kapacitu na úrovni, která je u Humiků odhadovaná až v pozdním dospívání. To vše pochází právě z dračí linie. A také jsou velmi citlivý na magii.
+        </p>
+        <p class="heading">
+            Původ slova
+        </p>
+        <p>
+            Označení <i>Drahikânus</i>, obdobně pak varianta <i>Drahius’Kânus</i>, v sobě nese plně doložený odkaz na prastarého, vznešeného a božího pradraka jménem Kânus Drâhus. Tato rasa na jeho počest přetvořila své pojmenování, díky čemuž mezi lidmi vznikla časem i mytologická historka jejich původu.
+        </p>
+        <p class="heading">
+            Mytologie
+        </p>
+        <p>
+            Současná věda nemá k dispozici pádný neprůstřelný důkaz o přesném původu Drahikânů. Jejich evoluční stálost po sta tisíce let však podporuje verzi, že na Aurionthu nejsou původní.
+        </p>
+        <p>
+            Příběhy o jejich vzniku se dělí do dvou hlavních větví: První vypráví o tom, že se dávným drakům nelíbil prapůvodní lid, a proto vybrali jedince ze svých řad a přetvořili je na humanoidy. Po dlouhém období se nakonec rozhodli při vodním pádu, historicky doložený pokles mořské hladiny, přejít na vzdálený ostrov, který vyhledali. Zde však k jejich očekávání, nebylo pusto. Byla zde rozsáhlá infrastruktura místního národa, která zdaleka přesahovala hranice, které byli na kontinentu. Lidé je zde přijmuli za své a spolupracovali, bez ohledu na vzhled, či původ.
+        </p>
+        <p>
+            Druhý, výrazněji mytologický příběh vypráví o tom, že Pradrak Kânus Drâhus se snesl na zem a oplodnil přinejmenším 200 plně náhodných lidí. Z tohoto masového oplodnění podle legend vznikla dnešní rasa Drahikânů.
+        </p>
+        <p>
+            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk dračí</a>.
+        </p>
+    </section>
+    
+    <div class="section-divider"></div>
+    
+    <section id="needle-ear-humanoid">
+        <ResidentSection
+            title="Elif"
+            key="elifipShapes"
+        />
+
+        <ClassificationTable
+            scientific={['śemmeth ?', 'člověk jehlouchý']}
+            linguistic={['Elif', 'Horalové']}
+            popular={[['', '']]}
+        />
+
+        <p class="heading">
+            Anatomický popis
+        </p>
+        <p>
+            Elifové představují lidskou linii výrazně přizpůsobenou životu v náročném prostředí Derských hor. Dlouhodobý vývoj v podmínkách s řidším vzduchem vedl ke zvětšení objemu jejich plicního koše a k přirozeně klidnějšímu krevnímu oběhu, který si zachovává stabilitu i ve fyzicky náročných nebo stresových situacích. Jejich uši získaly špičatý tvar, díky němuž fungují jako efektivní přijímač měkkých a dunivých vibrací šířících se skalním prostředím.
+        </p>
+        <p>
+            Jejich tělo je hubené a často zbarvené do šedomodra až zelenofialova. Jsou vysocí s dlouhými končetinami a velmi obratní. Jejich hrudník je díky plicím objemnější a širší.
+        </p>
+        <p class="heading">
+            Rozšiřování
+        </p>
+        <p>
+            Původním i hlavním sídelním prostorem této lidské linie jsou horské oblasti Derských hor a pohoří Gôrthōnh. Přestože je toto prostředí pro běžný život téměř nehostinné, Elifové zde dokázali dlouhodobě prosperovat. Mimo své domovské hory se vyznačují mimořádnou fyzickou zdatností v nížinách, kde z nich fyziologické přizpůsobení dělá vynikající běžce.
+        </p>
+        <p class="heading">
+            Společnost
+        </p>
+        <p>
+            Život ve vysokohorských podmínkách utvořil společenství založené na úzké soudržnosti, pevné disciplíně a schopnosti vnímat jemné změny horského prostředí. Svůj horský domov považují za přirozené útočiště a k obyvatelům nižších poloh přistupují s odstupem, avšak bez nevraživosti.
+        </p>
+        <p class="heading">
+            Magické vlastnosti
+        </p>
+        <p>
+            Díky horskému přizpůsobení jsou skvělými vládci vzduchu a někteří i země. Taktéž jsou velmi duchovní a etherická síla jim taktéž velmi jde. Díky zemi dokáží včas předvídat sesuvy půdy nebo rychle zjistit poryv větru.
+        </p>
+        <p class="heading">
+            Původ slova
+        </p>
+        <p>
+            Slovo <i>Elif</i> vzniklo převážně z jejich slangových výrazů <i>eel</i> pro vánek či slabý vítr a <i>iefii</i> pro rychlost a obratnost. Ve spojení bychom tedy je mohli nazvat <i>rychlý vánek</i> či lépe <i>větrná obratnost</i>.
+        </p>
+        <p>
+            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk jehlouchý</a>.
+        </p>
+    </section>
+    
+    <div class="section-divider"></div>
+
+    <section id="mass-body-humanoid">
+        <ResidentSection
+            title="Mokk"
+            key="mokkShapes"
+        />
+
+        <ClassificationTable
+            scientific={['śemmeth wekk', 'člověk objemný']}
+            linguistic={['Mokk (Mokkun)', '']}
+            popular={[['', '']]}
+        />
+
+        <p class="heading">
+            Anatomický popis
+        </p>
+        <p>
+            Mocci představují zavalitou a neobyčejně fyzicky zdatnou linii člověka. Jejich anatomie se vyznačuje širokými rameny, objemným hrudním košem, masivní kosterní stavbou a výrazně vyvinutým svalstvem. Často také toto vše doplňuje mohutný a objemný břich, způsoben především jejich stravou. Pokožka Mokků má vyšší hustotu pigmentu s přirozenými zelenohnědými až olivově zemitými barvami.
+        </p>
+        <p class="heading">
+            Rozšiřování
+        </p>
+        <p>
+            Hlavním místem, jejich pobytu je dnešní stát Mocumer a jeho ostrovy. Mocci osídlili především oblasti s bujnou vegetací.
+        </p>
+        <p class="heading">
+            Společnost
+        </p>
+        <p>
+            Společnost Mokků v Mocumeru je velmi volná a schovívavá. Nehraje se zde na postavení, peníze ani krev. Je to společnost, která přijme každého. tradicí je velké množství jídla, a honosné hostiny i v klasických dnech. Přestože z vnější perspektivy působí tvrdým, uzavřeným a striktním dojmem, uvnitř panuje klid, milost a především ochota. Mají však pevná pravidla chování, dresscodů do společností a občas netradiční až extravagantní zvyky. Mají pevný právní řád, velkou škálu řemeslných profesí.
+        </p>
+        <p class="heading">
+            Magické vlastnosti
+        </p>
+        <p>
+            Mocci disponují přirozenou rezistencí vůči organickým jedům a velmi často ovládají zemní magii. Zemní magie jim napomáhá ve stavebnictví a smyslu pro humor. Někteří z nich dokáži naopak ovládat vodu, která naopak napomáhá jejich zemědělství a samotné obživě.
+        </p>
+        <p class="heading">
+            Původ slova
+        </p>
+        <p>
+            Slovo <i>Mokk</i>, starší výraz pak <i>Mokkun</i>, odkazuje na cumerská slova <i>makkan</i> (objemný, honosný), <i>fellun</i> (tlustý, obžerný, nenasytný) a starší <i>wekk</i> (silný, velký, objemný).
+        </p>
+        <p>
+            Více najdete na podstránce <a href="{base}/semmeth-wekk" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk objemný</a>.
+        </p>
+    </section>
+    
+    <div class="section-divider"></div>
+
+    <section id="hybrid-humanoids">
         <ResidentSection
             title="Hörtigc"
             key="hortigcShapes"
@@ -454,21 +658,21 @@ Orc’like        člověk orc’like
             Samotné slovo <i>Höregc</i> pak pochází ze Starorodu a znamená <i>„výsledek dvou“</i>.
         </p>
         <p>
-            Více najdete na podstránce <a href="/?" class="link-blocked" onclick={(e) => e.preventDefault()}>[placeholder]</a>.
+            Více najdete na podstránce <a href="{base}/atlases/civilization/resident/hybrid-humanoids">Hörtigc</a>.
         </p>
     </section>
-
+    
     <div class="section-divider"></div>
-
-    <section id="slime-humanoid">
+    
+    <section id="sea-humanoids">
         <ResidentSection
-            title="Slionith"
-            key="slionithShapes"
+            title="Oceliś"
+            key="ocelisShapes"
         />
 
         <ClassificationTable
-            scientific={['śemmeth ?', 'člověk slizovitý']}
-            linguistic={['Slionith', 'slizovitý člověk / Rozteklý']}
+            scientific={['?', '?']}
+            linguistic={['Oceliś', 'Oceánci']}
             popular={[['', '']]}
         />
 
@@ -476,393 +680,28 @@ Orc’like        člověk orc’like
             Anatomický popis
         </p>
         <p>
-            Slionithé představují zcela unikátní linii, která se v průběhu věků evolučně odtrhla od svých původních předků z linie Monûlů. Zatímco původní Monûlové se vyznačovali mohutnou stavbou těla, silnými kostmi a hustou srstí přizpůsobenou mrazivým horám, tělesná schránka Slionithů si prošla radikální proměnou. Postupnou adaptací ztratili veškeré pevné části, kosti i tuhé tkáně, až se jejich těla proměnila v plnohodnotnou, přizpůsobivou slizovitou hmotu. Přesto si v základním nastavení zachovávají humanoidní siluetu, která sice na první pohled působí jako vědomě náročná na udržení, avšak představuje jejich přirozenou podstatu.
+            Tělesná stavba Oceliśů představuje unikátní adaptaci na vodní a pobřežní prostředí Aurionthu. Jejich kůže je hladká, pevná a přirozeně uzpůsobená k pohybu ve vodním sloupci i k ochraně před vysoušením na souši.
         </p>
-        <p>
-            Struktura jejich těla drží tvar bez nutnosti neustálého soustředění. Při velmi důkladném pozorování lze uvnitř jejich rosolovité hmoty zaznamenat malé, ale na pohled mimořádně rychlé proudění a mikroskopické proudy, které v organismu plní funkci jakési vnitřní hydrodynamické kostry. Vzhledem k nepřítomnosti pevných zábran se jejich tělesná schránka dokáže natáhnout do nepředstavitelných šířek nebo se naopak extrémně smrštit. Tyto výrazné tvarové změny však již vyžadují zapojení samotného vědomí. Vizuálně si tak Slionithé i přes svou želatinovou povahu uchovávají široká ramena či náznak celkově masivnější stavby těla, což je estetickým dědictvím po jejich monûlských předcích.
-        </p>
-
         <p class="heading">
             Rozšiřování
         </p>
         <p>
-            Vývoj Slionithů jako jedna z posledních vývojových vrstev úzce souvisí s kolonizací ostrova Mallēm rasou Monûlů. Ostrov už v době jejich příchodu nabízel specifické prostředí s dominancí rostlin plodících měkké až želatinové plody, které se pro kolonizátory staly hlavním zdrojem obživy.
-        </p>
-        <p>
-            Dlouhodobá konzumace této stravy a biochemické procesy s ní spojené vedly k postupnému zželatínění a rozvolnění jejich tkání. V důsledku této adaptace na prostředí ostrova se původní monûlští obyvatelé proměnili v samostatnou slizovitou linii.
+            Oceli obývají vodní oblasti Aurionthu, od mělkých pobřežních vod až po otevřený oceán.
         </p>
         <p class="heading">
             Společnost
         </p>
         <p>
-            Přestože vnější pozorovatelé mohou mít sklon posuzovat Slionithy podle jejich neobvyklé fyzické struktury, jejich existence nepřehlédnutelně dokazuje, že lidskost nespočívá ve tvaru, vzhledu ani velikosti tělesné schránky, ale ve vědomí, vytrvalosti a schopnosti myšlenkového plánování. Společenské uspořádání Slionithů bývá velmi klidné a rozvážné.
+            Žijí v rozechvělých společenstvích vybudovaných v zatopených jeskyních, na útesech nebo v podmořských kamenných strukturách.
         </p>
         <p class="heading">
             Magické vlastnosti
         </p>
         <p>
-            Magická podstata Slionithů je úzce spjata s hydrokinetickým a tvarovým prvkem magie, který napájí vnitřní proudění jejich těl. Nebojují hrubou fyzickou silou, ale dokáží absorbovat nárazy nebo procházet drobnými průduchy v terénu.
-        </p>
-
-        <p class="heading">
-            Původ slova
+            Ocelové jsou výbornými vládci vodní magie.
         </p>
         <p>
-            Slovo <i>Slionith</i> je vytvořeno jedním ze členů této rasy. Nikdo neví, proč právě toto, či z čeho vzniklo. Sám autor to nikdy neuvedl a vzal si toto tajemství taktéž do hrobu.
-        </p>
-        <p>
-            Ohledně samotného slova existuje nespočet teorií, hypotéz i domněnek. Nikdo nikdy nepřišel na původ. Vědci se proto domnívají, že slo o pouhé splinutí náhodné sady písmen, tedy lidsky řečeno: prostě si to vymyslel.
-        </p>
-
-        <p>
-            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk slizovitý</a>.
+            Více najdete na podstránce <a href="{base}/atlases/civilization/resident/sea-humanoids">Oceliś</a>.
         </p>
     </section>
-<!--
-    <div class="section-divider"></div>
-
-    <section id="otter-humanoid">
-        <ResidentSection
-            title="O’Zimus"
-            key="oZimusShapes"
-        />
-
-        <ClassificationTable
-            scientific={['śemmeth ?', 'člověk ?']}
-            linguistic={['', '']}
-            popular={[['', '']]}
-        />
-
-        <p class="heading">
-            Anatomický popis
-        </p>
-        <p class="heading">
-            Rozšiřování
-        </p>
-        <p class="heading">
-            Společnost
-        </p>
-        <p class="heading">
-            Magické vlastnosti
-        </p>
-        <p class="heading">
-            Původ slova
-        </p>
-        <p>
-            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>.
-        </p>
-    </section>
-    
-    <div class="section-divider"></div>
-    
-    <section id="shark-humanoid">
-        <ResidentSection
-            title="O’Erim"
-            key="oErimShapes"
-        />
-
-        <ClassificationTable
-            scientific={['śemmeth ?', 'člověk ?']}
-            linguistic={['', '']}
-            popular={[['', '']]}
-        />
-
-        <p class="heading">
-            Anatomický popis
-        </p>
-        <p class="heading">
-            Rozšiřování
-        </p>
-        <p class="heading">
-            Společnost
-        </p>
-        <p class="heading">
-            Magické vlastnosti
-        </p>
-        <p class="heading">
-            Původ slova
-        </p>
-        <p>
-            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>.
-        </p>
-    </section>
-    
-    <div class="section-divider"></div>
-    
-    <section id="coral-humanoid">
-        <ResidentSection title="O-de’Holl" key="oDeHollShapes" />
-    </section>
-    
-    <div class="section-divider"></div>
-    
-    <section id="cetacean-humanoid">
-        <ResidentSection
-            title="O’Cūrr"
-            key="oCurrShapes"
-        />
-
-        <ClassificationTable
-            scientific={['śemmeth ?', 'člověk ?']}
-            linguistic={['', '']}
-            popular={[['', '']]}
-        />
-
-        <p class="heading">
-            Anatomický popis
-        </p>
-        <p class="heading">
-            Rozšiřování
-        </p>
-        <p class="heading">
-            Společnost
-        </p>
-        <p class="heading">
-            Magické vlastnosti
-        </p>
-        <p class="heading">
-            Původ slova
-        </p>
-        <p>
-            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>.
-        </p>
-    </section>
-    
-    <div class="section-divider"></div>
-    
-    <section id="octopus-humanoid">
-        <ResidentSection
-            title="O-yu’Fklip"
-            key="oYuFklipShapes"
-        />
-
-        <ClassificationTable
-            scientific={['śemmeth ?', 'člověk ?']}
-            linguistic={['', '']}
-            popular={[['', '']]}
-        />
-
-        <p class="heading">
-            Anatomický popis
-        </p>
-        <p class="heading">
-            Rozšiřování
-        </p>
-        <p class="heading">
-            Společnost
-        </p>
-        <p class="heading">
-            Magické vlastnosti
-        </p>
-        <p class="heading">
-            Původ slova
-        </p>
-        <p>
-            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>.
-        </p>
-    </section>
-    
-        <div class="section-divider"></div>
-    
-    <section id="jellyfish-humanoid">
-        <ResidentSection
-            title="O’Dōttey"
-            key="oDotteyShapes"
-        />
-
-        <ClassificationTable
-            scientific={['śemmeth ?', 'člověk ?']}
-            linguistic={['', '']}
-            popular={[['', '']]}
-        />
-
-        <p class="heading">
-            Anatomický popis
-        </p>
-        <p class="heading">
-            Rozšiřování
-        </p>
-        <p class="heading">
-            Společnost
-        </p>
-        <p class="heading">
-            Magické vlastnosti
-        </p>
-        <p class="heading">
-            Původ slova
-        </p>
-        <p>
-            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>.
-        </p>
-    </section>
-    
-    <div class="section-divider"></div>
-    
-    <section id="needle-ear-humanoid">
-        <ResidentSection
-            title="Elifip"
-            key="elifipShapes"
-        />
-
-        <ClassificationTable
-            scientific={['śemmeth ?', 'člověk ?']}
-            linguistic={['', '']}
-            popular={[['', '']]}
-        />
-
-        <p class="heading">
-            Anatomický popis
-        </p>
-        <p class="heading">
-            Rozšiřování
-        </p>
-        <p class="heading">
-            Společnost
-        </p>
-        <p class="heading">
-            Magické vlastnosti
-        </p>
-        <p class="heading">
-            Původ slova
-        </p>
-        <p>
-            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>.
-        </p>
-    </section>
-    
-    <div class="section-divider"></div>
-    
-    <section id="dragon-humanoid">
-        <ResidentSection
-            title="Drahikânus"
-            key="DrahikanusShapes"
-        />
-
-        <ClassificationTable
-            scientific={['śemmeth ?', 'člověk ?']}
-            linguistic={['', '']}
-            popular={[['', '']]}
-        />
-
-        <p class="heading">
-            Anatomický popis
-        </p>
-        <p class="heading">
-            Rozšiřování
-        </p>
-        <p class="heading">
-            Společnost
-        </p>
-        <p class="heading">
-            Magické vlastnosti
-        </p>
-        <p class="heading">
-            Původ slova
-        </p>
-        <p>
-            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>.
-        </p>
-    </section>
-    
-    <div class="section-divider"></div>
-    
-    <section id="pig-humanoid">
-        <ResidentSection
-            title="Tureo’Gallos"
-            key="gallosShapes"
-        />
-
-        <ClassificationTable
-            scientific={['śemmeth ?', 'člověk ?']}
-            linguistic={['', '']}
-            popular={[['', '']]}
-        />
-
-        <p class="heading">
-            Anatomický popis
-        </p>
-        <p class="heading">
-            Rozšiřování
-        </p>
-        <p class="heading">
-            Společnost
-        </p>
-        <p class="heading">
-            Magické vlastnosti
-        </p>
-        <p class="heading">
-            Původ slova
-        </p>
-        <p>
-            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>.
-        </p>
-    </section>
-    
-    <div class="section-divider"></div>
-    
-    <section id="cow-humanoid">
-        <ResidentSection
-            title="Tureo’Munos"
-            key="munosShapes"
-        />
-
-        <ClassificationTable
-            scientific={['śemmeth ?', 'člověk ?']}
-            linguistic={['', '']}
-            popular={[['', '']]}
-        />
-
-        <p class="heading">
-            Anatomický popis
-        </p>
-        <p class="heading">
-            Rozšiřování
-        </p>
-        <p class="heading">
-            Společnost
-        </p>
-        <p class="heading">
-            Magické vlastnosti
-        </p>
-        <p class="heading">
-            Původ slova
-        </p>
-        <p>
-            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>.
-        </p>
-    </section>
-    
-    <div class="section-divider"></div>
-    
-    <section id="orc-like-humanoid">
-        <ResidentSection
-            title="Orc’Like"
-            key="orcLikeShapes"
-        />
-
-        <ClassificationTable
-            scientific={['śemmeth ?', 'člověk ?']}
-            linguistic={['', '']}
-            popular={[['', '']]}
-        />
-
-        <p class="heading">
-            Anatomický popis
-        </p>
-        <p class="heading">
-            Rozšiřování
-        </p>
-        <p class="heading">
-            Společnost
-        </p>
-        <p class="heading">
-            Magické vlastnosti
-        </p>
-        <p class="heading">
-            Původ slova
-        </p>
-        <p>
-            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk ?</a>.
-        </p>
-    </section>
--->
 </section>
