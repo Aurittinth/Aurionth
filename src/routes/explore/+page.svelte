@@ -33,7 +33,7 @@
                 <p>Rasy, druhy, poddruhy a základní pojmy života na Aurionthu.</p>
             </div>
             <div class="box">
-                <a href="#map">Chci vidět mapu</a>
+                <a href="#blind-image-map">Chci vidět mapu</a>
                 <p>Slepá mapa Aurionthu a první prostorová představa o světě.</p>
             </div>
             <div class="box">
