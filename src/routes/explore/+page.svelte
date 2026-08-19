@@ -1,7 +1,7 @@
 <script>
     import { base } from '$app/paths';
 
-    import blindAurionth from '$images/galery/Aurionth-blind-map.svg';
+    import blindAurionth from '$images/galery/AURIONTH-map.svg';
 </script>
 
 <header class="atlas-header">
@@ -46,7 +46,7 @@
             </div>
         </section>
 
-        <div id="map" class="map">
+        <div id="blind-image-map" class="fix justify-center">
             <img src={blindAurionth} alt="Slepá mapa Aurionthu" loading="lazy" />
         </div>
 
