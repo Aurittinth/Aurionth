@@ -1,6 +1,6 @@
 <script>
     import image from '$images/galery/placeholder.jpg';
-    import blindAurionth from '$images/galery/Aurionth-blind-map.svg';
+    import blindAurionth from '$images/galery/AURIONTH-map.svg';
 
     import { base } from '$app/paths';
 </script>

@@ -79,8 +79,9 @@ header.atlas-header {
     }
 
     .sec-nav a:hover {
-        color: var(--c-cyannebula);
+        color: var(--c-iceblue);
         background-color: var(--c-voidblack);
+        text-decoration: none;
     }
 
 /*==============================================
