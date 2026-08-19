@@ -33,7 +33,7 @@ Dōttey          člověk medúzovití
 <section class="atlas-inside">
     <h1>Obyvatelé - Mořští lidé</h1>
 
-    <section class="sea-humanoids"></section>
+    <section id="sea-humanoids"></section>
 
     <div class="section-divider"></div>
     
