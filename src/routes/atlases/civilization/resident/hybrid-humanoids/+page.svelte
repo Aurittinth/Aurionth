@@ -74,7 +74,7 @@
             Samotné slovo <i>Höregc</i> pak pochází ze Starorodu a znamená <i>„výsledek dvou“</i>.
         </p>
         <p>
-            Více najdete na podstránce <a href="/?" class="link-blocked" onclick={(e) => e.preventDefault()}>[placeholder]</a>.
+            Více najdete na podstránce <a href="{base}/?" class="link-blocked" onclick={(e) => e.preventDefault()}>[placeholder]</a>.
         </p>
     </section>
 

@@ -374,7 +374,7 @@
             Slovo <i>Tŕoid</i> podle odhadů pochází z prastarého jazyka Gaaharamantimishe. Spojením slov <i>Tŕaya</i> znamenající podle odhadů vlnitý pohyb a <i>Idamid</i> jako symbol písku. Do nějaké smysluplné podoby se to dalo překložit jako <i>„vlnitý písek“</i>, což krásně odráží nestálost písečných dun, připomínající mořské vlny, ale také typický pohyb Tŕoidů.
         </p>
         <p>
-            Více najdete na podstránce <a href="/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk hadí</a>.
+            Více najdete na podstránce <a href="{base}/semmeth-?" class="link-blocked" onclick={(e) => e.preventDefault()}>člověk hadí</a>.
         </p>
     </section>
 
