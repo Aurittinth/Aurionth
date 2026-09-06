@@ -12,6 +12,12 @@
     --f-crimson-text:       "Crimson Text", serif;
 }
 
+div.body {
+    font-size: 18pt;
+    font-weight: 400;
+    font-style: normal;
+}
+
 div.body > section {
     display: flex;
     background-color: #000000cf;
@@ -25,59 +31,54 @@ div.body > section {
     backdrop-filter: blur(2.5px);
 }
 
-section.main {
+.body section.main {
     text-align: center;
 }
 
-div.body {
-    font-size: 18pt;
-    font-weight: 400;
-    font-style: normal;
-}
-
-p {
-    color: var(--c-snow) !important;
-    font-family: var(--f-crimson-text) !important;
+.body p {
+    color: var(--c-snow);
+    font-family: var(--f-crimson-text);
     line-height: 115%;
     margin-top: 0.00em;
     margin-bottom: 0.60em;
 }
 
-h1, h2 {
-    font-family: var(--f-crimson-text) !important;
+.body h1,
+.body h2 {
+    font-family: var(--f-crimson-text);
     page-break-after: avoid;
     font-weight: 700;
     text-align: center;
 }
 
-h1 {
-    color: var(--c-customcrimson) !important;
-    font-size: 4.00em !important;
-    margin-top: 1.20em !important;
+.body h1 {
+    color: var(--c-customcrimson);
+    font-size: 4.00em;
+    margin-top: 1.20em;
 }
 
-h2 {
-    color: var(--c-lavender) !important;
-    font-size: 2.50em !important;
+.body h2 {
+    color: var(--c-lavender);
+    font-size: 2.50em;
 }
 
-span.author {
+.body span.author {
     color: var(--c-gray);
 }
 
-span.count-word {
+.body span.count-word {
     color: var(--c-gray);
 }
 
-span.quote {
+.body span.quote {
     color: var(--c-lightskyblue);
 }
 
-span.sub-info {
+.body span.sub-info {
     color: var(--c-mistlavender);
     font-style: italic;
 }
 
-span.time-hop {
+.body span.time-hop {
     text-align: center;
 }
