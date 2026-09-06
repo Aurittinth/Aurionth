@@ -12,7 +12,7 @@
     --f-crimson-text:       "Crimson Text", serif;
 }
 
-section {
+div.body > section {
     display: flex;
     background-color: #000000cf;
     margin: 0 20%;
