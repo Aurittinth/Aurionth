@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+
+:root {
+    --c-snow:               #e8e0f0;
+    --c-mistlavender:       #c8b4f0;
+    --c-lavender:           #b090f0;
+    --c-lightskyblue:       #91b6fb;
+    --c-customcrimson:      #700c22;
+    --c-gray:               #888888;
+
+    --f-crimson-text:       "Crimson Text", serif;
+}
+
+section {
+    display: flex;
+    background-color: #000000cf;
+    margin: 0 20%;
+    padding: 25px 2.5%;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.5rem;
+
+    -webkit-backdrop-filter: blur(2.5px);
+    backdrop-filter: blur(2.5px);
+}
+
+section.main {
+    text-align: center;
+}
+
+div.body {
+    font-size: 18pt;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    color: var(--c-snow) !important;
+    font-family: var(--f-crimson-text) !important;
+    line-height: 115%;
+    margin-top: 0.00em;
+    margin-bottom: 0.60em;
+}
+
+h1, h2 {
+    font-family: var(--f-crimson-text) !important;
+    page-break-after: avoid;
+    font-weight: 700;
+    text-align: center;
+}
+
+h1 {
+    color: var(--c-customcrimson) !important;
+    font-size: 4.00em !important;
+    margin-top: 1.20em !important;
+}
+
+h2 {
+    color: var(--c-lavender) !important;
+    font-size: 2.50em !important;
+}
+
+span.author {
+    color: var(--c-gray);
+}
+
+span.count-word {
+    color: var(--c-gray);
+}
+
+span.quote {
+    color: var(--c-lightskyblue);
+}
+
+span.sub-info {
+    color: var(--c-mistlavender);
+    font-style: italic;
+}
+
+span.time-hop {
+    text-align: center;
+}
