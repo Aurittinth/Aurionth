@@ -12,7 +12,7 @@
 
 - **Atlasy** — dvanáct tematických celků pokrývajících geopolitiku, kultury, náboženství a historii světa
 - **Novorodština** — konstruovaný jazyk s vlastní gramatikou, deklinacemi a slovníkem
-- **Pantheon & náboženství** — propracované věrouky včetně Xērroroi, archetypálních kosmických bytostí
+- **Panteon & náboženství** — propracované věrouky včetně Xērroroi, archetypálních kosmických bytostí
 - **Bestiář** — katalog tvorů světa Aurionth
 - **Genealogie** — rodokmeny klíčových postav a dynastií
 
