@@ -130,6 +130,7 @@
             </li>
             
             <li><a href="{base}/languages" onclick={closeMenu} class="disable">Jazyky</a></li>
+            <li><a href="{base}/calculate/time" onclick={closeMenu}>Převodník času</a></li>
 
             <li class="has-submenu">
                 <button
@@ -186,6 +187,7 @@
 					<li><a href="{base}/about/me">O tvůrci</a></li>
 					<li><a href="{base}/about/project">O projektu</a></li>
 					<li><a href="{base}/books">Aurionth - book</a></li>
+					<li><a href="{base}/calculate/time">Převodník</a></li>
 				</ul>
 			</div>
 		</div>
