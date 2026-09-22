@@ -181,13 +181,9 @@
 			<div class="footer">
 				<span class="footer-title">Navigace</span>
 				<ul>
-					<li><a href="{base}/" class="disable">xyz.cz</a></li>
-					<li><a href="{base}/atlases">Atlasy</a></li>
-					<li><a href="{base}/languages" class="disable">Jazyky</a></li>
 					<li><a href="{base}/about/me">O tvůrci</a></li>
 					<li><a href="{base}/about/project">O projektu</a></li>
-					<li><a href="{base}/books">Aurionth - book</a></li>
-					<li><a href="{base}/calculate/time">Převodník</a></li>
+					<li><a href="{base}/about/licence">Licence</a></li>
 				</ul>
 			</div>
 		</div>
